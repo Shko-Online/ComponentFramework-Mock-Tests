@@ -1,0 +1,34 @@
+{
+  "name": "@albanian-xrm/componentframework-mock-tests",
+  "version": "0.1.0",
+  "description": "Test for our mocking library which helps with testing PowerApps Component Framework Components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/albanian-xrm/ComponentFramework-Mock-Tests.git"
+  },
+  "author": "AlbanianXrm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/albanian-xrm/ComponentFramework-Mock-Tests/issues"
+  },
+  "homepage": "https://github.com/albanian-xrm/ComponentFramework-Mock-Tests#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.7",
+    "@types/powerapps-component-framework": "^1.3.4",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/sinon": "^10.0.13",
+    "eslint": "^8.22.0",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sinon": "^14.0.0",
+    "ts-jest": "^28.0.8",
+    "typescript": "^4.7.4"
+  }
+}
