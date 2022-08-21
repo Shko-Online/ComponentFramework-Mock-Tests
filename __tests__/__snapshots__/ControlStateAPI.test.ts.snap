@@ -1,22 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ControlStateAPI tests Init should work 1`] = `
+exports[`ControlStateAPI tests Click should Work 1`] = `
 <body>
-  <div>
-    <div
-      class="ControlState_Container"
-    />
-  </div>
-</body>
-`;
-
-exports[`ControlStateAPI tests Update View should Work 1`] = `
-<body>
-  <div>
-    <div
-      class="ControlState_Container"
-    />
-  </div>
   <div>
     <div
       class="ControlState_Container"
@@ -51,6 +36,142 @@ exports[`ControlStateAPI tests Update View should Work 1`] = `
       <div
         class="ControlState_SelectedColorElement"
         style="background-color: transparent;"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ControlStateAPI tests Click should Work 2`] = `
+<body>
+  <div>
+    <div
+      class="ControlState_Container"
+    >
+      <div
+        class="ControlState_DivLabelClass"
+      />
+      <button
+        buttoncolor="#80ff80"
+        class="ControlState_ButtonClass"
+        value="Green"
+      >
+        Green
+      </button>
+      <button
+        buttoncolor="#add8e6"
+        class="ControlState_ButtonClass"
+        value="Blue"
+      >
+        Blue
+      </button>
+      <button
+        buttoncolor="#ff8080"
+        class="ControlState_ButtonClass"
+        value="Red"
+      >
+        Red
+      </button>
+      <div
+        class="ControlState_DivLabelClass"
+      />
+      <div
+        class="ControlState_SelectedColorElement"
+        style="background-color: rgb(173, 216, 230);"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ControlStateAPI tests Init should work 1`] = `
+<body>
+  <div>
+    <div
+      class="ControlState_Container"
+    />
+  </div>
+</body>
+`;
+
+exports[`ControlStateAPI tests Update View should Work 1`] = `
+<body>
+  <div>
+    <div
+      class="ControlState_Container"
+    >
+      <div
+        class="ControlState_DivLabelClass"
+      />
+      <button
+        buttoncolor="#80ff80"
+        class="ControlState_ButtonClass"
+        value="Green"
+      >
+        Green
+      </button>
+      <button
+        buttoncolor="#add8e6"
+        class="ControlState_ButtonClass"
+        value="Blue"
+      >
+        Blue
+      </button>
+      <button
+        buttoncolor="#ff8080"
+        class="ControlState_ButtonClass"
+        value="Red"
+      >
+        Red
+      </button>
+      <div
+        class="ControlState_DivLabelClass"
+      />
+      <div
+        class="ControlState_SelectedColorElement"
+        style="background-color: transparent;"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`ControlStateAPI tests Update View with state should Work 1`] = `
+<body>
+  <div>
+    <div
+      class="ControlState_Container"
+    >
+      <div
+        class="ControlState_DivLabelClass"
+      />
+      <button
+        buttoncolor="#80ff80"
+        class="ControlState_ButtonClass"
+        value="Green"
+      >
+        Green
+      </button>
+      <button
+        buttoncolor="#add8e6"
+        class="ControlState_ButtonClass"
+        value="Blue"
+      >
+        Blue
+      </button>
+      <button
+        buttoncolor="#ff8080"
+        class="ControlState_ButtonClass"
+        value="Red"
+      >
+        Red
+      </button>
+      <div
+        class="ControlState_DivLabelClass"
+      />
+      <div
+        class="ControlState_SelectedColorElement"
+        style="background-color: rgb(173, 216, 230);"
       />
     </div>
   </div>
