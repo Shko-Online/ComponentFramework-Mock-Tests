@@ -12,6 +12,7 @@
       "baseUrl": ".",
       "paths": {
         "@albanian-xrm/componentframework-mock*": ["./ComponentFramework-Mock/src*"],
+        "@powerapps-samples/control-state-api*": ["./PowerApps-Samples/component-framework/ControlStateAPI*"],
         "@albanian-xrm/test-components*": ["./__test-components__*"]
       },
       "typeRoots": [

@@ -4,6 +4,11 @@
   "description": "Test for our mocking library which helps with testing PowerApps Component Framework Components",
   "main": "index.js",
   "scripts": {
+    "postinstall": "yarn install:albx && yarn install:control-state",
+    "install:albx": "cd ComponentFramework-Mock && yarn",
+    "install:control-state": "cd PowerApps-Samples\\component-framework\\ControlStateAPI && yarn",
+    "build": "yarn build:control-state",
+    "build:control-state": "cd PowerApps-Samples\\component-framework\\ControlStateAPI && yarn build ",
     "test": "jest --coverage --maxWorkers=4",
     "test-no-cover": "jest --maxWorkers=4"
   },
@@ -30,6 +35,7 @@
     "react-dom": "^18.2.0",
     "sinon": "^14.0.0",
     "ts-jest": "^28.0.8",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "webpack": "^5.74.0"
   }
 }

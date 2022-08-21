@@ -18,9 +18,9 @@ steps:
 
 - task: Yarn@3
   inputs:
-    projectDirectory: 'ComponentFramework-Mock'
+    arguments: 'build'
 
 - task: Yarn@3
   inputs:
-    arguments: 'run test'
+    arguments: 'test'
 

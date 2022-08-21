@@ -1,3 +1,6 @@
 [submodule "ComponentFramework-Mock"]
 	path = ComponentFramework-Mock
 	url = https://github.com/albanian-xrm/ComponentFramework-Mock.git
+[submodule "PowerApps-Samples"]
+	path = PowerApps-Samples
+	url = https://github.com/microsoft/PowerApps-Samples
