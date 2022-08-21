@@ -1,0 +1,3 @@
+[submodule "ComponentFramework-Mock"]
+	path = ComponentFramework-Mock
+	url = https://github.com/albanian-xrm/ComponentFramework-Mock.git

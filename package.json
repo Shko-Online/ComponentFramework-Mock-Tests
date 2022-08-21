@@ -4,7 +4,8 @@
   "description": "Test for our mocking library which helps with testing PowerApps Component Framework Components",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage --maxWorkers=4",
+    "test-no-cover": "jest --maxWorkers=4"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+      "allowSyntheticDefaultImports": true,
+      "target": "es5",
+      "lib": ["es5", "es6", "dom"],
+      "module": "ES6",
+      "moduleResolution": "node",
+      "noEmit": false,
+      "outDir": "dist",
+      "declaration": true,
+      "sourceMap": true,    
+      "baseUrl": ".",
+      "paths": {
+        "@albanian-xrm/componentframework-mock*": ["./ComponentFramework-Mock/src*"],
+        "@albanian-xrm/test-components*": ["./__test-components__*"]
+      },
+      "typeRoots": [
+          "./node_modules/@types"
+      ]
+  },
+  "exclude": [
+      "node_modules",
+      "wwwroot",
+  ],
+  "include": [
+      "src",
+      "__tests__",
+      "__test-components__"
+, "dist/TestComponent", "global.d.ts"  ]
+}
