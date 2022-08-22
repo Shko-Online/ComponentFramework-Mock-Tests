@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormattingAPIControl tests Init should work 1`] = `
+<body>
+  <div>
+    <div
+      class="Formatting_Container"
+    />
+  </div>
+</body>
+`;
+
+exports[`FormattingAPIControl tests Update View should Work 1`] = `
+<body>
+  <div>
+    <div
+      class="Formatting_Container"
+    >
+      <table
+        class="FormattingControlSampleHtmlTable_HtmlTable"
+      >
+        <tr
+          class="FormattingControlSampleHtmlTable_HtmlRow"
+        >
+          <th
+            class="FormattingControlSampleHtmlTable_HtmlHeaderCell FormattingControlSampleHtmlTable_HtmlCell_Key"
+          >
+            Example Method
+          </th>
+          <th
+            class="FormattingControlSampleHtmlTable_HtmlHeaderCell FormattingControlSampleHtmlTable_HtmlCell_Value"
+          >
+            Result
+          </th>
+        </tr>
+        <tr
+          class="FormattingControlSampleHtmlTable_HtmlRow"
+        >
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Key"
+          >
+            formatCurrency()
+          </td>
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
+          >
+            10250030
+          </td>
+        </tr>
+        <tr
+          class="FormattingControlSampleHtmlTable_HtmlRow"
+        >
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Key"
+          >
+            formatDecimal()
+          </td>
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
+          >
+            123456.2782
+          </td>
+        </tr>
+        <tr
+          class="FormattingControlSampleHtmlTable_HtmlRow"
+        >
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Key"
+          >
+            formatInteger()
+          </td>
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
+          >
+            12345
+          </td>
+        </tr>
+        <tr
+          class="FormattingControlSampleHtmlTable_HtmlRow"
+        >
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Key"
+          >
+            formatLanguage()
+          </td>
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
+          >
+            1033
+          </td>
+        </tr>
+        <tr
+          class="FormattingControlSampleHtmlTable_HtmlRow"
+        >
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Key"
+          >
+            formatDateYearMonth()
+          </td>
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
+          >
+            Mon Aug 22 2022 09:32:28 GMT+0200 (Central European Summer Time)
+          </td>
+        </tr>
+        <tr
+          class="FormattingControlSampleHtmlTable_HtmlRow"
+        >
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Key"
+          >
+            getWeekOfYear()
+          </td>
+          <td
+            class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
+          >
+            34
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+`;
