@@ -1,9 +1,9 @@
 import * as sinon from 'sinon';
 
-import { ComponentFrameworkMockGenerator } from '@albanian-xrm/componentframework-mock/ComponentFramework-Mock-Generator';
+import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
 import { FormattingAPIControl }  from '@powerapps-samples/formatting-api/FormattingAPIControl';
 import { IInputs, IOutputs }  from '@powerapps-samples/formatting-api/FormattingAPIControl/generated/ManifestTypes';
-import { StringPropertyMock } from '@albanian-xrm/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock';
+import { StringPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock';
 
 
 describe("FormattingAPIControl tests", () => {

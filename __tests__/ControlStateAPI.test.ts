@@ -1,9 +1,9 @@
 import * as sinon from 'sinon';
 
-import { ComponentFrameworkMockGenerator } from '@albanian-xrm/componentframework-mock/ComponentFramework-Mock-Generator';
+import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
 import { ControlStateAPI }  from '@powerapps-samples/control-state-api/ControlStateAPI';
 import { IInputs, IOutputs }  from '@powerapps-samples/control-state-api/ControlStateAPI/generated/ManifestTypes';
-import { StringPropertyMock } from '@albanian-xrm/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock';
+import { StringPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock';
 
 
 // Key used to store the selected color into the context object to persist across navigations 

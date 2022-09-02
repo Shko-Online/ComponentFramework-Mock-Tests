@@ -1,7 +1,7 @@
 import * as sinon from 'sinon';
-import { ComponentFrameworkMockGenerator } from '@albanian-xrm/componentframework-mock/ComponentFramework-Mock-Generator';
+import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
 import { TestComponentBoolean } from '@albanian-xrm/test-components/TestComponentBoolean/TestComponentBoolean';
-import { TwoOptionsPropertyMock } from '@albanian-xrm/componentframework-mock/ComponentFramework-Mock/PropertyTypes/TwoOptionsProperty.mock';
+import { TwoOptionsPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/TwoOptionsProperty.mock';
 
 describe("dumb test", () => {
     it("should work", () => {

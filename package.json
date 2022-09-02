@@ -1,5 +1,5 @@
 {
-  "name": "@albanian-xrm/componentframework-mock-tests",
+  "name": "@shko-online/componentframework-mock-tests",
   "version": "0.1.0",
   "description": "Test for our mocking library which helps with testing PowerApps Component Framework Components",
   "main": "index.js",

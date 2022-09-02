@@ -11,7 +11,7 @@
       "sourceMap": true,    
       "baseUrl": ".",
       "paths": {
-        "@albanian-xrm/componentframework-mock*": ["./ComponentFramework-Mock/src*"],
+        "@shko-online/componentframework-mock*": ["./ComponentFramework-Mock/src*"],
         "@powerapps-samples/control-state-api*": ["./PowerApps-Samples/component-framework/ControlStateAPI*"],
         "@powerapps-samples/formatting-api*": ["./PowerApps-Samples/component-framework/FormattingAPIControl*"],
         "@albanian-xrm/test-components*": ["./__test-components__*"]
