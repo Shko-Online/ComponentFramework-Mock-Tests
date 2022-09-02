@@ -44,7 +44,7 @@ exports[`FormattingAPIControl tests Update View should Work 1`] = `
           <td
             class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
           >
-            10,250,030
+            1,000.01
           </td>
         </tr>
         <tr
@@ -58,7 +58,7 @@ exports[`FormattingAPIControl tests Update View should Work 1`] = `
           <td
             class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
           >
-            123,456.278
+            123.45
           </td>
         </tr>
         <tr
@@ -72,7 +72,7 @@ exports[`FormattingAPIControl tests Update View should Work 1`] = `
           <td
             class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
           >
-            12345
+            987
           </td>
         </tr>
         <tr
@@ -100,7 +100,7 @@ exports[`FormattingAPIControl tests Update View should Work 1`] = `
           <td
             class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
           >
-            Fri Sep 02 2022 09:53:07 GMT+0200 (Central European Summer Time)
+            Fri Sep 02 2022 00:00:00 GMT+0200 (Central European Summer Time)
           </td>
         </tr>
         <tr
