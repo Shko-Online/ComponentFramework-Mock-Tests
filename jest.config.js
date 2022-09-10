@@ -16,5 +16,5 @@ module.exports = {
       "/node_modules/",
       "/ComponentFramework-Mock/"
     ],
-    coverageReporters: ['cobertura']
+    coverageReporters: ['cobertura', "text"]
   }
