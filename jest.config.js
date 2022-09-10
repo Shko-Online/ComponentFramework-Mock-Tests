@@ -12,4 +12,9 @@ module.exports = {
       // transform files with ts-jest
       "^.+\\.(jsx?|tsx?)$": "ts-jest",
     },
+    coveragePathIgnorePatterns : [
+      "/node_modules/",
+      "/ComponentFramework-Mock/"
+    ],
+    coverageReporters: ['cobertura']
   }

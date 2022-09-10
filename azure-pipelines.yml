@@ -15,12 +15,20 @@ steps:
     versionSpec: '1.x'
 
 - task: Yarn@3
+  displayName: "Install NPM Dependencies"
 
 - task: Yarn@3
+  displayName: "Build NPM Dependencies"
   inputs:
     arguments: 'build'
 
 - task: Yarn@3
+  displayName: "Test"
   inputs:
     arguments: 'test'
 
+ - task: PublishCodeCoverageResults@1
+   displayName: "Publish code coverage results"
+   inputs:
+     codeCoverageTool: Cobertura
+     summaryFileLocation: "coverage/cobertura-coverage.xml"
