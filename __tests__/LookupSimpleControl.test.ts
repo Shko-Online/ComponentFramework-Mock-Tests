@@ -55,13 +55,15 @@ describe("ControlStateAPI tests", () => {
         mockGenerator.ExecuteUpdateView();
         expect(document.body).toMatchSnapshot();
        
-        const button = mockGenerator.container.querySelector("button");
-        var evt = document.createEvent("Event");
-        evt.initEvent("click", false, true);
-        button.dispatchEvent(evt);
-   
-        mockGenerator.ExecuteUpdateView();     
-            
-        expect(document.body).toMatchSnapshot();
+        const buttons = mockGenerator.container.querySelectorAll("button");
+        buttons.forEach(button => {
+            var evt = document.createEvent("Event");
+            evt.initEvent("click", false, true);
+            button.dispatchEvent(evt);
+       
+            mockGenerator.ExecuteUpdateView();     
+                
+            expect(document.body).toMatchSnapshot();
+        });       
     })
 });

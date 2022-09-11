@@ -60,6 +60,36 @@ exports[`ControlStateAPI tests Click should Work 2`] = `
 </body>
 `;
 
+exports[`ControlStateAPI tests Click should Work 3`] = `
+<body>
+  <div>
+    <div>
+      <label>
+        Simple Lookup Control
+      </label>
+      <br />
+      <br />
+      <label>
+        name: Test Betim entityType: mocked_entity id: 00000000-0000-0000-0000-000000000001
+      </label>
+      <br />
+      <br />
+      <button />
+      <br />
+      <br />
+      <label>
+        name: Test Betim2 entityType: mocked_entity id: 00000000-0000-0000-0000-000000000002
+      </label>
+      <br />
+      <br />
+      <button />
+      <br />
+      <br />
+    </div>
+  </div>
+</body>
+`;
+
 exports[`ControlStateAPI tests Init should work 1`] = `
 <body>
   <div>
