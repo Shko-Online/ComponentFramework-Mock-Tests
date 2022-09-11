@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ControlStateAPI tests Init should work 1`] = `
+<body>
+  <div>
+    <div>
+      <label>
+        Simple Lookup Control
+      </label>
+      <br />
+      <br />
+      <label />
+      <br />
+      <br />
+      <button />
+      <br />
+      <br />
+      <label />
+      <br />
+      <br />
+      <button />
+      <br />
+      <br />
+    </div>
+  </div>
+</body>
+`;

@@ -14,6 +14,7 @@
         "@shko-online/componentframework-mock*": ["./ComponentFramework-Mock/src*"],
         "@powerapps-samples/control-state-api*": ["./PowerApps-Samples/component-framework/ControlStateAPI*"],
         "@powerapps-samples/formatting-api*": ["./PowerApps-Samples/component-framework/FormattingAPIControl*"],
+        "@powerapps-samples/lookup-simple-control*": ["./PowerApps-Samples/component-framework/LookupSimpleControl*"],
         "@albanian-xrm/test-components*": ["./__test-components__*"]
       },
       "typeRoots": [

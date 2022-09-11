@@ -4,13 +4,15 @@
   "description": "Test for our mocking library which helps with testing PowerApps Component Framework Components",
   "main": "index.js",
   "scripts": {
-    "postinstall": "yarn install:albx && yarn install:control-state && yarn install:formatting-api",
+    "postinstall": "yarn install:albx && yarn install:control-state && yarn install:formatting-api & yarn install:lookup-simple-control",
     "install:albx": "cd ComponentFramework-Mock && yarn",
     "install:control-state": "cd PowerApps-Samples\\component-framework\\ControlStateAPI && yarn",
     "install:formatting-api": "cd PowerApps-Samples\\component-framework\\FormattingAPIControl && yarn",
-    "build": "yarn build:control-state && yarn build:formatting-api",
+    "install:lookup-simple-control": "cd PowerApps-Samples\\component-framework\\LookupSimpleControl && yarn",
+    "build": "yarn build:control-state && yarn build:formatting-api && yarn build:lookup-simple-control",
     "build:control-state": "cd PowerApps-Samples\\component-framework\\ControlStateAPI && yarn build ",
     "build:formatting-api": "cd PowerApps-Samples\\component-framework\\FormattingAPIControl && yarn build ",
+    "build:lookup-simple-control": "cd PowerApps-Samples\\component-framework\\LookupSimpleControl && yarn build ",
     "test": "jest --coverage --maxWorkers=4",
     "test-no-cover": "jest --maxWorkers=4"
   },
