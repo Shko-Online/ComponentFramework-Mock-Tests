@@ -17,6 +17,16 @@ describe("ControlStateAPI tests", () => {
                 controlValue1: LookupPropertyMock
             },
             container);
+        mockGenerator.context.parameters.controlValue.raw = [{
+            entityType: 'mocked_entity',
+            id: "00000000-0000-0000-0000-000000000001",
+            name: 'Test Betim'
+        }];
+        mockGenerator.context.parameters.controlValue1.raw = [{
+            entityType: 'mocked_entity',
+            id: "00000000-0000-0000-0000-000000000002",
+            name: 'Test Betim2'
+        }];
         document.body.appendChild(container);
     }
     )
@@ -32,20 +42,26 @@ describe("ControlStateAPI tests", () => {
     })
 
     it("Update View should Work", () => {
-        mockGenerator.context.parameters.controlValue.raw = [{
-            entityType: 'mocked_entity',
-            id: "00000000-0000-0000-0000-000000000001",
-            name: 'Test Betim'
-        }]
-        mockGenerator.context.parameters.controlValue1.raw = [{
-            entityType: 'mocked_entity',
-            id: "00000000-0000-0000-0000-000000000002",
-            name: 'Test Betim2'
-        }]
+
         mockGenerator.ExecuteInit();
         mockGenerator.ExecuteUpdateView();
         sinon.assert.calledOnce(mockGenerator.control.init);
         sinon.assert.calledOnce(mockGenerator.control.updateView);
+        expect(document.body).toMatchSnapshot();
+    })
+
+    it("Click should Work", () => {       
+        mockGenerator.ExecuteInit();
+        mockGenerator.ExecuteUpdateView();
+        expect(document.body).toMatchSnapshot();
+       
+        const button = mockGenerator.container.querySelector("button");
+        var evt = document.createEvent("Event");
+        evt.initEvent("click", false, true);
+        button.dispatchEvent(evt);
+   
+        mockGenerator.ExecuteUpdateView();     
+            
         expect(document.body).toMatchSnapshot();
     })
 });
