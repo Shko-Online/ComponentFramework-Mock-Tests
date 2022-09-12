@@ -31,6 +31,7 @@
         "@powerapps-samples/formatting-api*": ["./PowerApps-Samples/component-framework/FormattingAPIControl*"],
         "@powerapps-samples/lookup-simple-control*": ["./PowerApps-Samples/component-framework/LookupSimpleControl*"],
         "@powerapps-samples/increment-control*": ["./PowerApps-Samples/component-framework/IncrementControl*"],
+        "@powerapps-samples/linear-input-control*": ["./PowerApps-Samples/component-framework/LinearInputControl*"],
         "@albanian-xrm/test-components*": ["./__test-components__*"]
       },
       "typeRoots": [
