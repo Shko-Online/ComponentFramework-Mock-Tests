@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IncrementControl Click should Work 1`] = `
+<body>
+  <div>
+    <div>
+      <input
+        type="label"
+      />
+      <button
+        class="SimpleIncrement_Button_Style"
+      >
+        undefined
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Click should Work 2`] = `
+<body>
+  <div>
+    <div>
+      <input
+        type="label"
+      />
+      <button
+        class="SimpleIncrement_Button_Style"
+      >
+        undefined
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Init should work 1`] = `
+<body>
+  <div>
+    <div>
+      <input
+        type="label"
+      />
+      <button
+        class="SimpleIncrement_Button_Style"
+      >
+        undefined
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Update View should Work 1`] = `
+<body>
+  <div>
+    <div>
+      <input
+        type="label"
+      />
+      <button
+        class="SimpleIncrement_Button_Style"
+      >
+        undefined
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Update View with value should work 1`] = `
+<body>
+  <div>
+    <div>
+      <input
+        type="label"
+      />
+      <button
+        class="SimpleIncrement_Button_Style"
+      >
+        undefined
+      </button>
+    </div>
+  </div>
+</body>
+`;
