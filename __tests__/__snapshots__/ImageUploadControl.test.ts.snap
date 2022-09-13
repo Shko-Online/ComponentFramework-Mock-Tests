@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IncrementControl Click remove work 1`] = `
+<body>
+  <div>
+    <div
+      class="NoImage"
+    >
+      <button>
+        Upload
+      </button>
+      <img />
+      <button
+        class="RemoveButton"
+      >
+        Remove
+      </button>
+      <label />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Click remove work 2`] = `
+<body>
+  <div>
+    <div
+      class="NoImage"
+    >
+      <button>
+        Upload
+      </button>
+      <img />
+      <button
+        class="RemoveButton"
+      >
+        Remove
+      </button>
+      <label />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Click upload work 1`] = `
+<body>
+  <div>
+    <div
+      class="NoImage"
+    >
+      <button>
+        Upload
+      </button>
+      <img />
+      <button
+        class="RemoveButton"
+      >
+        Remove
+      </button>
+      <label />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Click upload work 2`] = `
+<body>
+  <div>
+    <div
+      class="NoImage"
+    >
+      <button>
+        Upload
+      </button>
+      <img />
+      <button
+        class="RemoveButton"
+      >
+        Remove
+      </button>
+      <label />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Init should work 1`] = `
+<body>
+  <div>
+    <div
+      class="NoImage"
+    >
+      <button>
+        Upload
+      </button>
+      <img />
+      <button
+        class="RemoveButton"
+      >
+        Remove
+      </button>
+      <label />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Update View should Work 1`] = `
+<body>
+  <div>
+    <div
+      class="NoImage"
+    >
+      <button>
+        Upload
+      </button>
+      <img />
+      <button
+        class="RemoveButton"
+      >
+        Remove
+      </button>
+      <label />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Update View with value should work 1`] = `
+<body>
+  <div>
+    <div
+      class="NoImage"
+    >
+      <button>
+        Upload
+      </button>
+      <img />
+      <button
+        class="RemoveButton"
+      >
+        Remove
+      </button>
+      <label />
+    </div>
+  </div>
+</body>
+`;

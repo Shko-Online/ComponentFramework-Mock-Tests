@@ -20,6 +20,7 @@ module.exports = {
       '@albanian-xrm/test-components/(.*)': '<rootDir>/__test-components__/$1',
       '@powerapps-samples/control-state-api/(.*)': '<rootDir>/PowerApps-Samples/component-framework/ControlStateAPI/$1',
       '@powerapps-samples/formatting-api/(.*)': '<rootDir>/PowerApps-Samples/component-framework/FormattingAPIControl/$1',
+      '@powerapps-samples/image-upload-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/ImageUploadControl/$1',
       '@powerapps-samples/increment-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/IncrementControl/$1',
       '@powerapps-samples/linear-input-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/LinearInputControl/$1',
       '@powerapps-samples/lookup-simple-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/LookupSimpleControl/$1'
@@ -35,5 +36,5 @@ module.exports = {
       "/node_modules/",
       "/ComponentFramework-Mock/"
     ],
-    coverageReporters: ['cobertura', "text"]
+    coverageReporters: ['cobertura', "text","html"]
   }
