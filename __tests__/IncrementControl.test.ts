@@ -50,13 +50,35 @@ describe("IncrementControl", () => {
 		sinon.assert.calledOnce(mockGenerator.control.init);
 		sinon.assert.calledOnce(mockGenerator.control.updateView);
 		expect(document.body).toMatchSnapshot();
-	})
+	})	
 	it("Update View with value should work", () => {
 		mockGenerator.context.parameters.value.raw = 100;
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		sinon.assert.calledOnce(mockGenerator.control.init);
 		sinon.assert.calledOnce(mockGenerator.control.updateView);
+		expect(document.body).toMatchSnapshot();
+	})
+	it("Update View with error should work", () => {
+		mockGenerator.context.parameters.value.error = true;
+		mockGenerator.ExecuteInit();
+		mockGenerator.ExecuteUpdateView();
+		sinon.assert.calledOnce(mockGenerator.control.init);
+		sinon.assert.calledOnce(mockGenerator.control.updateView);
+		expect(document.body).toMatchSnapshot();
+	})
+	it("Blur should Work", () => {
+		mockGenerator.context.parameters.value.raw = 100;
+		mockGenerator.ExecuteInit();
+		mockGenerator.ExecuteUpdateView();
+
+		const button = mockGenerator.container.querySelector("input");
+		var evt = document.createEvent("Event");
+		evt.initEvent("blur", true, false);
+		button.dispatchEvent(evt);
+
+		mockGenerator.ExecuteUpdateView();		
+		expect(mockGenerator.control.getOutputs().value).toEqual(100);
 		expect(document.body).toMatchSnapshot();
 	})
 	it("Click should Work", () => {
@@ -75,8 +97,6 @@ describe("IncrementControl", () => {
 		console.log(mockGenerator.control.getOutputs().value);
 		expect(mockGenerator.control.getOutputs().value).toEqual(101);
 		expect(document.body).toMatchSnapshot();
-
-
 	})
 
 });

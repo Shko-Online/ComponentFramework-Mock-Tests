@@ -1,5 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`IncrementControl Blur should Work 1`] = `
+<body>
+  <div>
+    <div>
+      <input
+        type="label"
+      />
+      <button
+        class="SimpleIncrement_Button_Style"
+      >
+        Increment
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`IncrementControl Click should Work 1`] = `
 <body>
   <div>
@@ -56,6 +73,24 @@ exports[`IncrementControl Update View should Work 1`] = `
   <div>
     <div>
       <input
+        type="label"
+      />
+      <button
+        class="SimpleIncrement_Button_Style"
+      >
+        Increment
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Update View with error should work 1`] = `
+<body>
+  <div>
+    <div>
+      <input
+        class="SimpleIncrement_Input_Error_Style"
         type="label"
       />
       <button
