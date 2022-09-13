@@ -58,6 +58,20 @@ describe("IncrementControl", () => {
 		sinon.assert.calledOnce(mockGenerator.control.updateView);
 		expect(document.body).toMatchSnapshot();
 	})
+    it("Blur should Work", () => {
+		mockGenerator.context.parameters.value.raw = 100;
+		mockGenerator.ExecuteInit();
+		mockGenerator.ExecuteUpdateView();
+
+		const button = mockGenerator.container.querySelector("input");
+		var evt = document.createEvent("Event");
+		evt.initEvent("blur", true, false);
+		button.dispatchEvent(evt);
+
+		mockGenerator.ExecuteUpdateView();		
+		expect(mockGenerator.control.getOutputs().value).toEqual(100);
+		expect(document.body).toMatchSnapshot();
+    })
     it("Click should Work", () => {
 		mockGenerator.context.parameters.value.raw = 100;
 		mockGenerator.ExecuteInit();

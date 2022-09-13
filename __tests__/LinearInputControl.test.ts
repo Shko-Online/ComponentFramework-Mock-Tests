@@ -58,6 +58,20 @@ describe("IncrementControl", () => {
         sinon.assert.calledOnce(mockGenerator.control.updateView);
         expect(document.body).toMatchSnapshot();
     })
+    it("Refresh Data should work", () =>{
+        mockGenerator.context.parameters.controlValue.raw = 50;
+		mockGenerator.ExecuteInit();
+		mockGenerator.ExecuteUpdateView();
+
+        const button = mockGenerator.container.querySelector("input");
+		var evt = document.createEvent("Event");
+		evt.initEvent("input", true, false);
+		button.dispatchEvent(evt);
+        
+        mockGenerator.ExecuteUpdateView();		
+		
+		expect(document.body).toMatchSnapshot();
+    })
     it("Slider should work", () => {
         mockGenerator.context.parameters.controlValue.raw = 500;
 		mockGenerator.ExecuteInit();

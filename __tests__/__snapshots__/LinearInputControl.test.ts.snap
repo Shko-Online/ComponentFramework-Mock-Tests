@@ -23,6 +23,27 @@ exports[`IncrementControl Init should work 1`] = `
 </body>
 `;
 
+exports[`IncrementControl Refresh Data should work 1`] = `
+<body>
+  <div>
+    <div>
+      <input
+        class="linearslider"
+        id="linearrangeinput"
+        max="1000"
+        min="1"
+        type="range"
+        value="0"
+      />
+      <label
+        class="LinearRangeLabel"
+        id="lrclabel"
+      />
+    </div>
+  </div>
+</body>
+`;
+
 exports[`IncrementControl Slider should work 1`] = `
 <body>
   <div>
