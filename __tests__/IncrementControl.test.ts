@@ -18,63 +18,65 @@ import * as sinon from 'sinon';
 import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
 import { IncrementControl } from '@powerapps-samples/increment-control/IncrementControl';
 import { IInputs, IOutputs } from '@powerapps-samples/increment-control/IncrementControl/generated/ManifestTypes';
+import * as resource from '@powerapps-samples/increment-control/IncrementControl/strings/IncrementControl.1033.resx';
 import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
 
 describe("IncrementControl", () => {
-	let mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs>;
-	beforeEach(()=>{
-        const container = document.createElement('div');
+	let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
+	beforeEach(() => {
+		const container = document.createElement('div');
 
-         mockGenerator = new ComponentFrameworkMockGenerator(
-            IncrementControl,
-            {
-                value: NumberPropertyMock
-            },
-            container);
-        document.body.appendChild(container);
-    }
-    )
+		mockGenerator = new ComponentFrameworkMockGenerator(
+			IncrementControl,
+			{
+				value: NumberPropertyMock
+			},
+			container);
+		mockGenerator.SetControlResource(resource);
+		document.body.appendChild(container);
+	})
 
-    afterEach(()=>{
-        document.body.innerHTML = null;
-    })
-	it("Init should work", () => {            
-        mockGenerator.ExecuteInit();
-        sinon.assert.calledOnce(mockGenerator.control.init);
-        expect(document.body).toMatchSnapshot();
-    })
-	it("Update View should Work", () => {    
-        mockGenerator.ExecuteInit();
-        mockGenerator.ExecuteUpdateView();
-        sinon.assert.calledOnce(mockGenerator.control.init);
-        sinon.assert.calledOnce(mockGenerator.control.updateView);
-        expect(document.body).toMatchSnapshot();
-    })
-	it("Update View with value should work", () => {
-		mockGenerator.context.parameters.value.raw =100;
+	afterEach(() => {
+		document.body.innerHTML = null;
+	})
+	it("Init should work", () => {
+		mockGenerator.ExecuteInit();
+		sinon.assert.calledOnce(mockGenerator.control.init);
+		expect(document.body).toMatchSnapshot();
+	})
+	it("Update View should Work", () => {
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		sinon.assert.calledOnce(mockGenerator.control.init);
-        sinon.assert.calledOnce(mockGenerator.control.updateView);
-        expect(document.body).toMatchSnapshot();
+		sinon.assert.calledOnce(mockGenerator.control.updateView);
+		expect(document.body).toMatchSnapshot();
+	})
+	it("Update View with value should work", () => {
+		mockGenerator.context.parameters.value.raw = 100;
+		mockGenerator.ExecuteInit();
+		mockGenerator.ExecuteUpdateView();
+		sinon.assert.calledOnce(mockGenerator.control.init);
+		sinon.assert.calledOnce(mockGenerator.control.updateView);
+		expect(document.body).toMatchSnapshot();
 	})
 	it("Click should Work", () => {
-		mockGenerator.context.parameters.value.raw =100;
+		mockGenerator.context.parameters.value.raw = 100;
 		mockGenerator.ExecuteInit();
-        mockGenerator.ExecuteUpdateView();
-        expect(document.body).toMatchSnapshot();
+		mockGenerator.ExecuteUpdateView();
+		expect(document.body).toMatchSnapshot();
 
-		const button =mockGenerator.container.querySelector("button");
-		var evt =document.createEvent("Event");
-		evt.initEvent("click",true, false);
+		const button = mockGenerator.container.querySelector("button");
+		var evt = document.createEvent("Event");
+		evt.initEvent("click", true, false);
 		button.dispatchEvent(evt);
+		console.log(button.innerHTML);
 
 		mockGenerator.ExecuteUpdateView();
 		console.log(mockGenerator.control.getOutputs().value);
 		expect(mockGenerator.control.getOutputs().value).toEqual(101);
 		expect(document.body).toMatchSnapshot();
-	
-		
+
+
 	})
 
 });

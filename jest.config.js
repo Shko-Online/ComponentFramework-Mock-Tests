@@ -15,7 +15,7 @@
 
 /** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
-    moduleNameMapper: {
+    moduleNameMapper: {    
       '@shko-online/componentframework-mock/(.*)': '<rootDir>/ComponentFramework-Mock/src/$1',
       '@albanian-xrm/test-components/(.*)': '<rootDir>/__test-components__/$1',
       '@powerapps-samples/control-state-api/(.*)': '<rootDir>/PowerApps-Samples/component-framework/ControlStateAPI/$1',
@@ -29,11 +29,11 @@ module.exports = {
     transform: {
       // transform files with ts-jest
       "^.+\\.(jsx?|tsx?)$": "ts-jest",
+      "\\.resx" : "<rootDir>/raw-Loader.js"
     },
     coveragePathIgnorePatterns : [
       "/node_modules/",
       "/ComponentFramework-Mock/"
-
     ],
     coverageReporters: ['cobertura', "text"]
   }

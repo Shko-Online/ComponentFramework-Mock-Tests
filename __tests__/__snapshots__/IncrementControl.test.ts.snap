@@ -10,7 +10,7 @@ exports[`IncrementControl Click should Work 1`] = `
       <button
         class="SimpleIncrement_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>
@@ -27,7 +27,7 @@ exports[`IncrementControl Click should Work 2`] = `
       <button
         class="SimpleIncrement_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>
@@ -44,7 +44,7 @@ exports[`IncrementControl Init should work 1`] = `
       <button
         class="SimpleIncrement_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>
@@ -61,7 +61,7 @@ exports[`IncrementControl Update View should Work 1`] = `
       <button
         class="SimpleIncrement_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>
@@ -78,7 +78,7 @@ exports[`IncrementControl Update View with value should work 1`] = `
       <button
         class="SimpleIncrement_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>
