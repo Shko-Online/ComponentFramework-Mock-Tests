@@ -16,10 +16,11 @@
 import * as sinon from 'sinon';
 
 import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
-import {LocalizationAPIControl} from '@powerapps-samples/localization-api-control/LocalizationAPIControl';
-import { IInputs, IOutputs } from '@powerapps-samples/localization-api-control/LocalizationAPIControl/generated/ManifestTypes';
-import * as resource from '@powerapps-samples/localization-api-control/LocalizationAPIControl/strings/LocalizationAPIControl.1033.resx';
+import { NavigationAPIControl } from '@powerapps-samples/navigation-api-control/NavigationAPIControl';
+import { IInputs, IOutputs } from '@powerapps-samples/navigation-api-control/NavigationAPIControl/generated/ManifestTypes';
+import * as resource from '@powerapps-samples/navigation-api-control/NavigationAPIControl/strings/NavigationAPIControl.1033.resx';
 import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
+
 
 describe("IncrementControl", () => {
 	let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
@@ -27,66 +28,51 @@ describe("IncrementControl", () => {
 		const container = document.createElement('div');
 
 		mockGenerator = new ComponentFrameworkMockGenerator(
-			LocalizationAPIControl ,
+			NavigationAPIControl,
 			{
-				value: NumberPropertyMock
+				controlValue: NumberPropertyMock
 			},
 			container);
 		mockGenerator.SetControlResource(resource);
 		document.body.appendChild(container);
 	})
-    afterEach(() => {
+
+	afterEach(() => {
 		document.body.innerHTML = null;
 	})
-	it("Init should work", () => {
+    it("Init should work", () => {
 		mockGenerator.ExecuteInit();
 		sinon.assert.calledOnce(mockGenerator.control.init);
 		expect(document.body).toMatchSnapshot();
 	})
-	it("Update View should Work", () => {
-		mockGenerator.ExecuteInit();
-		mockGenerator.ExecuteUpdateView();
-		sinon.assert.calledOnce(mockGenerator.control.init);
-		sinon.assert.calledOnce(mockGenerator.control.updateView);
-		expect(document.body).toMatchSnapshot();
-	})
-	it("Update View with value should work", () => {
-		mockGenerator.context.parameters.value.raw = 100;
+    it("Update View should Work", () => {
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		sinon.assert.calledOnce(mockGenerator.control.init);
 		sinon.assert.calledOnce(mockGenerator.control.updateView);
 		expect(document.body).toMatchSnapshot();
-	})
-    it("Blur should Work", () => {
-		mockGenerator.context.parameters.value.raw = 100;
-		mockGenerator.ExecuteInit();
-		mockGenerator.ExecuteUpdateView();
-
-		const button = mockGenerator.container.querySelector("input");
-		var evt = document.createEvent("Event");
-		evt.initEvent("blur", true, false);
-		button.dispatchEvent(evt);
-
-		mockGenerator.ExecuteUpdateView();		
-		expect(mockGenerator.control.getOutputs().value).toEqual(100);
-		expect(document.body).toMatchSnapshot();
-    })
-    it("Click should Work", () => {
-		mockGenerator.context.parameters.value.raw = 100;
-		mockGenerator.ExecuteInit();
+	})	
+    it("Buttons should work", () => {
+        mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
 
-		const button = mockGenerator.container.querySelector("button");
-		var evt = document.createEvent("Event");
-		evt.initEvent("click", true, false);
-		button.dispatchEvent(evt);
+         const buttons = mockGenerator.container.querySelectorAll('button');
+         buttons.forEach((button) =>{
+            var cases = button.textContent;
+            console.log(cases);
+            var evt = document.createEvent("Event");
+		    evt.initEvent("click", true, false);
+		    button.dispatchEvent(evt);
+            
+
+            mockGenerator.ExecuteUpdateView();
+
+            expect(document.body).toMatchSnapshot();
+
+         })
 
 
-		mockGenerator.ExecuteUpdateView();
-		console.log(mockGenerator.control.getOutputs().value);
-		expect(mockGenerator.control.getOutputs().value).toEqual(101);
-		expect(document.body).toMatchSnapshot();
+
     })
 });

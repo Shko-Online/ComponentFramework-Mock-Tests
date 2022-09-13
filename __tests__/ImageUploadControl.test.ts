@@ -62,6 +62,7 @@ describe("IncrementControl", () => {
     sinon.assert.calledOnce(mockGenerator.control.updateView);
     expect(document.body).toMatchSnapshot();
   });
+  
   it("Click upload work", () => {
     mockGenerator.context.parameters.value.raw = null;
     mockGenerator.ExecuteInit();

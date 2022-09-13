@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IncrementControl Buttons should work 1`] = `
+<body>
+  <div>
+    <div
+      class="NavigationAPI"
+    >
+      <button
+        id="openAlertDialogButton"
+      >
+        openAlertDialogButton
+      </button>
+      <button
+        id="openConfirmDialogButton"
+      >
+        openConfirmDialogButton
+      </button>
+      <button
+        id="openFileButton"
+      >
+        openFileButton
+      </button>
+      <button
+        id="openUrlButton"
+      >
+        openUrlButton
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Buttons should work 2`] = `
+<body>
+  <div>
+    <div
+      class="NavigationAPI"
+    >
+      <button
+        id="openAlertDialogButton"
+      >
+        openAlertDialogButton
+      </button>
+      <button
+        id="openConfirmDialogButton"
+      >
+        openConfirmDialogButton
+      </button>
+      <button
+        id="openFileButton"
+      >
+        openFileButton
+      </button>
+      <button
+        id="openUrlButton"
+      >
+        openUrlButton
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Buttons should work 3`] = `
+<body>
+  <div>
+    <div
+      class="NavigationAPI"
+    >
+      <button
+        id="openAlertDialogButton"
+      >
+        openAlertDialogButton
+      </button>
+      <button
+        id="openConfirmDialogButton"
+      >
+        openConfirmDialogButton
+      </button>
+      <button
+        id="openFileButton"
+      >
+        openFileButton
+      </button>
+      <button
+        id="openUrlButton"
+      >
+        openUrlButton
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Buttons should work 4`] = `
+<body>
+  <div>
+    <div
+      class="NavigationAPI"
+    >
+      <button
+        id="openAlertDialogButton"
+      >
+        openAlertDialogButton
+      </button>
+      <button
+        id="openConfirmDialogButton"
+      >
+        openConfirmDialogButton
+      </button>
+      <button
+        id="openFileButton"
+      >
+        openFileButton
+      </button>
+      <button
+        id="openUrlButton"
+      >
+        openUrlButton
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Buttons should work 5`] = `
+<body>
+  <div>
+    <div
+      class="NavigationAPI"
+    >
+      <button
+        id="openAlertDialogButton"
+      >
+        openAlertDialogButton
+      </button>
+      <button
+        id="openConfirmDialogButton"
+      >
+        openConfirmDialogButton
+      </button>
+      <button
+        id="openFileButton"
+      >
+        openFileButton
+      </button>
+      <button
+        id="openUrlButton"
+      >
+        openUrlButton
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Init should work 1`] = `
+<body>
+  <div>
+    <div
+      class="NavigationAPI"
+    >
+      <button
+        id="openAlertDialogButton"
+      >
+        openAlertDialogButton
+      </button>
+      <button
+        id="openConfirmDialogButton"
+      >
+        openConfirmDialogButton
+      </button>
+      <button
+        id="openFileButton"
+      >
+        openFileButton
+      </button>
+      <button
+        id="openUrlButton"
+      >
+        openUrlButton
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`IncrementControl Update View should Work 1`] = `
+<body>
+  <div>
+    <div
+      class="NavigationAPI"
+    >
+      <button
+        id="openAlertDialogButton"
+      >
+        openAlertDialogButton
+      </button>
+      <button
+        id="openConfirmDialogButton"
+      >
+        openConfirmDialogButton
+      </button>
+      <button
+        id="openFileButton"
+      >
+        openFileButton
+      </button>
+      <button
+        id="openUrlButton"
+      >
+        openUrlButton
+      </button>
+    </div>
+  </div>
+</body>
+`;

@@ -25,7 +25,8 @@ module.exports = {
       '@powerapps-samples/linear-input-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/LinearInputControl/$1',
       '@powerapps-samples/localization-api-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/LocalizationAPIControl/$1',
       '@powerapps-samples/lookup-simple-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/LookupSimpleControl/$1',
-      '@powerapps-samples/multi-select-option-set-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/MultiSelectOptionSetControl/$1'
+      '@powerapps-samples/multi-select-option-set-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/MultiSelectOptionSetControl/$1',
+      '@powerapps-samples/navigation-api-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/NavigationAPIControl/$1'
     },  
     preset: 'ts-jest',
     testEnvironment: 'jsdom',

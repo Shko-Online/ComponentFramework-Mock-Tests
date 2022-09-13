@@ -4,7 +4,7 @@
   "description": "Test for our mocking library which helps with testing PowerApps Component Framework Components",
   "main": "index.js",
   "scripts": {
-    "postinstall": "yarn install:albx & yarn install:control-state & yarn install:formatting-api & yarn install:increment-control & yarn install:linear-input-control & yarn install:localization-api-control & yarn install:lookup-simple-control & yarn install:image-upload-control & yarn install:multi-select-option-set-control",
+    "postinstall": "yarn install:albx & yarn install:control-state & yarn install:formatting-api & yarn install:increment-control & yarn install:linear-input-control & yarn install:localization-api-control & yarn install:lookup-simple-control & yarn install:image-upload-control & yarn install:navigation-api-control & yarn install:multi-select-option-set-control",
     "install:albx": "cd ComponentFramework-Mock && yarn",
     "install:control-state": "cd PowerApps-Samples\\component-framework\\ControlStateAPI && yarn",
     "install:formatting-api": "cd PowerApps-Samples\\component-framework\\FormattingAPIControl && yarn",
@@ -13,8 +13,9 @@
     "install:linear-input-control": "cd PowerApps-Samples\\component-framework\\LinearInputControl && yarn",
     "install:localization-api-control": "cd PowerApps-Samples\\component-framework\\LocalizationAPIControl && yarn",
     "install:lookup-simple-control": "cd PowerApps-Samples\\component-framework\\LookupSimpleControl && yarn",
+    "install:navigation-api-control": "cd PowerApps-Samples\\component-framework\\NavigationAPIControl && yarn",
     "install:multi-select-option-set-control": "cd PowerApps-Samples\\component-framework\\MultiSelectOptionSetControl && yarn",
-    "build": "yarn build:control-state & yarn build:formatting-api & yarn build:increment-control & yarn build:linear-input-control & yarn build:localization-api-contol & yarn build:lookup-simple-control & yarn build:image-upload-control & yarn build:multi-select-option-set-control",
+    "build": "yarn build:control-state & yarn build:formatting-api & yarn build:increment-control & yarn build:linear-input-control & yarn build:localization-api-contol & yarn build:lookup-simple-control & yarn build:image-upload-control & yarn build:navigation-api-control & yarn build:multi-select-option-set-control",
     "build:control-state": "cd PowerApps-Samples\\component-framework\\ControlStateAPI && yarn build ",
     "build:formatting-api": "cd PowerApps-Samples\\component-framework\\FormattingAPIControl && yarn build ",
     "build:image-upload-control": "cd PowerApps-Samples\\component-framework\\ImageUploadControl && yarn build ",
@@ -22,6 +23,7 @@
     "build:linear-input-control": "cd PowerApps-Samples\\component-framework\\LinearInputControl && yarn build ",
     "build:localization-api-contol": "cd PowerApps-Samples\\component-framework\\LocalizationAPIControl && yarn build ",
     "build:lookup-simple-control": "cd PowerApps-Samples\\component-framework\\LookupSimpleControl && yarn build ",
+    "build:navigation-api-control": "cd PowerApps-Samples\\component-framework\\NavigationAPIControl && yarn build ",
     "build:multi-select-option-set-control": "cd PowerApps-Samples\\component-framework\\MultiSelectOptionSetControl && yarn build ",
     "test": "jest --coverage --maxWorkers=4",
     "test-no-cover": "jest --maxWorkers=4"
