@@ -23,6 +23,7 @@ module.exports = {
       '@powerapps-samples/image-upload-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/ImageUploadControl/$1',
       '@powerapps-samples/increment-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/IncrementControl/$1',
       '@powerapps-samples/linear-input-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/LinearInputControl/$1',
+      '@powerapps-samples/localization-api-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/LocalizationAPIControl/$1',
       '@powerapps-samples/lookup-simple-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/LookupSimpleControl/$1'
     },  
     preset: 'ts-jest',

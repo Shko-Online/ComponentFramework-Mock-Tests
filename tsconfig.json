@@ -33,6 +33,7 @@
         "@powerapps-samples/image-upload-control*": ["./PowerApps-Samples/component-framework/ImageUploadControl*"],
         "@powerapps-samples/increment-control*": ["./PowerApps-Samples/component-framework/IncrementControl*"],
         "@powerapps-samples/linear-input-control*": ["./PowerApps-Samples/component-framework/LinearInputControl*"],
+        "@powerapps-samples/localization-api-control*": ["./PowerApps-Samples/component-framework/LocalizationAPIControl*"],
         "@albanian-xrm/test-components*": ["./__test-components__*"]
       },
       "typeRoots": [
