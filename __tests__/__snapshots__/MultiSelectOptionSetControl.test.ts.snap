@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MultiSelectOptionSetControl Init should work 1`] = `
+<body>
+  <div>
+    <div>
+      <select
+        multiple="true"
+      >
+        <option
+          value="1"
+        />
+        <option
+          value="2"
+        />
+      </select>
+      <br />
+      <br />
+      <label>
+        Selected Options:
+      </label>
+      <br />
+      <label />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MultiSelectOptionSetControl Select string value work 1`] = `
+<body>
+  <div>
+    <div>
+      <select
+        multiple="true"
+      >
+        <option
+          value="1"
+        />
+        <option
+          value="2"
+        />
+      </select>
+      <br />
+      <br />
+      <label>
+        Selected Options:
+      </label>
+      <br />
+      <label>
+        First,Second
+      </label>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MultiSelectOptionSetControl Select string value work 2`] = `
+<body>
+  <div>
+    <div>
+      <select
+        multiple="true"
+      >
+        <option
+          value="1"
+        />
+        <option
+          value="2"
+        />
+      </select>
+      <br />
+      <br />
+      <label>
+        Selected Options:
+      </label>
+      <br />
+      <label>
+        First,Second
+      </label>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MultiSelectOptionSetControl Update View should Work 1`] = `
+<body>
+  <div>
+    <div>
+      <select
+        multiple="true"
+      >
+        <option
+          value="1"
+        />
+        <option
+          value="2"
+        />
+      </select>
+      <br />
+      <br />
+      <label>
+        Selected Options:
+      </label>
+      <br />
+      <label />
+    </div>
+  </div>
+</body>
+`;
