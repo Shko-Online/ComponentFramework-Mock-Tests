@@ -34,6 +34,7 @@
         "@powerapps-samples/increment-control*": ["./PowerApps-Samples/component-framework/IncrementControl*"],
         "@powerapps-samples/linear-input-control*": ["./PowerApps-Samples/component-framework/LinearInputControl*"],
         "@powerapps-samples/localization-api-control*": ["./PowerApps-Samples/component-framework/LocalizationAPIControl*"],
+        "@powerapps-samples/navigation-api-control*": ["./PowerApps-Samples/component-framework/NavigationAPIControl*"],
         "@albanian-xrm/test-components*": ["./__test-components__*"]
       },
       "typeRoots": [
