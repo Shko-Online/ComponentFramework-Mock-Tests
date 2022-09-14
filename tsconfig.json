@@ -29,6 +29,7 @@
         "@shko-online/componentframework-mock*": ["./ComponentFramework-Mock/src*"],
         "@powerapps-samples/control-state-api*": ["./PowerApps-Samples/component-framework/ControlStateAPI*"],
         "@powerapps-samples/formatting-api*": ["./PowerApps-Samples/component-framework/FormattingAPIControl*"],
+        "@powerapps-samples/i-frame-control*": ["./PowerApps-Samples/component-framework/IFrameControl*"],
         "@powerapps-samples/lookup-simple-control*": ["./PowerApps-Samples/component-framework/LookupSimpleControl*"],
         "@powerapps-samples/image-upload-control*": ["./PowerApps-Samples/component-framework/ImageUploadControl*"],
         "@powerapps-samples/increment-control*": ["./PowerApps-Samples/component-framework/IncrementControl*"],

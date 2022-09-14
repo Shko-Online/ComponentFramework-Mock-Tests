@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IFrameControl Init should work 1`] = `
+<body>
+  <div />
+</body>
+`;
+
+exports[`IFrameControl Update View should Work 1`] = `
+<body>
+  <div>
+    <iframe
+      class="SampleControl_IFrame"
+    />
+  </div>
+</body>
+`;
+
+exports[`IFrameControl Update View with value should work 1`] = `
+<body>
+  <div>
+    <iframe
+      class="SampleControl_IFrame"
+      src="https://www.bing.com/maps/embed?h=400&w=300&cp=41.153332~20.168331&lvl=12&typ=d&sty=o&src=SHELL&FORM=MBEDV8"
+    />
+  </div>
+</body>
+`;
