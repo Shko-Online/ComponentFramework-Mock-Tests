@@ -37,6 +37,7 @@
         "@powerapps-samples/navigation-api-control*": ["./PowerApps-Samples/component-framework/NavigationAPIControl*"],
         "@powerapps-samples/multi-select-option-set-control*": ["./PowerApps-Samples/component-framework/MultiSelectOptionSetControl*"],
         "@powerapps-samples/device-api-control*": ["./PowerApps-Samples/component-framework/DeviceApiControl*"],
+        "@powerapps-samples/web-api-control*": ["./PowerApps-Samples/component-framework/WebAPIControl*"],
         "@albanian-xrm/test-components*": ["./__test-components__*"]
       },
       "typeRoots": [

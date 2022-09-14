@@ -16,12 +16,12 @@
 import * as sinon from 'sinon';
 
 import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
-import { DeviceApiControl } from '@powerapps-samples/device-api-control/DeviceApiControl';
-import { IInputs, IOutputs } from '@powerapps-samples/device-api-control/DeviceApiControl/generated/ManifestTypes';
-import * as resource from '@powerapps-samples/device-api-control/DeviceApiControl/strings/DeviceApiControl.1033.resx';
+import { WebAPIControl } from '@powerapps-samples/web-api-control/WebAPIControl';
+import { IInputs, IOutputs } from '@powerapps-samples/web-api-control/WebAPIControl/generated/ManifestTypes';
+import * as resource from '@powerapps-samples/web-api-control/WebAPIControl/strings/WebAPIControl.1033.resx';
 import { StringPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock';
 
-describe("DeviceApiControl", () => {
+describe("WebAPIControl", () => {
 	let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
 	beforeEach(() => {
         window.alert = function(s:string){
@@ -30,9 +30,9 @@ describe("DeviceApiControl", () => {
 		const container = document.createElement('div');
 
 		mockGenerator = new ComponentFrameworkMockGenerator(
-			DeviceApiControl,
+			WebAPIControl,
 			{
-				Location: StringPropertyMock
+				stringProperty: StringPropertyMock
 			},
 			container);
 		mockGenerator.SetControlResource(resource);
@@ -53,97 +53,85 @@ describe("DeviceApiControl", () => {
 		sinon.assert.calledOnce(mockGenerator.control.init);
 		sinon.assert.calledOnce(mockGenerator.control.updateView);
 		expect(document.body).toMatchSnapshot();
-	})
-    it("Update View with value should work", () => {
-		mockGenerator.context.updatedProperties[0] = "Location";
-		mockGenerator.ExecuteInit();
-		mockGenerator.ExecuteUpdateView();
-		sinon.assert.calledOnce(mockGenerator.control.init);
-        sinon.assert.calledOnce(mockGenerator.control.updateView);
-        expect(document.body).toMatchSnapshot();
     })
-    it("getLocationBtn should Work", () => {
-		mockGenerator.ExecuteInit();
+    it("Button //100 work", () => {
+        mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
-
-		const button = mockGenerator.container.querySelector("input#getLocationBtn");
+      
+        const button =mockGenerator.container.querySelector('#create_button_100');
         var evt = document.createEvent("Event");
-		evt.initEvent("pointerup", true, false);
+		evt.initEvent("click", true, false);
 		button.dispatchEvent(evt);
 
-		mockGenerator.ExecuteUpdateView();
+        mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
-           
     })
-    it("getImageBtn should Work", () => {
-		mockGenerator.ExecuteInit();
+    it("Button //200 work", () => {
+        mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
-
-		const button = mockGenerator.container.querySelector("input#getImageBtn");
+     
+        const button =mockGenerator.container.querySelector('#create_button_200');
         var evt = document.createEvent("Event");
-		evt.initEvent("pointerup", true, false);
+		evt.initEvent("click", true, false);
 		button.dispatchEvent(evt);
 
-		mockGenerator.ExecuteUpdateView();
+        mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
-           
     })
-    it("captureVideo should Work", () => {
-		mockGenerator.ExecuteInit();
+    it("Button //300 work", () => {
+        mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
-
-		const button = mockGenerator.container.querySelector("input#captureVideo");
+       
+        const button =mockGenerator.container.querySelector('#create_button_300');
         var evt = document.createEvent("Event");
-		evt.initEvent("pointerup", true, false);
+		evt.initEvent("click", true, false);
 		button.dispatchEvent(evt);
 
-		mockGenerator.ExecuteUpdateView();
+        mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
-           
     })
-    it("captureAudio should Work", () => {
-		mockGenerator.ExecuteInit();
+    it("Button delete_button work", () => {
+        mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
 
-		const button = mockGenerator.container.querySelector("input#captureAudio");
+        const button =mockGenerator.container.querySelector('#delete_button');
         var evt = document.createEvent("Event");
-		evt.initEvent("pointerup", true, false);
+		evt.initEvent("click", true, false);
 		button.dispatchEvent(evt);
 
-		mockGenerator.ExecuteUpdateView();
+        mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
-           
     })
-    it("input#getBarcode should Work", () => {
-		mockGenerator.ExecuteInit();
+    it("Button calculateAverage work", () => {
+        mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
-
-		const button = mockGenerator.container.querySelector("input#getBarcode");
-        var evt = document.createEvent("Event");
-		evt.initEvent("pointerup", true, false);
-		button.dispatchEvent(evt);
-
-		mockGenerator.ExecuteUpdateView();
-		expect(document.body).toMatchSnapshot();
-           
-    })
-    it("Update View with error should work", () => {
-        mockGenerator.context.device.pickFile.callsFake((options)=>{
-           return new Promise<ComponentFramework.FileObject[]>((resolve,reject)=>{
-            reject("Error");
-           })
+        mockGenerator.context.webAPI.retrieveMultipleRecords.callsFake((entity,options)=>{
+            return new Promise<ComponentFramework.WebApi.RetrieveMultipleResponse>((resolve) =>{
+                resolve({
+                    entities: [
+                        {
+                            average_val: 234
+                        }
+                    ],
+                    nextLink: "string"
+                })
+            })
         });
+        const buttons =mockGenerator.container.querySelectorAll('#odata_refresh');
+        buttons.forEach((button)=>{
+            var evt = document.createEvent("Event");
+		evt.initEvent("click", true, false);
+		button.dispatchEvent(evt);
 
-		const element = mockGenerator.container.getElementsByClassName("error")[0];
-		mockGenerator.ExecuteInit();
-		mockGenerator.ExecuteUpdateView();
-        expect(document.body).toMatchSnapshot();
-		
-	})
+        mockGenerator.ExecuteUpdateView();
+		expect(document.body).toMatchSnapshot();
+        })
+        
+    })
     
 })
