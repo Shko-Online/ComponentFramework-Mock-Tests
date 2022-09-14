@@ -107,3 +107,55 @@ exports[`MultiSelectOptionSetControl Update View should Work 1`] = `
   </div>
 </body>
 `;
+
+exports[`MultiSelectOptionSetControl Update individual selected 1`] = `
+<body>
+  <div>
+    <div>
+      <select
+        multiple="true"
+      >
+        <option
+          value="1"
+        />
+        <option
+          value="2"
+        />
+      </select>
+      <br />
+      <br />
+      <label>
+        Selected Options:
+      </label>
+      <br />
+      <label />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`MultiSelectOptionSetControl Update individual selected 2`] = `
+<body>
+  <div>
+    <div>
+      <select
+        multiple="true"
+      >
+        <option
+          value="1"
+        />
+        <option
+          value="2"
+        />
+      </select>
+      <br />
+      <br />
+      <label>
+        Selected Options:
+      </label>
+      <br />
+      <label />
+    </div>
+  </div>
+</body>
+`;
