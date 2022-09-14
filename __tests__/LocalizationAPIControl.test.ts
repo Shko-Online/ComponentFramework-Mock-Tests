@@ -21,7 +21,7 @@ import { IInputs, IOutputs } from '@powerapps-samples/localization-api-control/L
 import * as resource from '@powerapps-samples/localization-api-control/LocalizationAPIControl/strings/LocalizationAPIControl.1033.resx';
 import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
 
-describe("IncrementControl", () => {
+describe("LocalizationAPIControl", () => {
 	let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
 	beforeEach(() => {
 		const container = document.createElement('div');

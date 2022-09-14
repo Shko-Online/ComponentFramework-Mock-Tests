@@ -22,7 +22,7 @@ import * as resource from '@powerapps-samples/navigation-api-control/NavigationA
 import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
 
 
-describe("IncrementControl", () => {
+describe("NavigationAPIControl", () => {
 	let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
 	beforeEach(() => {
 		const container = document.createElement('div');
@@ -60,7 +60,6 @@ describe("IncrementControl", () => {
          const buttons = mockGenerator.container.querySelectorAll('button');
          buttons.forEach((button) =>{
             var cases = button.textContent;
-            console.log(cases);
             var evt = document.createEvent("Event");
 		    evt.initEvent("click", true, false);
 		    button.dispatchEvent(evt);

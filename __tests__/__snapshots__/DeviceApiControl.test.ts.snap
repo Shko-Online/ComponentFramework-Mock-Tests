@@ -1,0 +1,1247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeviceApiControl Init should work 1`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl Update View should Work 1`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl Update View with error should work 1`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl Update View with value should work 1`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl captureAudio should Work 1`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl captureAudio should Work 2`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl captureVideo should Work 1`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl captureVideo should Work 2`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl getImageBtn should Work 1`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl getImageBtn should Work 2`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl getLocationBtn should Work 1`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl getLocationBtn should Work 2`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl input#getBarcode should Work 1`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;
+
+exports[`DeviceApiControl input#getBarcode should Work 2`] = `
+<body>
+  <div>
+    
+			
+    <div
+      style="display: flex; flex-direction: row; align-items: center;"
+    >
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <input
+          id="getLocationBtn"
+          type="button"
+          value="Get Location"
+        />
+        
+					
+        <input
+          id="getImageBtn"
+          type="button"
+          value="Get Image"
+        />
+        
+					
+        <input
+          id="captureVideo"
+          type="button"
+          value="Capture Video"
+        />
+        
+					
+        <input
+          id="captureAudio"
+          type="button"
+          value="Capture Audio"
+        />
+        
+					
+        <input
+          id="getBarcode"
+          type="button"
+          value="Get Barcode"
+        />
+        
+				
+      </div>
+      
+				
+      <div
+        style="display: flex; flex-direction: column;"
+      >
+        
+					
+        <div
+          id="locationResult"
+        />
+        
+					
+        <figure>
+          
+						
+          <img
+            id="imageResult"
+            src="https://via.placeholder.com/400x250.png?text=No Image Loaded"
+            style="height: 250px; width: 400px"
+          />
+          
+						
+          <figcaption />
+          
+					
+        </figure>
+        
+				
+      </div>
+      
+			
+    </div>
+    
+		
+  </div>
+</body>
+`;

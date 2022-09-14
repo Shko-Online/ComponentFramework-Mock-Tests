@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ControlStateAPI tests Click should Work 1`] = `
+exports[`LookupSimpleControl Click should Work 1`] = `
 <body>
   <div>
     <div>
@@ -30,7 +30,7 @@ exports[`ControlStateAPI tests Click should Work 1`] = `
 </body>
 `;
 
-exports[`ControlStateAPI tests Click should Work 2`] = `
+exports[`LookupSimpleControl Click should Work 2`] = `
 <body>
   <div>
     <div>
@@ -60,7 +60,7 @@ exports[`ControlStateAPI tests Click should Work 2`] = `
 </body>
 `;
 
-exports[`ControlStateAPI tests Click should Work 3`] = `
+exports[`LookupSimpleControl Click should Work 3`] = `
 <body>
   <div>
     <div>
@@ -90,7 +90,7 @@ exports[`ControlStateAPI tests Click should Work 3`] = `
 </body>
 `;
 
-exports[`ControlStateAPI tests Init should work 1`] = `
+exports[`LookupSimpleControl Init should work 1`] = `
 <body>
   <div>
     <div>
@@ -116,7 +116,7 @@ exports[`ControlStateAPI tests Init should work 1`] = `
 </body>
 `;
 
-exports[`ControlStateAPI tests Update View should Work 1`] = `
+exports[`LookupSimpleControl Update View should Work 1`] = `
 <body>
   <div>
     <div>

@@ -24,7 +24,7 @@ import {
 import * as resource from "@powerapps-samples/image-upload-control/ImageUploadControl/strings/ImageUploadControl.1033.resx";
 import { StringPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock";
 
-describe("IncrementControl", () => {
+describe("ImageUploadontrol", () => {
   let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
   beforeEach(() => {
     const container = document.createElement("div");

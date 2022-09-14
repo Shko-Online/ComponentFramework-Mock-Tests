@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IncrementControl Buttons should work 1`] = `
+exports[`NavigationAPIControl Buttons should work 1`] = `
 <body>
   <div>
     <div
@@ -31,7 +31,7 @@ exports[`IncrementControl Buttons should work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Buttons should work 2`] = `
+exports[`NavigationAPIControl Buttons should work 2`] = `
 <body>
   <div>
     <div
@@ -62,7 +62,7 @@ exports[`IncrementControl Buttons should work 2`] = `
 </body>
 `;
 
-exports[`IncrementControl Buttons should work 3`] = `
+exports[`NavigationAPIControl Buttons should work 3`] = `
 <body>
   <div>
     <div
@@ -93,7 +93,7 @@ exports[`IncrementControl Buttons should work 3`] = `
 </body>
 `;
 
-exports[`IncrementControl Buttons should work 4`] = `
+exports[`NavigationAPIControl Buttons should work 4`] = `
 <body>
   <div>
     <div
@@ -124,7 +124,7 @@ exports[`IncrementControl Buttons should work 4`] = `
 </body>
 `;
 
-exports[`IncrementControl Buttons should work 5`] = `
+exports[`NavigationAPIControl Buttons should work 5`] = `
 <body>
   <div>
     <div
@@ -155,7 +155,7 @@ exports[`IncrementControl Buttons should work 5`] = `
 </body>
 `;
 
-exports[`IncrementControl Init should work 1`] = `
+exports[`NavigationAPIControl Init should work 1`] = `
 <body>
   <div>
     <div
@@ -186,7 +186,7 @@ exports[`IncrementControl Init should work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Update View should Work 1`] = `
+exports[`NavigationAPIControl Update View should Work 1`] = `
 <body>
   <div>
     <div

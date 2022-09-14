@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IncrementControl Click remove work 1`] = `
+exports[`ImageUploadontrol Click remove work 1`] = `
 <body>
   <div>
     <div
@@ -21,7 +21,7 @@ exports[`IncrementControl Click remove work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Click remove work 2`] = `
+exports[`ImageUploadontrol Click remove work 2`] = `
 <body>
   <div>
     <div
@@ -42,7 +42,7 @@ exports[`IncrementControl Click remove work 2`] = `
 </body>
 `;
 
-exports[`IncrementControl Click upload work 1`] = `
+exports[`ImageUploadontrol Click upload work 1`] = `
 <body>
   <div>
     <div
@@ -63,7 +63,7 @@ exports[`IncrementControl Click upload work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Click upload work 2`] = `
+exports[`ImageUploadontrol Click upload work 2`] = `
 <body>
   <div>
     <div
@@ -84,7 +84,7 @@ exports[`IncrementControl Click upload work 2`] = `
 </body>
 `;
 
-exports[`IncrementControl Init should work 1`] = `
+exports[`ImageUploadontrol Init should work 1`] = `
 <body>
   <div>
     <div
@@ -105,7 +105,7 @@ exports[`IncrementControl Init should work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Update View should Work 1`] = `
+exports[`ImageUploadontrol Update View should Work 1`] = `
 <body>
   <div>
     <div
@@ -126,7 +126,7 @@ exports[`IncrementControl Update View should Work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Update View with value should work 1`] = `
+exports[`ImageUploadontrol Update View with value should work 1`] = `
 <body>
   <div>
     <div

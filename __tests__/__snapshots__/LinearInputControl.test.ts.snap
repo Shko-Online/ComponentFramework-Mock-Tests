@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IncrementControl Init should work 1`] = `
+exports[`LinearInputControl Init should work 1`] = `
 <body>
   <div>
     <div>
@@ -23,7 +23,7 @@ exports[`IncrementControl Init should work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Refresh Data should work 1`] = `
+exports[`LinearInputControl Refresh Data should work 1`] = `
 <body>
   <div>
     <div>
@@ -44,7 +44,7 @@ exports[`IncrementControl Refresh Data should work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Slider should work 1`] = `
+exports[`LinearInputControl Slider should work 1`] = `
 <body>
   <div>
     <div>
@@ -65,7 +65,7 @@ exports[`IncrementControl Slider should work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Update View should Work 1`] = `
+exports[`LinearInputControl Update View should Work 1`] = `
 <body>
   <div>
     <div>
@@ -86,7 +86,7 @@ exports[`IncrementControl Update View should Work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Update View with value should work 1`] = `
+exports[`LinearInputControl Update View with value should work 1`] = `
 <body>
   <div>
     <div>

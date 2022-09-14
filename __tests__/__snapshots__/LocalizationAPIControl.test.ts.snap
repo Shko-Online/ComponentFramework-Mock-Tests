@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IncrementControl Blur should Work 1`] = `
+exports[`LocalizationAPIControl Blur should Work 1`] = `
 <body>
   <div>
     <div>
@@ -17,7 +17,7 @@ exports[`IncrementControl Blur should Work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Click should Work 1`] = `
+exports[`LocalizationAPIControl Click should Work 1`] = `
 <body>
   <div>
     <div>
@@ -34,7 +34,7 @@ exports[`IncrementControl Click should Work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Click should Work 2`] = `
+exports[`LocalizationAPIControl Click should Work 2`] = `
 <body>
   <div>
     <div>
@@ -51,7 +51,7 @@ exports[`IncrementControl Click should Work 2`] = `
 </body>
 `;
 
-exports[`IncrementControl Init should work 1`] = `
+exports[`LocalizationAPIControl Init should work 1`] = `
 <body>
   <div>
     <div>
@@ -68,7 +68,7 @@ exports[`IncrementControl Init should work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Update View should Work 1`] = `
+exports[`LocalizationAPIControl Update View should Work 1`] = `
 <body>
   <div>
     <div>
@@ -85,7 +85,7 @@ exports[`IncrementControl Update View should Work 1`] = `
 </body>
 `;
 
-exports[`IncrementControl Update View with value should work 1`] = `
+exports[`LocalizationAPIControl Update View with value should work 1`] = `
 <body>
   <div>
     <div>

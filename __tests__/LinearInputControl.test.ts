@@ -20,7 +20,7 @@ import { LinearInputControl } from '@powerapps-samples/linear-input-control/Line
 import { IInputs, IOutputs } from '@powerapps-samples/linear-input-control/LinearInputControl/generated/ManifestTypes';
 import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
 
-describe("IncrementControl", () => {
+describe("LinearInputControl", () => {
 	let mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs>;
 	beforeEach(()=>{
         const container = document.createElement('div');

@@ -20,7 +20,7 @@ import { LookupSimpleControl } from '@powerapps-samples/lookup-simple-control/Lo
 import { IInputs, IOutputs } from '@powerapps-samples/lookup-simple-control/LookupSimpleControl/generated/ManifestTypes';
 import { LookupPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/LookupProperty.mock';
 
-describe("ControlStateAPI tests", () => {
+describe("LookupSimpleControl", () => {
     let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
     beforeEach(() => {
         const container = document.createElement('div');
