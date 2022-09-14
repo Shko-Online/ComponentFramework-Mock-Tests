@@ -60,47 +60,42 @@ describe("MultiSelectOptionSetControl", () => {
     sinon.assert.calledOnce(mockGenerator.control.updateView);
     expect(document.body).toMatchSnapshot();
   });
-  // it("Update View with value should work", () => {
-  //   mockGenerator.context.parameters.value.raw = null;
-  //   mockGenerator.ExecuteInit();
-  //   mockGenerator.ExecuteUpdateView();
-  //   sinon.assert.calledOnce(mockGenerator.control.init);
-  //   sinon.assert.calledOnce(mockGenerator.control.updateView);
-  //   expect(document.body).toMatchSnapshot();
-  // });
   it("Select string value work", () => {
-    const controlValue = 
-    mockGenerator.context.parameters.controlValue as MultiSelectOptionSetPropertyMock;
-    controlValue.setValue([1,2]);
+    const controlValue = mockGenerator.context.parameters
+      .controlValue as MultiSelectOptionSetPropertyMock;
+    controlValue.setValue([1, 2]);
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     expect(document.body).toMatchSnapshot();
 
-    const button = mockGenerator.container.querySelectorAll("select")[0];
-
+    const select = mockGenerator.container.querySelector("select");
+    const option1 = select.querySelector("option[value='1']");
     var evt = document.createEvent("Event");
     evt.initEvent("click", false, true);
-    button.dispatchEvent(evt);
+    option1.dispatchEvent(evt);
 
     mockGenerator.ExecuteUpdateView();
     console.log(mockGenerator.control.getOutputs().controlValue);
-    expect(mockGenerator.control.getOutputs().controlValue).not.toBeNull();
+    expect(mockGenerator.control.getOutputs().controlValue[0]).toEqual(2);
     expect(document.body).toMatchSnapshot();
   });
-  // it("Select multiple", () => {
-  //   mockGenerator.context.parameters.controlValue as MultiSelectOptionSetPropertyMock;
-  //   mockGenerator.ExecuteInit();
-  //   mockGenerator.ExecuteUpdateView();
-  //   expect(document.body).toMatchSnapshot();
+  it("Update individual selected", () => {
+    const controlValue = mockGenerator.context.parameters
+      .controlValue as MultiSelectOptionSetPropertyMock;
+    controlValue.setValue([]);
+    mockGenerator.ExecuteInit();
+    mockGenerator.ExecuteUpdateView();
+    expect(document.body).toMatchSnapshot();
 
-  //   const button = mockGenerator.container.setAttribute("multiple", "true");
-  //   var evt = document.createEvent("Event");
-  //   evt.initEvent("click", true, false);
-  //   // button.dispatchEvent(evt);
+    const select = mockGenerator.container.querySelector("select");
+    const option1 = select.querySelector("option[value='1']");
+    var evt = document.createEvent("Event");
+    evt.initEvent("click", false, true);
+    option1.dispatchEvent(evt);
 
-  //   mockGenerator.ExecuteUpdateView();
-  //   console.log(mockGenerator.control.getOutputs().controlValue);
-  //   expect(mockGenerator.control.getOutputs().controlValue).toEqual([]);
-  //   expect(document.body).toMatchSnapshot();
-  // });
+    mockGenerator.ExecuteUpdateView();
+    console.log(mockGenerator.control.getOutputs().controlValue);
+    expect(mockGenerator.control.getOutputs().controlValue[0]).toEqual(1);
+    expect(document.body).toMatchSnapshot();
+  });
 });
