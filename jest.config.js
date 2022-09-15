@@ -27,6 +27,7 @@ module.exports = {
       '@powerapps-samples/lookup-simple-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/LookupSimpleControl/$1',
       '@powerapps-samples/multi-select-option-set-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/MultiSelectOptionSetControl/$1',
       '@powerapps-samples/navigation-api-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/NavigationAPIControl/$1',
+      '@powerapps-samples/data-set-grid/(.*)': '<rootDir>/PowerApps-Samples/component-framework/DataSetGrid/$1',,
       '@powerapps-samples/device-api-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/DeviceApiControl/$1',
       '@powerapps-samples/web-api-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/webAPIControl/$1',
       '@powerapps-samples/i-frame-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/IFrameControl/$1',
