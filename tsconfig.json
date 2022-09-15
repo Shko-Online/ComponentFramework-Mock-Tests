@@ -37,6 +37,7 @@
         "@powerapps-samples/localization-api-control*": ["./PowerApps-Samples/component-framework/LocalizationAPIControl*"],
         "@powerapps-samples/navigation-api-control*": ["./PowerApps-Samples/component-framework/NavigationAPIControl*"],
         "@powerapps-samples/multi-select-option-set-control*": ["./PowerApps-Samples/component-framework/MultiSelectOptionSetControl*"],
+        "@powerapps-samples/data-set-grid*": ["./PowerApps-Samples/component-framework/DataSetGrid*"],
         "@powerapps-samples/device-api-control*": ["./PowerApps-Samples/component-framework/DeviceApiControl*"],
         "@powerapps-samples/web-api-control*": ["./PowerApps-Samples/component-framework/WebAPIControl*"],
         "@albanian-xrm/test-components*": ["./__test-components__*"]
