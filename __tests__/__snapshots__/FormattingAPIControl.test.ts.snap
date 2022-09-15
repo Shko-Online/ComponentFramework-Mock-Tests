@@ -44,7 +44,7 @@ exports[`FormattingAPIControl tests Update View should Work 1`] = `
           <td
             class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
           >
-            1,000.01
+            $1,000.01
           </td>
         </tr>
         <tr

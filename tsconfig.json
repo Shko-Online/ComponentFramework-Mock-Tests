@@ -41,6 +41,7 @@
         "@powerapps-samples/device-api-control*": ["./PowerApps-Samples/component-framework/DeviceApiControl*"],
         "@powerapps-samples/web-api-control*": ["./PowerApps-Samples/component-framework/WebAPIControl*"],
         "@powerapps-samples/property-set-table-control*": ["./PowerApps-Samples/component-framework/PropertySetTableControl*"],
+        "@powerapps-samples/table-control*": ["./PowerApps-Samples/component-framework/TableControl*"],
         "@powerapps-samples/map-control*": ["./PowerApps-Samples/component-framework/MapControl*"],
         "@albanian-xrm/test-components*": ["./__test-components__*"]
       },
