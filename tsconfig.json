@@ -40,6 +40,7 @@
         "@powerapps-samples/data-set-grid*": ["./PowerApps-Samples/component-framework/DataSetGrid*"],
         "@powerapps-samples/device-api-control*": ["./PowerApps-Samples/component-framework/DeviceApiControl*"],
         "@powerapps-samples/web-api-control*": ["./PowerApps-Samples/component-framework/WebAPIControl*"],
+        "@powerapps-samples/property-set-table-control*": ["./PowerApps-Samples/component-framework/PropertySetTableControl*"],
         "@albanian-xrm/test-components*": ["./__test-components__*"]
       },
       "typeRoots": [

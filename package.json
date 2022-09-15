@@ -4,7 +4,11 @@
   "description": "Test for our mocking library which helps with testing PowerApps Component Framework Components",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
+    "postinstall": "yarn install:albx & yarn install:control-state & yarn install:formatting-api & yarn install:i-frame-control & yarn install:property-set-table-control & yarn install:increment-control & yarn install:linear-input-control & yarn install:localization-api-control & yarn install:device-api-control & yarn install:lookup-simple-control & yarn install:image-upload-control & yarn install:navigation-api-control & yarn install:multi-select-option-set-control & yarn install:web-api-control",
+=======
     "postinstall": "yarn install:albx & yarn install:control-state & yarn install:formatting-api & yarn install:i-frame-control & yarn install:increment-control & yarn install:linear-input-control & yarn install:localization-api-control & yarn install:device-api-control & yarn install:lookup-simple-control & yarn install:image-upload-control & yarn install:navigation-api-control & yarn install:multi-select-option-set-control & yarn install:data-set-grid & yarn install:web-api-control",
+>>>>>>> 535302afb47fd90979286ae1b607223540b8a515
     "install:albx": "cd ComponentFramework-Mock && yarn",
     "install:control-state": "cd PowerApps-Samples\\component-framework\\ControlStateAPI && yarn",
     "install:formatting-api": "cd PowerApps-Samples\\component-framework\\FormattingAPIControl && yarn",
@@ -19,7 +23,12 @@
     "install:data-set-grid": "cd PowerApps-Samples\\component-framework\\DataSetGrid && yarn",
     "install:device-api-control": "cd PowerApps-Samples\\component-framework\\DeviceApiControl && yarn",
     "install:web-api-control": "cd PowerApps-Samples\\component-framework\\WebAPIControl && yarn",
+<<<<<<< HEAD
+    "install:property-set-table-control": "cd PowerApps-Samples\\component-framework\\PropertySetTableControl && yarn",
+    "build": "yarn build:control-state & yarn build:formatting-api & yarn build:i-frame-control & yarn build:increment-control & yarn build:property-set-table-control & yarn build:linear-input-control & yarn build:localization-api-contol & yarn build:device-api-control & yarn build:lookup-simple-control & yarn build:image-upload-control & yarn build:navigation-api-control & yarn build:multi-select-option-set-control & yarn build:web-api-control",
+=======
     "build": "yarn build:control-state & yarn build:formatting-api & yarn build:i-frame-control & yarn build:increment-control & yarn build:linear-input-control & yarn build:localization-api-contol & yarn build:device-api-control & yarn build:lookup-simple-control & yarn build:image-upload-control & yarn build:navigation-api-control & yarn build:multi-select-option-set-control & yarn build:data-set-grid & yarn build:web-api-control",
+>>>>>>> 535302afb47fd90979286ae1b607223540b8a515
     "build:control-state": "cd PowerApps-Samples\\component-framework\\ControlStateAPI && yarn build ",
     "build:formatting-api": "cd PowerApps-Samples\\component-framework\\FormattingAPIControl && yarn build ",
     "build:i-frame-control": "cd PowerApps-Samples\\component-framework\\IFrameControl && yarn build",
@@ -33,6 +42,7 @@
     "build:data-set-grid": "cd PowerApps-Samples\\component-framework\\DataSetGrid && yarn build ",
     "build:device-api-control": "cd PowerApps-Samples\\component-framework\\DeviceApiControl && yarn build ",
     "build:web-api-control": "cd PowerApps-Samples\\component-framework\\WebAPIControl && yarn build ",
+    "build:property-set-table-control": "cd PowerApps-Samples\\component-framework\\PropertySetTableControl && yarn build",
     "test": "jest --coverage --maxWorkers=4",
     "test-no-cover": "jest --maxWorkers=4"
   },
