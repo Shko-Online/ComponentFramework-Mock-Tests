@@ -32,7 +32,8 @@ module.exports = {
       '@powerapps-samples/web-api-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/webAPIControl/$1',
       '@powerapps-samples/i-frame-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/IFrameControl/$1',
       '@powerapps-samples/property-set-table-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/PropertySetTableControl/$1',
-      '@powerapps-samples/facepile-react-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/FacepileReactControl/$1'
+      '@powerapps-samples/map-control/(.*)': '<rootDir>/PowerApps-Samples/component-framework/MapControl/$1',
+      
     },  
     preset: 'ts-jest',
     testEnvironment: 'jsdom',
