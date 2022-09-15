@@ -29,7 +29,38 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 1`] = `
       />
       <table
         class="SimpleTable_Table_Style"
-      />
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </body>
@@ -64,7 +95,38 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 2`] = `
       />
       <table
         class="SimpleTable_Table_Style"
-      />
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </body>
@@ -99,7 +161,38 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 3`] = `
       />
       <table
         class="SimpleTable_Table_Style"
-      />
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </body>
@@ -138,6 +231,217 @@ exports[`PropertySetTableControl Init should work 1`] = `
 </body>
 `;
 
+exports[`PropertySetTableControl Row click should work 1`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="SimpleTable_TableRow_Style"
+            rowrecid="0023-2190139-12213-5646"
+          >
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+              />
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl Row click should work 2`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl Row click should work 3`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`PropertySetTableControl Update View should Work 1`] = `
 <body>
   <div>
@@ -167,7 +471,38 @@ exports[`PropertySetTableControl Update View should Work 1`] = `
       />
       <table
         class="SimpleTable_Table_Style"
-      />
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </body>
@@ -202,7 +537,51 @@ exports[`PropertySetTableControl on row click should work 1`] = `
       />
       <table
         class="SimpleTable_Table_Style"
-      />
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="SimpleTable_TableRow_Style"
+            rowrecid="0023-2190139-12213-5646"
+          >
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+              />
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </body>

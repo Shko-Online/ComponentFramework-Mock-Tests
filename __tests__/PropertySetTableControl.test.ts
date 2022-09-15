@@ -20,6 +20,7 @@ import { PropertySetTableControl }  from '@powerapps-samples/property-set-table-
 import { IInputs, IOutputs } from '@powerapps-samples/property-set-table-control/PropertySetTableControl/generated/ManifestTypes';
 import * as resource from '@powerapps-samples/property-set-table-control/PropertySetTableControl/strings/PropertySetTableControl.1033.resx';
 import { DataSetMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock';
+import { EntityRecord } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock';
 
 describe("PropertySetTableControl", () => {
 	let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
@@ -33,6 +34,26 @@ describe("PropertySetTableControl", () => {
 			},
 			container);
 		mockGenerator.SetControlResource(resource);
+		const controlValue = mockGenerator.context.parameters
+		.sampleDataSet as DataSetMock;
+	  controlValue.columns = [
+		{
+		  alias: "alias",
+		  dataType: "string",
+		  displayName: "Mocked Column",
+		  name: "alias",
+		  order: 1,
+		  visualSizeFactor: 200,
+		},
+		{
+		  alias: "alias2",
+		  dataType: "string",
+		  displayName: "Second Mocked Column",
+		  name: "alias2",
+		  order: 2,
+		  visualSizeFactor: 200,
+		},
+	  ];
 		document.body.appendChild(container);
 	})
 
@@ -66,22 +87,34 @@ describe("PropertySetTableControl", () => {
 		expect(document.body).toMatchSnapshot();
         })
 	})
-	it("on row click should work", () => {
-        mockGenerator.ExecuteInit();
+	it("Row click should work", () => {
+        const controlValue =mockGenerator.context.parameters.sampleDataSet as DataSetMock;
+		const row = new EntityRecord();
+		row.id = {guid : "0023-2190139-12213-5646"}
+		controlValue.records[row.id.guid]= row;
+		controlValue.sortedRecordIds = [row.id.guid]
+		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
-		expect(document.body).toMatchSnapshot();
-	mockGenerator.context.parameters.sampleDataSet
-        const button =mockGenerator.container.querySelectorAll('tr.SimpleTable_TableRow_Style')[1];
-        
-		
+
+		const select = mockGenerator.container.querySelector(`[rowRecId='${row.id.guid}']`);
 			var evt = document.createEvent("Event");
-			console.log(button);
+			console.log(select);
 			evt.initEvent("click", true, false);
-			button.dispatchEvent(evt);
+			select.dispatchEvent(evt);
 	
 			mockGenerator.ExecuteUpdateView();
-			expect(document.body).toMatchSnapshot();
-			
-        
+			expect(document.body).toMatchSnapshot(); 
+	})
+	it("Row click should work", () => {
+        mockGenerator.control.getOutputs();
+		mockGenerator.ExecuteInit();
+		mockGenerator.ExecuteUpdateView();
+		expect(document.body).toMatchSnapshot(); 
+	})
+	it("Row click should work", () => {
+        mockGenerator.control.destroy();
+		mockGenerator.ExecuteInit();
+		mockGenerator.ExecuteUpdateView();
+		expect(document.body).toMatchSnapshot(); 
 	})
 })
