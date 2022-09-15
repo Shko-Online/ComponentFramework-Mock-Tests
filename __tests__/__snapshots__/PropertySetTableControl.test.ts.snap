@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 1`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 2`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 3`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl Init should work 1`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl Update View should Work 1`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl on row click should work 1`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      />
+    </div>
+  </div>
+</body>
+`;
