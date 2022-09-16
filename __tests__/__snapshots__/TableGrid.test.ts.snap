@@ -1,0 +1,384 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableControl Destroy should work 1`] = `
+<body>
+  <div>
+    <div
+      class="SimpleTable_MainContainer_Style"
+      style="height: 698px;"
+    >
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+      <button
+        class="LoadMoreButton_Hidden_Style LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TableControl GetOutputs should work 1`] = `
+<body>
+  <div>
+    <div
+      class="SimpleTable_MainContainer_Style"
+      style="height: 698px;"
+    >
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+      <button
+        class="LoadMoreButton_Hidden_Style LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TableControl Init should work 1`] = `
+<body>
+  <div>
+    <div
+      class="SimpleTable_MainContainer_Style"
+    >
+      <table
+        class="SimpleTable_Table_Style"
+      />
+      <button
+        class="LoadMoreButton_Hidden_Style LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TableControl Load More Button 1`] = `
+<body>
+  <div>
+    <div
+      class="SimpleTable_MainContainer_Style"
+      style="height: 698px;"
+    >
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+      <button
+        class="LoadMoreButton_Hidden_Style LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TableControl Load More Button 2`] = `
+<body>
+  <div>
+    <div
+      class="SimpleTable_MainContainer_Style"
+      style="height: 698px;"
+    >
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+      <button
+        class="LoadMoreButton_Hidden_Style LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TableControl Row Click Event handler for the associated row when being clicked 1`] = `
+<body>
+  <div>
+    <div
+      class="SimpleTable_MainContainer_Style"
+      style="height: 698px;"
+    >
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            class="SimpleTable_TableRow_Style"
+            rowrecid="0023-2190139-12213-5646"
+          >
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button
+        class="LoadMoreButton_Hidden_Style LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TableControl Update View should Work 1`] = `
+<body>
+  <div>
+    <div
+      class="SimpleTable_MainContainer_Style"
+      style="height: 698px;"
+    >
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+      <button
+        class="LoadMoreButton_Hidden_Style LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TableControl toggle load more button if it has next page 1`] = `
+<body>
+  <div>
+    <div
+      class="SimpleTable_MainContainer_Style"
+      style="height: 698px;"
+    >
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+      <button
+        class="LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
