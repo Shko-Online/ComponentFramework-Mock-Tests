@@ -133,5 +133,17 @@ describe("WebAPIControl", () => {
         })
         
     })
+	it("Destroy should work", () => {
+        mockGenerator.control.destroy();
+		mockGenerator.ExecuteInit();
+		mockGenerator.ExecuteUpdateView();
+		expect(document.body).toMatchSnapshot(); 
+	})
+	it("getOuputs should work", () => {
+        mockGenerator.control.getOutputs();
+		mockGenerator.ExecuteInit();
+		mockGenerator.ExecuteUpdateView();
+		expect(document.body).toMatchSnapshot(); 
+	})
     
 })

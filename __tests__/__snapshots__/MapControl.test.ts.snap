@@ -2,6 +2,8 @@
 
 exports[`MapControl ApiKey not null 1`] = `<body />`;
 
+exports[`MapControl Destroy should work 1`] = `<body />`;
+
 exports[`MapControl Init should work 1`] = `<body />`;
 
 exports[`MapControl MapUrl not null 1`] = `<body />`;
