@@ -130,7 +130,7 @@ describe("DataSetGrid", () => {
   it("Row Click Event handler for the associated row when being clicked", () => {
     const controlValue = mockGenerator.context.parameters.dataSetGrid as DataSetMock;
 
-    const row = new EntityRecord();
+    const row = new EntityRecord(undefined, "0023-2190139-12213-5643","First");
     row.id = {guid: "0023-2190139-12213-5646"}
     controlValue.records[row.id.guid]= row;
     controlValue.sortedRecordIds = [row.id.guid]
@@ -161,5 +161,49 @@ describe("DataSetGrid", () => {
     evt.initEvent("click", false, true);
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
+  });
+
+  it("Render multiple rows", () => {
+    const controlValue = mockGenerator.context.parameters.dataSetGrid as DataSetMock;
+
+    const rows = [
+    new EntityRecord(undefined, "0023-2190139-12213-5643","First"),
+    new EntityRecord(undefined, "0023-2190139-12213-5646", "Second"),
+    new EntityRecord(undefined, "0023-2190139-12213-5641",  "Third")];
+
+    controlValue.initRecords(rows);
+
+    mockGenerator.ExecuteInit();
+    mockGenerator.ExecuteUpdateView();
+
+    const select = mockGenerator.container.querySelectorAll(`[rowRecId='${rows[0].id.guid}']`)[0];
+
+    var evt = document.createEvent("Event");
+    evt.initEvent("click", false, true);
+    select.dispatchEvent(evt);
+    expect(document.body).toMatchSnapshot();
+    
+  });
+
+  it("Render multiple rows sorted", () => {
+    const controlValue = mockGenerator.context.parameters.dataSetGrid as DataSetMock;
+
+    const rows = [
+    new EntityRecord(undefined,"0023-2190139-12213-5643","First"),
+    new EntityRecord(undefined, "0023-2190139-12213-5646", "Second"),
+    new EntityRecord(undefined, "0023-2190139-12213-5641", "Third")];
+    
+    controlValue.initRecords(rows);
+
+    mockGenerator.ExecuteInit();
+    mockGenerator.ExecuteUpdateView();
+
+    const select = mockGenerator.container.querySelectorAll(`[rowRecId='${rows[0].id.guid}']`)[0];
+
+    var evt = document.createEvent("Event");
+    evt.initEvent("click", false, true);
+    select.dispatchEvent(evt);
+    expect(document.body).toMatchSnapshot();
+    
   });
 });
