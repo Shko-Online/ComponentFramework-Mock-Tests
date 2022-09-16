@@ -76,7 +76,6 @@ describe("ImageUploadontrol", () => {
         button.dispatchEvent(evt);
 
         mockGenerator.ExecuteUpdateView();
-        console.log(mockGenerator.control.getOutputs().value);
         expect(mockGenerator.control.getOutputs().value).not.toBeNull();
         expect(document.body).toMatchSnapshot();
 
@@ -93,7 +92,6 @@ describe("ImageUploadontrol", () => {
         button.dispatchEvent(evt);
 
         mockGenerator.ExecuteUpdateView();
-        console.log(mockGenerator.control.getOutputs().value);
         expect(mockGenerator.control.getOutputs().value).toEqual(undefined);
         expect(document.body).toMatchSnapshot();
     

@@ -91,10 +91,9 @@ describe("IncrementControl", () => {
 		var evt = document.createEvent("Event");
 		evt.initEvent("click", true, false);
 		button.dispatchEvent(evt);
-		console.log(button.innerHTML);
+		
 
 		mockGenerator.ExecuteUpdateView();
-		console.log(mockGenerator.control.getOutputs().value);
 		expect(mockGenerator.control.getOutputs().value).toEqual(101);
 		expect(document.body).toMatchSnapshot();
 	})

@@ -98,23 +98,46 @@ describe("PropertySetTableControl", () => {
 
 		const select = mockGenerator.container.querySelector(`[rowRecId='${row.id.guid}']`);
 			var evt = document.createEvent("Event");
-			console.log(select);
 			evt.initEvent("click", true, false);
 			select.dispatchEvent(evt);
 	
 			mockGenerator.ExecuteUpdateView();
 			expect(document.body).toMatchSnapshot(); 
 	})
-	it("Row click should work", () => {
+	it("Get output should work", () => {
         mockGenerator.control.getOutputs();
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot(); 
 	})
-	it("Row click should work", () => {
+	it("Destroy should work", () => {
         mockGenerator.control.destroy();
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot(); 
 	})
+	it("toggle load more button if it has next page", () => {
+        const controlValue = mockGenerator.context.parameters
+          .sampleDataSet as DataSetMock;
+        controlValue.paging.hasNextPage = true;
+        mockGenerator.ExecuteInit();
+        mockGenerator.ExecuteUpdateView();
+        expect(document.body).toMatchSnapshot();
+      });
+	  it("toggle load more button if it has previous page", () => {
+        const controlValue = mockGenerator.context.parameters
+          .sampleDataSet as DataSetMock;
+        controlValue.paging.hasPreviousPage = true;
+        mockGenerator.ExecuteInit();
+        mockGenerator.ExecuteUpdateView();
+        expect(document.body).toMatchSnapshot();
+      });
+	  it("Get colums", () => {
+        const controlValue = mockGenerator.context.parameters
+          .sampleDataSet as DataSetMock;
+        controlValue.columns= [];
+        mockGenerator.ExecuteInit();
+        mockGenerator.ExecuteUpdateView();
+        expect(document.body).toMatchSnapshot();
+      });
 })

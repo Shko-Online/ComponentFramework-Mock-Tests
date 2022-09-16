@@ -198,6 +198,173 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 3`] = `
 </body>
 `;
 
+exports[`PropertySetTableControl Destroy should work 1`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl Get colums 1`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl Get output should work 1`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`PropertySetTableControl Init should work 1`] = `
 <body>
   <div>
@@ -310,138 +477,6 @@ exports[`PropertySetTableControl Row click should work 1`] = `
 </body>
 `;
 
-exports[`PropertySetTableControl Row click should work 2`] = `
-<body>
-  <div>
-    <div
-      class="main-container"
-    >
-      <div>
-        <input
-          class="GetValueInput_Style"
-          id="getValueInputBox"
-          placeholder="select a row and enter the alias name"
-        />
-        <button />
-        <label
-          class="GetValueResult_Style"
-        />
-      </div>
-      <button
-        class="loadNextPageButton_Disabled_Style Button_Style"
-        disabled=""
-        type="button"
-      />
-      <button
-        class="loadNextPageButton_Disabled_Style Button_Style"
-        disabled=""
-        type="button"
-      />
-      <table
-        class="SimpleTable_Table_Style"
-      >
-        <thead>
-          <tr
-            class="SimpleTable_TableRow_Style"
-          >
-            <th
-              class="SimpleTable_TableHeader_Style"
-            >
-              <div
-                class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
-              />
-            </th>
-            <th
-              class="SimpleTable_TableHeader_Style"
-            >
-              <div
-                class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
-              />
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td
-              class="No_Record_Style"
-              colspan="2"
-            />
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</body>
-`;
-
-exports[`PropertySetTableControl Row click should work 3`] = `
-<body>
-  <div>
-    <div
-      class="main-container"
-    >
-      <div>
-        <input
-          class="GetValueInput_Style"
-          id="getValueInputBox"
-          placeholder="select a row and enter the alias name"
-        />
-        <button />
-        <label
-          class="GetValueResult_Style"
-        />
-      </div>
-      <button
-        class="loadNextPageButton_Disabled_Style Button_Style"
-        disabled=""
-        type="button"
-      />
-      <button
-        class="loadNextPageButton_Disabled_Style Button_Style"
-        disabled=""
-        type="button"
-      />
-      <table
-        class="SimpleTable_Table_Style"
-      >
-        <thead>
-          <tr
-            class="SimpleTable_TableRow_Style"
-          >
-            <th
-              class="SimpleTable_TableHeader_Style"
-            >
-              <div
-                class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
-              />
-            </th>
-            <th
-              class="SimpleTable_TableHeader_Style"
-            >
-              <div
-                class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
-              />
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td
-              class="No_Record_Style"
-              colspan="2"
-            />
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</body>
-`;
-
 exports[`PropertySetTableControl Update View should Work 1`] = `
 <body>
   <div>
@@ -462,6 +497,136 @@ exports[`PropertySetTableControl Update View should Work 1`] = `
       <button
         class="loadNextPageButton_Disabled_Style Button_Style"
         disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl toggle load more button if it has next page 1`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        disabled=""
+        type="button"
+      />
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
+        type="button"
+      />
+      <table
+        class="SimpleTable_Table_Style"
+      >
+        <thead>
+          <tr
+            class="SimpleTable_TableRow_Style"
+          >
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td
+              class="No_Record_Style"
+              colspan="2"
+            />
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`PropertySetTableControl toggle load more button if it has previous page 1`] = `
+<body>
+  <div>
+    <div
+      class="main-container"
+    >
+      <div>
+        <input
+          class="GetValueInput_Style"
+          id="getValueInputBox"
+          placeholder="select a row and enter the alias name"
+        />
+        <button />
+        <label
+          class="GetValueResult_Style"
+        />
+      </div>
+      <button
+        class="loadNextPageButton_Disabled_Style Button_Style"
         type="button"
       />
       <button
