@@ -121,7 +121,9 @@ describe("DataSetGrid", () => {
     expect(document.body).toMatchSnapshot();
   });
   it("Get sorted Columns", () => {
-  
+    const controlValue = mockGenerator.context.parameters
+    .dataSetGrid as DataSetMock;
+  controlValue.columns= [];
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     expect(document.body).toMatchSnapshot();
@@ -162,4 +164,16 @@ describe("DataSetGrid", () => {
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
   });
+  it("Get output should work", () => {
+    mockGenerator.control.getOutputs();
+mockGenerator.ExecuteInit();
+mockGenerator.ExecuteUpdateView();
+expect(document.body).toMatchSnapshot(); 
+})
+it("Destroy should work", () => {
+    mockGenerator.control.destroy();
+mockGenerator.ExecuteInit();
+mockGenerator.ExecuteUpdateView();
+expect(document.body).toMatchSnapshot(); 
+})
 });

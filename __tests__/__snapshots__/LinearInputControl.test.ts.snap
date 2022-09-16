@@ -101,7 +101,9 @@ exports[`LinearInputControl Update View with value should work 1`] = `
       <label
         class="LinearRangeLabel"
         id="lrclabel"
-      />
+      >
+        0
+      </label>
     </div>
   </div>
 </body>

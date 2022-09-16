@@ -85,7 +85,6 @@ describe("LocalizationAPIControl", () => {
 
 
 		mockGenerator.ExecuteUpdateView();
-		console.log(mockGenerator.control.getOutputs().value);
 		expect(mockGenerator.control.getOutputs().value).toEqual(101);
 		expect(document.body).toMatchSnapshot();
     })

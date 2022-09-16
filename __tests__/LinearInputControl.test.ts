@@ -52,6 +52,7 @@ describe("LinearInputControl", () => {
     })
     it("Update View with value should work", () => {
 		mockGenerator.context.parameters.controlValue.raw = 500;
+        mockGenerator.context.parameters.controlValue.formatted= "0";
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		sinon.assert.calledOnce(mockGenerator.control.init);

@@ -155,6 +155,68 @@ exports[`NavigationAPIControl Buttons should work 5`] = `
 </body>
 `;
 
+exports[`NavigationAPIControl Destroy should work 1`] = `
+<body>
+  <div>
+    <div
+      class="NavigationAPI"
+    >
+      <button
+        id="openAlertDialogButton"
+      >
+        openAlertDialogButton
+      </button>
+      <button
+        id="openConfirmDialogButton"
+      >
+        openConfirmDialogButton
+      </button>
+      <button
+        id="openFileButton"
+      >
+        openFileButton
+      </button>
+      <button
+        id="openUrlButton"
+      >
+        openUrlButton
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`NavigationAPIControl GetOutputs should work 1`] = `
+<body>
+  <div>
+    <div
+      class="NavigationAPI"
+    >
+      <button
+        id="openAlertDialogButton"
+      >
+        openAlertDialogButton
+      </button>
+      <button
+        id="openConfirmDialogButton"
+      >
+        openConfirmDialogButton
+      </button>
+      <button
+        id="openFileButton"
+      >
+        openFileButton
+      </button>
+      <button
+        id="openUrlButton"
+      >
+        openUrlButton
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
 exports[`NavigationAPIControl Init should work 1`] = `
 <body>
   <div>

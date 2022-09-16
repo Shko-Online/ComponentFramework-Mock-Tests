@@ -27,7 +27,7 @@ exports[`DataSetGrid Adding DataSet Control main-container button to the contain
 </body>
 `;
 
-exports[`DataSetGrid Get sorted Columns 1`] = `
+exports[`DataSetGrid Destroy should work 1`] = `
 <body>
   <div>
     <div
@@ -45,6 +45,51 @@ exports[`DataSetGrid Get sorted Columns 1`] = `
           </div>
         </div>
       </div>
+      <button
+        class="DataSetControl_LoadMoreButton_Hidden_Style DataSetControl_LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`DataSetGrid Get output should work 1`] = `
+<body>
+  <div>
+    <div
+      class="DataSetControl_main-container"
+      style="max-height: 693px;"
+    >
+      <div
+        class="DataSetControl_grid-container"
+      >
+        <div>
+          <div
+            class="DataSetControl_grid-norecords"
+          >
+            undefined
+          </div>
+        </div>
+      </div>
+      <button
+        class="DataSetControl_LoadMoreButton_Hidden_Style DataSetControl_LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`DataSetGrid Get sorted Columns 1`] = `
+<body>
+  <div>
+    <div
+      class="DataSetControl_main-container"
+    >
+      <div
+        class="DataSetControl_grid-container"
+      />
       <button
         class="DataSetControl_LoadMoreButton_Hidden_Style DataSetControl_LoadMoreButton_Style"
         type="button"
@@ -247,6 +292,33 @@ exports[`DataSetGrid toggle load more when needed 1`] = `
       </div>
       <button
         class="DataSetControl_LoadMoreButton_Style"
+        type="button"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`DataSetGrid toggle load more when needed 2`] = `
+<body>
+  <div>
+    <div
+      class="DataSetControl_main-container"
+      style="max-height: 693px;"
+    >
+      <div
+        class="DataSetControl_grid-container"
+      >
+        <div>
+          <div
+            class="DataSetControl_grid-norecords"
+          >
+            undefined
+          </div>
+        </div>
+      </div>
+      <button
+        class="DataSetControl_LoadMoreButton_Hidden_Style DataSetControl_LoadMoreButton_Style"
         type="button"
       />
     </div>

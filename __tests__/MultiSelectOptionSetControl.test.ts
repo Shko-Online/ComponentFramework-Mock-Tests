@@ -75,7 +75,6 @@ describe("MultiSelectOptionSetControl", () => {
     option1.dispatchEvent(evt);
 
     mockGenerator.ExecuteUpdateView();
-    console.log(mockGenerator.control.getOutputs().controlValue);
     expect(mockGenerator.control.getOutputs().controlValue[0]).toEqual(2);
     expect(document.body).toMatchSnapshot();
   });
@@ -94,7 +93,6 @@ describe("MultiSelectOptionSetControl", () => {
     option1.dispatchEvent(evt);
 
     mockGenerator.ExecuteUpdateView();
-    console.log(mockGenerator.control.getOutputs().controlValue);
     expect(mockGenerator.control.getOutputs().controlValue[0]).toEqual(1);
     expect(document.body).toMatchSnapshot();
   });
