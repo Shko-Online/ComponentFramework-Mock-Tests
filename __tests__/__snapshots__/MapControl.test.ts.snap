@@ -4,8 +4,6 @@ exports[`MapControl ApiKey not null 1`] = `<body />`;
 
 exports[`MapControl Init should work 1`] = `<body />`;
 
+exports[`MapControl MapUrl not null 1`] = `<body />`;
+
 exports[`MapControl Update View should Work 1`] = `<body />`;
-
-exports[`MapControl Update View should Work 2`] = `<body />`;
-
-exports[`MapControl Update View should Work 3`] = `<body />`;
