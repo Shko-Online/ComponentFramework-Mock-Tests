@@ -75,7 +75,7 @@ exports[`MultiSelectOptionSetControl Select string value work 2`] = `
       </label>
       <br />
       <label>
-        First,Second
+        Second
       </label>
     </div>
   </div>
@@ -154,7 +154,9 @@ exports[`MultiSelectOptionSetControl Update individual selected 2`] = `
         Selected Options:
       </label>
       <br />
-      <label />
+      <label>
+        First
+      </label>
     </div>
   </div>
 </body>

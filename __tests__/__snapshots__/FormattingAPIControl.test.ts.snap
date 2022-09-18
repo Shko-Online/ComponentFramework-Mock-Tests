@@ -104,7 +104,7 @@ exports[`FormattingAPIControl tests Destroy should work 1`] = `
           <td
             class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
           >
-            37
+            38
           </td>
         </tr>
       </table>
@@ -340,7 +340,7 @@ exports[`FormattingAPIControl tests getOuputs should work 1`] = `
           <td
             class="FormattingControlSampleHtmlTable_HtmlCell FormattingControlSampleHtmlTable_HtmlCell_Value"
           >
-            37
+            38
           </td>
         </tr>
       </table>

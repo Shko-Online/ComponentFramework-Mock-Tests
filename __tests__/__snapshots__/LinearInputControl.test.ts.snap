@@ -38,7 +38,9 @@ exports[`LinearInputControl Refresh Data should work 1`] = `
       <label
         class="LinearRangeLabel"
         id="lrclabel"
-      />
+      >
+        500.5
+      </label>
     </div>
   </div>
 </body>
@@ -59,7 +61,9 @@ exports[`LinearInputControl Slider should work 1`] = `
       <label
         class="LinearRangeLabel"
         id="lrclabel"
-      />
+      >
+        700
+      </label>
     </div>
   </div>
 </body>

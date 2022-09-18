@@ -26,7 +26,6 @@ export class TestComponentBoolean implements ComponentFramework.ReactControl<IIn
         state?: ComponentFramework.Dictionary,
         container?: HTMLDivElement): void {
         this._value = context.parameters.turnedOn.raw;
-        console.log(context.client.getClient());
         notifyOutputChanged();
     }
     destroy(): void {
