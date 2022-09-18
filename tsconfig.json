@@ -12,51 +12,94 @@
 	PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	language governing rights and limitations under the RPL. 
 */
-
 {
-  "compilerOptions": {
-      "allowSyntheticDefaultImports": true,
-      "target": "es5",
-      "lib": ["es5", "es6", "dom"],
-      "module": "ES6",
-      "moduleResolution": "node",
-      "noEmit": false,
-      "outDir": "dist",
-      "declaration": true,
-      "sourceMap": true,    
-      "baseUrl": ".",
-      "paths": {
-        "@shko-online/componentframework-mock*": ["./ComponentFramework-Mock/src*"],
-        "@powerapps-samples/control-state-api*": ["./PowerApps-Samples/component-framework/ControlStateAPI*"],
-        "@powerapps-samples/formatting-api*": ["./PowerApps-Samples/component-framework/FormattingAPIControl*"],
-        "@powerapps-samples/i-frame-control*": ["./PowerApps-Samples/component-framework/IFrameControl*"],
-        "@powerapps-samples/lookup-simple-control*": ["./PowerApps-Samples/component-framework/LookupSimpleControl*"],
-        "@powerapps-samples/image-upload-control*": ["./PowerApps-Samples/component-framework/ImageUploadControl*"],
-        "@powerapps-samples/increment-control*": ["./PowerApps-Samples/component-framework/IncrementControl*"],
-        "@powerapps-samples/linear-input-control*": ["./PowerApps-Samples/component-framework/LinearInputControl*"],
-        "@powerapps-samples/localization-api-control*": ["./PowerApps-Samples/component-framework/LocalizationAPIControl*"],
-        "@powerapps-samples/navigation-api-control*": ["./PowerApps-Samples/component-framework/NavigationAPIControl*"],
-        "@powerapps-samples/multi-select-option-set-control*": ["./PowerApps-Samples/component-framework/MultiSelectOptionSetControl*"],
-        "@powerapps-samples/data-set-grid*": ["./PowerApps-Samples/component-framework/DataSetGrid*"],
-        "@powerapps-samples/device-api-control*": ["./PowerApps-Samples/component-framework/DeviceApiControl*"],
-        "@powerapps-samples/web-api-control*": ["./PowerApps-Samples/component-framework/WebAPIControl*"],
-        "@powerapps-samples/property-set-table-control*": ["./PowerApps-Samples/component-framework/PropertySetTableControl*"],
-        "@powerapps-samples/table-control*": ["./PowerApps-Samples/component-framework/TableControl*"],
-        "@powerapps-samples/map-control*": ["./PowerApps-Samples/component-framework/MapControl*"],
-        "@powerapps-samples/table-grid*": ["./PowerApps-Samples/component-framework/TableGrid*"],
-        "@albanian-xrm/test-components*": ["./__test-components__*"]
-      },
-      "typeRoots": [
-          "./node_modules/@types"
-      ]
-  },
-  "exclude": [
-      "node_modules",
-      "wwwroot",
-  ],
-  "include": [
-      "src",
-      "__tests__",
-      "__test-components__"
-, "dist/TestComponent", "global.d.ts"  ]
+    "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
+        "target": "es5",
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+        ],
+        "module": "ES6",
+        "moduleResolution": "node",
+        "noEmit": false,
+        "outDir": "dist",
+        "declaration": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "paths": {
+            "@shko-online/componentframework-mock*": [
+                "./ComponentFramework-Mock/src*"
+            ],
+            "@powerapps-samples/control-state-api*": [
+                "./PowerApps-Samples/component-framework/ControlStateAPI*"
+            ],
+            "@powerapps-samples/formatting-api*": [
+                "./PowerApps-Samples/component-framework/FormattingAPIControl*"
+            ],
+            "@powerapps-samples/i-frame-control*": [
+                "./PowerApps-Samples/component-framework/IFrameControl*"
+            ],
+            "@powerapps-samples/lookup-simple-control*": [
+                "./PowerApps-Samples/component-framework/LookupSimpleControl*"
+            ],
+            "@powerapps-samples/image-upload-control*": [
+                "./PowerApps-Samples/component-framework/ImageUploadControl*"
+            ],
+            "@powerapps-samples/increment-control*": [
+                "./PowerApps-Samples/component-framework/IncrementControl*"
+            ],
+            "@powerapps-samples/linear-input-control*": [
+                "./PowerApps-Samples/component-framework/LinearInputControl*"
+            ],
+            "@powerapps-samples/localization-api-control*": [
+                "./PowerApps-Samples/component-framework/LocalizationAPIControl*"
+            ],
+            "@powerapps-samples/navigation-api-control*": [
+                "./PowerApps-Samples/component-framework/NavigationAPIControl*"
+            ],
+            "@powerapps-samples/multi-select-option-set-control*": [
+                "./PowerApps-Samples/component-framework/MultiSelectOptionSetControl*"
+            ],
+            "@powerapps-samples/data-set-grid*": [
+                "./PowerApps-Samples/component-framework/DataSetGrid*"
+            ],
+            "@powerapps-samples/device-api-control*": [
+                "./PowerApps-Samples/component-framework/DeviceApiControl*"
+            ],
+            "@powerapps-samples/web-api-control*": [
+                "./PowerApps-Samples/component-framework/WebAPIControl*"
+            ],
+            "@powerapps-samples/property-set-table-control*": [
+                "./PowerApps-Samples/component-framework/PropertySetTableControl*"
+            ],
+            "@powerapps-samples/table-control*": [
+                "./PowerApps-Samples/component-framework/TableControl*"
+            ],
+            "@powerapps-samples/map-control*": [
+                "./PowerApps-Samples/component-framework/MapControl*"
+            ],
+            "@powerapps-samples/table-grid*": [
+                "./PowerApps-Samples/component-framework/TableGrid*"
+            ],
+            "@albanian-xrm/test-components*": [
+                "./__test-components__*"
+            ]
+        },
+        "typeRoots": [
+            "./node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "wwwroot",
+    ],
+    "include": [
+        "src",
+        "__tests__",
+        "__test-components__",
+        "stories",
+        "global.d.ts"
+    ]
 }
