@@ -12,66 +12,48 @@
 	PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	language governing rights and limitations under the RPL. 
 */
-
-import { Story, Meta } from "@storybook/html";
-
+import { Meta } from "@storybook/html";
 import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator";
-import { DataSetGrid } from "@powerapps-samples/data-set-grid/DataSetGrid";
 import {
   IInputs,
   IOutputs,
-} from "@powerapps-samples/data-set-grid/DataSetGrid/generated/ManifestTypes";
-import { DataSetMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock";
-import * as resource from "@powerapps-samples/image-upload-control/ImageUploadControl/strings/ImageUploadControl.1033.resx";
+} from "@powerapps-samples/map-control/MapControl/generated/ManifestTypes";
+import { MapControl } from "@powerapps-samples/map-control/MapControl";
+import { StringPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock";
 
 export default {
-  title: "PCF Components/DataSetGrid",
+  title: "PCF Components/MapControl",
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
     layout: "fullscreen",
   },
   // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
-  argTypes: {
-    onLogin: { action: "onLogin" },
-    onLogout: { action: "onLogout" },
-    onCreateAccount: { action: "onCreateAccount" },
-  },
+  argTypes: {},
 } as Meta;
-
 const Template = (args) => {
   const container = document.createElement("div");
   const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> =
     new ComponentFrameworkMockGenerator(
-      DataSetGrid,
+      MapControl,
       {
-        dataSetGrid: DataSetMock,
+        controlApiKey: StringPropertyMock,
+        controlValue: StringPropertyMock,
       },
       container
     );
-    mockGenerator.SetControlResource(resource);
-  const controlValue = mockGenerator.context.parameters
-    .dataSetGrid as DataSetMock;
-  controlValue.columns = [
-    {
-      alias: "alias",
-      dataType: "string",
-      displayName: "Mocked Column",
-      name: "alias",
-      order: 1,
-      visualSizeFactor: 200,
-    },
-    {
-      alias: "alias2",
-      dataType: "string",
-      displayName: "Second Mocked Column",
-      name: "alias2",
-      order: 2,
-      visualSizeFactor: 200,
-    },
-  ];
-
+  const mapUrl = mockGenerator.context.parameters
+    .controlValue as StringPropertyMock ;
+  const apiKey = mockGenerator.context.parameters
+    .controlApiKey as StringPropertyMock;
+mapUrl.setValue(args.addressString);
+apiKey.setValue(args.apiKey);
   mockGenerator.ExecuteInit();
+  mockGenerator.ExecuteUpdateView();
   return container;
 };
 
-export const NoData = Template.bind({});
+export const Primary = Template.bind({});
+Primary.args = {
+    addressString: "",
+    apiKey: "AIzaSyCdIXX4wdEPDGozhpbS1__l-LniN8IRotM"
+};
