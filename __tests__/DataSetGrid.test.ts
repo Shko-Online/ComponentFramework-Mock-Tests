@@ -164,12 +164,6 @@ describe("DataSetGrid", () => {
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
   });
-  it("Get output should work", () => {
-    mockGenerator.control.getOutputs();
-mockGenerator.ExecuteInit();
-mockGenerator.ExecuteUpdateView();
-expect(document.body).toMatchSnapshot(); 
-})
 it("Destroy should work", () => {
     mockGenerator.control.destroy();
 mockGenerator.ExecuteInit();
@@ -220,4 +214,5 @@ expect(document.body).toMatchSnapshot();
     expect(document.body).toMatchSnapshot();
     
   });
+  
 });

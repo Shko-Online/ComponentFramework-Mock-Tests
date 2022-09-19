@@ -23,7 +23,6 @@ import { DateTimePropertyMock } from '@shko-online/componentframework-mock/Compo
 import { DecimalNumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DecimalNumberProperty.mock';
 import { WholeNumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/WholeNumberProperty.mock';
 
-
 describe("FormattingAPIControl tests", () => {
     let mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs>;
     beforeEach(()=>{
@@ -38,6 +37,25 @@ describe("FormattingAPIControl tests", () => {
                integerInput: WholeNumberPropertyMock
             },
             container);
+
+            const args = {
+                currencyInput: 1001.01,
+                dateInput: new Date(2022,8,2),
+                decimalInput: 123.45,
+                integerInput:  987          
+            }
+
+            const currencyInput = mockGenerator.context.parameters.currencyInput as  NumberPropertyMock;
+            currencyInput.setValue(args.currencyInput); 
+            const dateInput = mockGenerator.context.parameters.dateInput as DateTimePropertyMock;
+            dateInput.setValue(args.dateInput);
+            const decimalInput = mockGenerator.context.parameters.decimalInput as DecimalNumberPropertyMock;
+            decimalInput.setValue(args.decimalInput);
+            const integerInput = mockGenerator.context.parameters.integerInput as WholeNumberPropertyMock;
+            integerInput.setValue(args.integerInput); 
+            
+
+       
         document.body.appendChild(container);
     }
     )
@@ -53,27 +71,10 @@ describe("FormattingAPIControl tests", () => {
     })
 
     it("Update View should Work", () => {    
-        mockGenerator.context.parameters.currencyInput.raw = 1000.01;
-        mockGenerator.context.parameters.dateInput.raw = new Date(2022,8,2);
-        mockGenerator.context.parameters.decimalInput.raw = 123.45;
-        mockGenerator.context.parameters.integerInput.raw = 987;
-
         mockGenerator.ExecuteInit();
         mockGenerator.ExecuteUpdateView();
         sinon.assert.calledOnce(mockGenerator.control.init);
         sinon.assert.calledOnce(mockGenerator.control.updateView);
         expect(document.body).toMatchSnapshot();
     })
-    it("Destroy should work", () => {
-        mockGenerator.control.destroy();
-		mockGenerator.ExecuteInit();
-		mockGenerator.ExecuteUpdateView();
-		expect(document.body).toMatchSnapshot(); 
-	})
-	it("getOuputs should work", () => {
-        mockGenerator.control.getOutputs();
-		mockGenerator.ExecuteInit();
-		mockGenerator.ExecuteUpdateView();
-		expect(document.body).toMatchSnapshot(); 
-	})
 })

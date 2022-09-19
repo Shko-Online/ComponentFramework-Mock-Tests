@@ -54,33 +54,6 @@ exports[`DataSetGrid Destroy should work 1`] = `
 </body>
 `;
 
-exports[`DataSetGrid Get output should work 1`] = `
-<body>
-  <div>
-    <div
-      class="DataSetControl_main-container"
-      style="max-height: 693px;"
-    >
-      <div
-        class="DataSetControl_grid-container"
-      >
-        <div>
-          <div
-            class="DataSetControl_grid-norecords"
-          >
-            undefined
-          </div>
-        </div>
-      </div>
-      <button
-        class="DataSetControl_LoadMoreButton_Hidden_Style DataSetControl_LoadMoreButton_Style"
-        type="button"
-      />
-    </div>
-  </div>
-</body>
-`;
-
 exports[`DataSetGrid Get sorted Columns 1`] = `
 <body>
   <div>
