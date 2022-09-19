@@ -16,9 +16,9 @@
 import * as sinon from 'sinon';
 
 import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
-import { TableGrid } from '@powerapps-samples/table-grid/TableGrid';
-import { IInputs, IOutputs } from '@powerapps-samples/table-grid/TableGrid/generated/ManifestTypes';
-import * as resource from '@powerapps-samples/table-grid/TableGrid/strings/TableGrid.1033.resx';
+import { TableGrid } from '@albanian-xrm/test-components/TableGrid';
+import { IInputs, IOutputs } from '@albanian-xrm/test-components/TableGrid/generated/ManifestTypes';
+import * as resource from '@albanian-xrm/test-components/TableGrid/strings/TableGrid.1033.resx';
 import { DataSetMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock';
 import { EntityRecord } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock';
 
