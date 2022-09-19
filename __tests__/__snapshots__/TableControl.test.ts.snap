@@ -104,7 +104,7 @@ exports[`TableControl Click should Work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Sun, September 18, 2022
+            Mon, September 19, 2022
           </td>
         </tr>
       </table>
@@ -222,7 +222,7 @@ exports[`TableControl Click should Work 2`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Sun, September 18, 2022
+            Mon, September 19, 2022
           </td>
         </tr>
       </table>
@@ -340,7 +340,7 @@ exports[`TableControl Destroy should work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Sun, September 18, 2022
+            Mon, September 19, 2022
           </td>
         </tr>
       </table>
@@ -458,7 +458,7 @@ exports[`TableControl GetOutputs should work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Sun, September 18, 2022
+            Mon, September 19, 2022
           </td>
         </tr>
       </table>
@@ -586,7 +586,7 @@ exports[`TableControl Update View should Work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Sun, September 18, 2022
+            Mon, September 19, 2022
           </td>
         </tr>
       </table>
@@ -594,6 +594,242 @@ exports[`TableControl Update View should Work 1`] = `
         class="SampleControlHtmlTable_ButtonClass"
       >
         Click to invoke: setFullScreen(true)
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TableControl onlookup 1`] = `
+<body>
+  <div>
+    <div
+      class="Table_Container"
+    >
+      <table
+        class="SampleControlHtmlTable_HtmlTable"
+      >
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <th
+            class="SampleControlHtmlTable_HtmlHeaderCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            Example Method
+          </th>
+          <th
+            class="SampleControlHtmlTable_HtmlHeaderCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            Result
+          </th>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            getFormFactor()
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            1
+          </td>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            getClient()
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            Web
+          </td>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            userName
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            undefined
+          </td>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            User Language isRTL
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            undefined
+          </td>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            formatting formatCurrency
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            $100,500
+          </td>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            formatting formatDateLong
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            Mon, September 19, 2022
+          </td>
+        </tr>
+      </table>
+      <button
+        class="SampleControlHtmlTable_ButtonClass"
+      >
+        Click to invoke: setFullScreen(true)
+      </button>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`TableControl onlookup 2`] = `
+<body>
+  <div>
+    <div
+      class="Table_Container"
+    >
+      <table
+        class="SampleControlHtmlTable_HtmlTable"
+      >
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <th
+            class="SampleControlHtmlTable_HtmlHeaderCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            Example Method
+          </th>
+          <th
+            class="SampleControlHtmlTable_HtmlHeaderCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            Result
+          </th>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            getFormFactor()
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            1
+          </td>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            getClient()
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            Web
+          </td>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            userName
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            undefined
+          </td>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            User Language isRTL
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            undefined
+          </td>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            formatting formatCurrency
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            $100,500
+          </td>
+        </tr>
+        <tr
+          class="SampleControlHtmlTable_HtmlRow"
+        >
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Key"
+          >
+            formatting formatDateLong
+          </td>
+          <td
+            class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
+          >
+            Mon, September 19, 2022
+          </td>
+        </tr>
+      </table>
+      <button
+        class="SampleControlHtmlTable_ButtonClass"
+      >
+        Click to invoke: setFullScreen(false)
       </button>
     </div>
   </div>

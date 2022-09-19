@@ -21,6 +21,7 @@ import { IInputs, IOutputs } from '@powerapps-samples/table-control/TableControl
 import * as resource from '@powerapps-samples/table-control/TableControl/strings/TableControl.1033.resx';
 import { StringPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock';
 
+
 describe("TableControl", () => {
 	let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
 	beforeEach(() => {
@@ -34,6 +35,27 @@ describe("TableControl", () => {
 			container);
 		mockGenerator.SetControlResource(resource);
 		document.body.appendChild(container);
+		mockGenerator.context.utils.getEntityMetadata.callsFake((entity)=>{
+		return new	Promise<ComponentFramework.PropertyHelper.EntityMetadata>(resolve=>{
+			resolve({
+				data:  [
+					{
+						entityName: 'account'
+					}
+				]
+			})
+		})
+		})
+		mockGenerator.context.utils.lookupObjects.callsFake((lookupOptions: ComponentFramework.UtilityApi.LookupOptions) => {
+            return new Promise<ComponentFramework.LookupValue[]>((resolve) => {
+                resolve([{
+                    entityType: lookupOptions.entityTypes ? lookupOptions.entityTypes[0] : 'account',
+                    id: "00000000-0000-0000-0000-000000000001",
+                    name: "Account",
+                }])
+            });
+        })
+		
 	})
 
 	afterEach(() => {
@@ -75,6 +97,7 @@ describe("TableControl", () => {
         var evt = document.createEvent("Event");
 		evt.initEvent("click", true, false);
 		button.dispatchEvent(evt);
+		console.log(button.type);
 
 		mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();
@@ -82,5 +105,26 @@ describe("TableControl", () => {
      
 	})
    
+	it("onlookup", () => {
+		
+		mockGenerator.ExecuteInit();
+		mockGenerator.ExecuteUpdateView();
+		expect(document.body).toMatchSnapshot();
+		const entitymeta =mockGenerator.context.utils.getEntityMetadata("account");
+        const times=0;
+		const buttons = mockGenerator.container.querySelectorAll(".SampleControlHtmlTable_ButtonClass");
+		buttons.forEach((button) =>{
+			console.log(button);
+			console.log(times);
+        var evt = document.createEvent("Event");
+		evt.initEvent("click", true, false);
+		button.dispatchEvent(evt);
+		times+1;
+
+		mockGenerator.ExecuteUpdateView();
+		expect(document.body).toMatchSnapshot();
+	})
+     
+	})
     
 })
