@@ -20,27 +20,24 @@ import { ControlStateAPI } from "@powerapps-samples/control-state-api/ControlSta
 import {
   IInputs,
   IOutputs,
-} from "@powerapps-samples/control-state-api/ControlStateApi/generated/ManifestTypes";
+} from "@powerapps-samples/control-state-api/ControlStateAPI/generated/ManifestTypes";
 import { StringPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock";
 
 export default {
-  title: "PCF Components/DataSetGrid",
+  title: "PCF Components/ControlState",
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
     layout: "fullscreen",
   },
   // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
   argTypes: {
-    onLogin: { action: "onLogin" },
-    onLogout: { action: "onLogout" },
-    onCreateAccount: { action: "onCreateAccount" },
+    
   },
 } as Meta;
 
 const Template = (args) => {
   const container = document.createElement("div");
-  const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> =
-    new ComponentFrameworkMockGenerator(
+  let mockGenerator = new ComponentFrameworkMockGenerator<IInputs,IOutputs>(
       ControlStateAPI,
       {
         stateControlProperty: StringPropertyMock,
@@ -48,8 +45,9 @@ const Template = (args) => {
       container
     );
 
-  mockGenerator.ExecuteInit();
-  return container;
+    mockGenerator.ExecuteInit();
+    mockGenerator.ExecuteUpdateView();
+    return container;
 };
 
 export const Primary = Template.bind({});
