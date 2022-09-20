@@ -16,39 +16,36 @@
 import { Story, Meta } from "@storybook/html";
 
 import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator";
-import { DataSetGrid } from "@powerapps-samples/data-set-grid/DataSetGrid";
-import {
-  IInputs,
-  IOutputs,
-} from "@powerapps-samples/data-set-grid/DataSetGrid/generated/ManifestTypes";
+import { DataSetGrid } from '@albanian-xrm/test-components/DataSetGrid';
+import { IInputs, IOutputs } from '@albanian-xrm/test-components/DataSetGrid/generated/ManifestTypes';
 import { DataSetMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock";
-import * as resource from "@powerapps-samples/image-upload-control/ImageUploadControl/strings/ImageUploadControl.1033.resx";
+import resource from "@powerapps-samples/data-set-grid/DataSetGrid/strings/DataSetGrid.1033.resx";
 
 export default {
   title: "PCF Components/DataSetGrid",
   parameters: {
-    // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
-    layout: "fullscreen",
+      layout: 'fullscreen',
   },
-  // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
-  argTypes: {
-    onLogin: { action: "onLogin" },
-    onLogout: { action: "onLogout" },
-    onCreateAccount: { action: "onCreateAccount" },
+  argTypes:{
+ 
   },
+  decorators: [
+      (Story, context)=>{
+          return Story(context.args);
+      }
+  ]
 } as Meta;
 
-const Template = (args) => {
-  const container = document.createElement("div");
-  const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> =
-    new ComponentFrameworkMockGenerator(
+const Template= (args) =>{
+  const container= document.createElement("div");
+  const mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs> = new ComponentFrameworkMockGenerator(
       DataSetGrid,
       {
         dataSetGrid: DataSetMock,
       },
       container
     );
-    mockGenerator.SetControlResource(resource);
+  mockGenerator.SetControlResource(resource);
   const controlValue = mockGenerator.context.parameters
     .dataSetGrid as DataSetMock;
   controlValue.columns = [
@@ -71,6 +68,7 @@ const Template = (args) => {
   ];
 
   mockGenerator.ExecuteInit();
+  mockGenerator.ExecuteUpdateView();
   return container;
 };
 
