@@ -33,7 +33,10 @@ export default {
         },
         container
     );
-    
+    const latitudeValue = mockGenerator.context.parameters.latitudeValue as DecimalNumberPropertyMock;
+    latitudeValue.setValue(args.latitudeValue);
+    const longtitudeValue = mockGenerator.context.parameters.longitudeValue as DecimalNumberPropertyMock;
+    longtitudeValue.setValue(args.longitudeValue);
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     return container;
@@ -42,8 +45,8 @@ export default {
 
   export const Primary = Template.bind({});
   Primary.args ={
-    latitudeValue: 41.153332,
-    longitudeValue: 20.168331,
+    latitudeValue: 41.341985, 
+    longitudeValue: 19.775859,
   }
 
 
