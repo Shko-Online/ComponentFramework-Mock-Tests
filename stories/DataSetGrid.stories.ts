@@ -16,29 +16,33 @@
 import { Story, Meta } from "@storybook/html";
 
 import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator";
-import { DataSetGrid } from '@albanian-xrm/test-components/DataSetGrid';
-import { IInputs, IOutputs } from '@albanian-xrm/test-components/DataSetGrid/generated/ManifestTypes';
+import { DataSetGrid } from "@albanian-xrm/test-components/DataSetGrid";
+import {
+  IInputs,
+  IOutputs,
+} from "@albanian-xrm/test-components/DataSetGrid/generated/ManifestTypes";
 import { DataSetMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock";
 import resource from "@powerapps-samples/data-set-grid/DataSetGrid/strings/DataSetGrid.1033.resx";
+import { Primary } from "./DeviceApiControl.stories";
+import { EntityRecord } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock";
 
 export default {
   title: "PCF Components/DataSetGrid",
   parameters: {
-      layout: 'fullscreen',
+    layout: "fullscreen",
   },
-  argTypes:{
- 
-  },
+  argTypes: {},
   decorators: [
-      (Story, context)=>{
-          return Story(context.args);
-      }
-  ]
+    (Story, context) => {
+      return Story(context.args);
+    },
+  ],
 } as Meta;
 
-const Template= (args) =>{
-  const container= document.createElement("div");
-  const mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs> = new ComponentFrameworkMockGenerator(
+const Template = (args) => {
+  const container = document.createElement("div");
+  const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> =
+    new ComponentFrameworkMockGenerator(
       DataSetGrid,
       {
         dataSetGrid: DataSetMock,
@@ -46,13 +50,28 @@ const Template= (args) =>{
       container
     );
   mockGenerator.SetControlResource(resource);
-  const controlValue = mockGenerator.context.parameters
+
+  const dataSetGrid = mockGenerator.context.parameters
     .dataSetGrid as DataSetMock;
-  controlValue.columns = [
+    
+  dataSetGrid.columns = args.Columns||[];
+  dataSetGrid.initRecords((args.Items||[]).map(record=>{
+    const record1 = new EntityRecord("test", record.id, record.alias);
+    record1.columns = record;
+    return record1;
+  }))
+  mockGenerator.ExecuteInit();
+  mockGenerator.ExecuteUpdateView();
+  return container;
+};
+
+export const NoData = Template.bind({});
+NoData.args = {
+Columns: [
     {
-      alias: "alias",
+      alias: "alias1",
       dataType: "string",
-      displayName: "Mocked Column",
+      displayName: "First Mocked Column",
       name: "alias",
       order: 1,
       visualSizeFactor: 200,
@@ -65,11 +84,17 @@ const Template= (args) =>{
       order: 2,
       visualSizeFactor: 200,
     },
-  ];
-
-  mockGenerator.ExecuteInit();
-  mockGenerator.ExecuteUpdateView();
-  return container;
-};
-
-export const NoData = Template.bind({});
+  ],
+  Items: [
+    {
+      id: '1',
+      alias: 'First Item',
+      alias2: 'Second Item'
+    },
+    {
+      id: '2',
+      alias: 'First Item 2',
+      alias2: 'Second Item 2'
+    }
+  ]
+}
