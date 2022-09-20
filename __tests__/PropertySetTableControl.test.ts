@@ -16,9 +16,9 @@
 import * as sinon from 'sinon';
 
 import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
-import { PropertySetTableControl } from '@powerapps-samples/property-set-table-control/PropertySetTableControl';
-import { IInputs, IOutputs } from '@powerapps-samples/property-set-table-control/PropertySetTableControl/generated/ManifestTypes';
-import * as resource from '@powerapps-samples/property-set-table-control/PropertySetTableControl/strings/PropertySetTableControl.1033.resx';
+import { PropertySetTableControl } from '@albanian-xrm/test-components/PropertySetTableControl';
+import { IInputs, IOutputs } from '@albanian-xrm/test-components/PropertySetTableControl/generated/ManifestTypes';
+import * as resource from '@albanian-xrm/test-components/PropertySetTableControl/strings/PropertySetTableControl.1033.resx';
 import { DataSetMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock';
 import { EntityRecord } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock';
 
