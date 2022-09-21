@@ -28,13 +28,12 @@ export default {
   title: "PCF Components/TestComponentcontainer",
 
   argTypes: {
-    height: { type: "number" },
-    width: { type: "number" },
+
     
   },
   parameters: {
     controls: {
-      include: ["height", "width"],
+      
       layout: "fullscreen",
     },
   },
@@ -51,18 +50,11 @@ const Template = (args) => {
       container
     );
     container.style.overflow= "auto";
-    container.style.border = "10px", "solid black";
+    container.style.position = "relative";
     container.style.resize = "both" ,"initial";
-   
-  container.style.width= args.width || container.style.width;
-  container.style.height = args.height || container.style.height;  
-  
+
   mockGenerator.ExecuteInit();
   mockGenerator.ExecuteUpdateView();
   return container;
 };
 export const Primary = Template.bind({});
-Primary.args = {
-    width: 200,
-    height: 100
-}
