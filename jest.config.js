@@ -43,6 +43,9 @@ module.exports = {
       "^.+\\.(jsx?|tsx?)$": "ts-jest",
       "\\.resx" : "<rootDir>/raw-Loader.js"
     },
+    "setupFiles": [
+			"<rootDir>/setupTests.ts"
+		],
     coveragePathIgnorePatterns : [
       "/node_modules/",
       "/ComponentFramework-Mock/"

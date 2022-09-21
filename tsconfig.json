@@ -22,6 +22,7 @@
             "dom"
         ],
         "module": "ES6",
+        "resolveJsonModule": true,
         "moduleResolution": "node",
         "noEmit": false,
         "outDir": "dist",
