@@ -23,7 +23,6 @@ import {
 } from "@albanian-xrm/test-components/DataSetGrid/generated/ManifestTypes";
 import { DataSetMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock";
 import resource from "@powerapps-samples/data-set-grid/DataSetGrid/strings/DataSetGrid.1033.resx";
-import { Primary } from "./DeviceApiControl.stories";
 import { EntityRecord } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock";
 
 export default {
