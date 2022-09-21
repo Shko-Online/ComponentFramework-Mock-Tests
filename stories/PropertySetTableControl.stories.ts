@@ -3,21 +3,18 @@ import { Story, Meta } from '@storybook/html';
 import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
 import { PropertySetTableControl } from '@albanian-xrm/test-components/PropertySetTableControl';
 import { IInputs, IOutputs } from '@albanian-xrm/test-components/PropertySetTableControl/generated/ManifestTypes';
-import * as resource from '@albanian-xrm/test-components/PropertySetTableControl/strings/PropertySetTableControl.1033.resx';
+import  resource from '@albanian-xrm/test-components/PropertySetTableControl/strings/PropertySetTableControl.1033.resx';
 import { DataSetMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock';
 import { EntityRecord } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock';
 
 export default {
     title: "PCF Components/PropertySetTableControl",
+  
     parameters: {
         layout: 'fullscreen',
     },
     argTypes: {},
-    decorators: [
-      (Story, context) => {
-        return Story(context.args);
-      },
-    ],
+  
 } as Meta;
 
 const Template =(args) => {
@@ -43,8 +40,9 @@ const Template =(args) => {
     return container;
   
 };
+
 export const Primary = Template.bind({});
-Primary.arg= {
+Primary.args= {
     Columns: [
         {
           alias: "alias1",

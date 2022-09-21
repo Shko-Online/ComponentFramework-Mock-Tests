@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/html';
 import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
 import { IncrementControl } from '@powerapps-samples/increment-control/IncrementControl';
 import { IInputs, IOutputs } from '@powerapps-samples/increment-control/IncrementControl/generated/ManifestTypes';
-import * as resource from '@powerapps-samples/increment-control/IncrementControl/strings/IncrementControl.1033.resx';
+import  resource from '@powerapps-samples/increment-control/IncrementControl/strings/IncrementControl.1033.resx';
 import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
 
 export default {

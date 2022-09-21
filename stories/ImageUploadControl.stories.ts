@@ -4,7 +4,7 @@ import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework
 import { ImageUploadControl } from "@powerapps-samples/image-upload-control/ImageUploadControl";
 import {IInputs,IOutputs, } from "@powerapps-samples/image-upload-control/ImageUploadControl/generated/ManifestTypes";
 import { StringPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock";
-import * as resource from "@powerapps-samples/image-upload-control/ImageUploadControl/strings/ImageUploadControl.1033.resx";
+import  resource from "@powerapps-samples/image-upload-control/ImageUploadControl/strings/ImageUploadControl.1033.resx";
 export default {
     title: 'PCF Components/ImageUploadControl',
    

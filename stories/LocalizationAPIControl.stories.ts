@@ -3,7 +3,7 @@ import { Story, Meta } from '@storybook/html';
 import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
 import {LocalizationAPIControl} from '@powerapps-samples/localization-api-control/LocalizationAPIControl';
 import { IInputs, IOutputs } from '@powerapps-samples/localization-api-control/LocalizationAPIControl/generated/ManifestTypes';
-import * as resource from '@powerapps-samples/localization-api-control/LocalizationAPIControl/strings/LocalizationAPIControl.1033.resx';
+import  resource from '@powerapps-samples/localization-api-control/LocalizationAPIControl/strings/LocalizationAPIControl.1033.resx';
 import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
 
 export default {
