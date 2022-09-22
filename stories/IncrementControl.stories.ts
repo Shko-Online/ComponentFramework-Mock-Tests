@@ -5,6 +5,7 @@ import { IncrementControl } from '@powerapps-samples/increment-control/Increment
 import { IInputs, IOutputs } from '@powerapps-samples/increment-control/IncrementControl/generated/ManifestTypes';
 import  resource from '@powerapps-samples/increment-control/IncrementControl/strings/IncrementControl.1033.resx';
 import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
+import "@powerapps-samples/increment-control/IncrementControl/css/IncrementControl.css"
 
 export default {
     title: 'PCF Components/IncrementControl',
@@ -24,6 +25,7 @@ export default {
 
   const Template = (args) => {
     const container =document.createElement("div");
+    container.className = "SampleNamespace.IncrementControl";
     const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> = new ComponentFrameworkMockGenerator(
         IncrementControl,
         {

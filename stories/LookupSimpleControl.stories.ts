@@ -4,6 +4,8 @@ import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework
 import { LookupSimpleControl } from '@powerapps-samples/lookup-simple-control/LookupSimpleControl';
 import { IInputs, IOutputs } from '@powerapps-samples/lookup-simple-control/LookupSimpleControl/generated/ManifestTypes';
 import { LookupPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/LookupProperty.mock';
+
+
 export default {
     title: 'PCF Components/LookupSimpleControl',
      parameters: {

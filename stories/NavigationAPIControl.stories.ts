@@ -5,7 +5,7 @@ import { NavigationAPIControl } from '@powerapps-samples/navigation-api-control/
 import { IInputs, IOutputs } from '@powerapps-samples/navigation-api-control/NavigationAPIControl/generated/ManifestTypes';
 import * as resource from '@powerapps-samples/navigation-api-control/NavigationAPIControl/strings/NavigationAPIControl.1033.resx';
 import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
-import { valueToNode } from '@babel/types';
+import "@powerapps-samples/navigation-api-control/NavigationAPIControl/css/NavigationAPIControl.css"
 
 export default {
     title: 'PCF Components/NavigationAPIControl',
@@ -23,6 +23,7 @@ export default {
 
   const Template = (args) =>{
     const container = document.createElement("div");
+    container.className = "SampleNamespace.NavigationAPIControl";
     const mockGenerator :ComponentFrameworkMockGenerator<IInputs, IOutputs> = new ComponentFrameworkMockGenerator(
         NavigationAPIControl,
         {

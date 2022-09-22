@@ -5,6 +5,8 @@ import { ImageUploadControl } from "@powerapps-samples/image-upload-control/Imag
 import {IInputs,IOutputs, } from "@powerapps-samples/image-upload-control/ImageUploadControl/generated/ManifestTypes";
 import { StringPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock";
 import  resource from "@powerapps-samples/image-upload-control/ImageUploadControl/strings/ImageUploadControl.1033.resx";
+import "@powerapps-samples/image-upload-control/ImageUploadControl/css/ImageUploadControl.css"
+
 export default {
     title: 'PCF Components/ImageUploadControl',
    
@@ -21,6 +23,7 @@ export default {
 
   const Template =(args)=>{
     const container = document.createElement("div");
+    container.className = "SampleNamespace.ImageUploadControl";
     const mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs> = new ComponentFrameworkMockGenerator(
        ImageUploadControl,
         {

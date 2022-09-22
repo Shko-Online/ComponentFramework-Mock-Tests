@@ -20,6 +20,7 @@ import {
 } from "@powerapps-samples/linear-input-control/LinearInputControl/generated/ManifestTypes";
 import { NumberPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock";
 import { LinearInputControl } from "@powerapps-samples/linear-input-control/LinearInputControl";
+import "@powerapps-samples/linear-input-control/LinearInputControl/css/LinearInputControl.css"
 
 export default {
   title: "PCF Components/LinearInputControl",
@@ -32,6 +33,8 @@ export default {
 } as Meta;
 const Template = (args) => {
   const container = document.createElement("div");
+  container.className = "SampleNamespace.LinearInputControl";
+  container.style.padding = "20px"
   const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> =
     new ComponentFrameworkMockGenerator(
       LinearInputControl,

@@ -22,7 +22,7 @@ import {
   IOutputs,
 } from "@powerapps-samples/control-state-api/ControlStateAPI/generated/ManifestTypes";
 import { StringPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock";
-
+import "@powerapps-samples/control-state-api/ControlStateAPI/css/ControlStateAPI.css"
 export default {
   title: "PCF Components/ControlState",
   parameters: {
@@ -37,6 +37,7 @@ export default {
 
 const Template = (args) => {
   const container = document.createElement("div");
+  container.className = "SampleNamespace.ControlStateAPI";
   let mockGenerator = new ComponentFrameworkMockGenerator<IInputs,IOutputs>(
       ControlStateAPI,
       {

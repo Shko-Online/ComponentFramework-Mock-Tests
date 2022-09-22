@@ -21,6 +21,7 @@ import { NumberPropertyMock } from '@shko-online/componentframework-mock/Compone
 import { DateTimePropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DateTimeProperty.mock';
 import { DecimalNumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DecimalNumberProperty.mock';
 import { WholeNumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/WholeNumberProperty.mock';
+import "@powerapps-samples/formatting-api/FormattingAPIControl/css/FormattingAPIControl.css"
 
 export default {
     title: 'PCF Components/FormattingAPIControl',
@@ -36,6 +37,7 @@ export default {
 
   const Template = (args) => {
     const container = document.createElement("div");
+    container.className = "SampleNamespace.FormattingAPIControl"
     const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> = new ComponentFrameworkMockGenerator(
         FormattingAPIControl,
         {

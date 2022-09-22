@@ -20,7 +20,7 @@ import {
 } from "@powerapps-samples/map-control/MapControl/generated/ManifestTypes";
 import { MapControl } from "@powerapps-samples/map-control/MapControl";
 import { StringPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock";
-
+import "@powerapps-samples/map-control/MapControl/css/MapControl.css"
 export default {
   title: "PCF Components/MapControl",
   parameters: {
@@ -32,6 +32,7 @@ export default {
 } as Meta;
 const Template = (args) => {
   const container = document.createElement("div");
+  container.className = "SampleNamespace.MapControl";
   const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> =
     new ComponentFrameworkMockGenerator(
       MapControl,

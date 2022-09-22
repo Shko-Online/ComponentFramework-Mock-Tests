@@ -5,7 +5,7 @@ import {LocalizationAPIControl} from '@powerapps-samples/localization-api-contro
 import { IInputs, IOutputs } from '@powerapps-samples/localization-api-control/LocalizationAPIControl/generated/ManifestTypes';
 import  resource from '@powerapps-samples/localization-api-control/LocalizationAPIControl/strings/LocalizationAPIControl.1033.resx';
 import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
-
+import "@powerapps-samples/localization-api-control/LocalizationAPIControl/css/LocalizationAPIControl.css"
 export default {
     title: 'PCF Components/LocalizationAPIControl',
    
@@ -25,6 +25,7 @@ export default {
   const Template = (args) => {
     
     const container = document.createElement("div");
+    container.className = "SampleNamespace.LocalizationAPIControl";
     const mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs> = new ComponentFrameworkMockGenerator(
         LocalizationAPIControl,
         {

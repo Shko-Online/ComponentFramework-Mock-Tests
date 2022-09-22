@@ -5,6 +5,7 @@ import { IFrameControl } from '@powerapps-samples/i-frame-control/IFrameControl'
 import { IInputs, IOutputs } from '@powerapps-samples/i-frame-control/IFrameControl/generated/ManifestTypes';
 import { StringPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock';
 import { DecimalNumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DecimalNumberProperty.mock';
+import "@powerapps-samples/i-frame-control/IFrameControl/css/IFrameControl.css"
 
 export default {
     title: 'PCF Components/IFrameControl',
@@ -24,6 +25,7 @@ export default {
   
   const Template =(args)=>{
     const container = document.createElement("div");
+    container.className = "SampleNamespace.IFrameControl"
     const mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs> = new ComponentFrameworkMockGenerator(
         IFrameControl,
         {
