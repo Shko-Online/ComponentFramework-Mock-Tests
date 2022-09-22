@@ -6,6 +6,7 @@ import { IInputs, IOutputs } from '@albanian-xrm/test-components/PropertySetTabl
 import  resource from '@albanian-xrm/test-components/PropertySetTableControl/strings/PropertySetTableControl.1033.resx';
 import { DataSetMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock';
 import { EntityRecord } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock';
+import "@powerapps-samples/property-set-table-control/PropertySetTableControl/css/PropertySetTableControl.css"
 
 export default {
     title: "PCF Components/PropertySetTableControl",
@@ -19,6 +20,7 @@ export default {
 
 const Template =(args) => {
     const container = document.createElement("div");
+    container.className = "SampleNamespace.PropertySetTableControl";
     const mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs> = new ComponentFrameworkMockGenerator(
         PropertySetTableControl,
         {

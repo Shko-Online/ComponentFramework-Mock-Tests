@@ -20,7 +20,7 @@ import {
 } from "@powerapps-samples/web-api-control/WebAPIControl/generated/ManifestTypes";
 import { WebAPIControl } from "@powerapps-samples/web-api-control/WebAPIControl";
 import { StringPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock";
-import "../PowerApps-Samples/component-framework/WebAPIControl/WebAPIControl/css/WebAPIControl.css"
+import "@powerapps-samples/web-api-control/WebAPIControl/css/WebAPIControl.css"
 
 export default {
     title: "PCF Components/WebApiControl",
