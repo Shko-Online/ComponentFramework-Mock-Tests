@@ -21,6 +21,7 @@ export default {
 const Template =(args) => {
     const container = document.createElement("div");
     container.className = "SampleNamespace.PropertySetTableControl";
+    container.style.padding = "20px"
     const mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs> = new ComponentFrameworkMockGenerator(
         PropertySetTableControl,
         {
