@@ -4,6 +4,7 @@ import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework
 import { TableControl }  from '@powerapps-samples/table-control/TableControl';
 import { IInputs, IOutputs } from '@powerapps-samples/table-control/TableControl/generated/ManifestTypes';
 import { StringPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock';
+import "@powerapps-samples/table-control/TableControl/css/TableControl.css"
 
 
 export default {
@@ -25,6 +26,7 @@ export default {
 
 const Template = (args) =>{
     const container = document.createElement("div");
+    container.className = "SampleNamespace.TableControl";
     const mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs> = new ComponentFrameworkMockGenerator(
         TableControl,
         {
