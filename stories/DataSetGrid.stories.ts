@@ -24,6 +24,7 @@ import {
 import { DataSetMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock";
 import resource from "@powerapps-samples/data-set-grid/DataSetGrid/strings/DataSetGrid.1033.resx";
 import { EntityRecord } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock";
+import "@powerapps-samples/data-set-grid/DataSetGrid/css/DataSetGrid.css"
 
 export default {
   title: "PCF Components/DataSetGrid",
@@ -40,6 +41,7 @@ export default {
 
 const Template = (args) => {
   const container = document.createElement("div");
+  container.className = "SampleNamespace.DataSetGrid";
   const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> =
     new ComponentFrameworkMockGenerator(
       DataSetGrid,
