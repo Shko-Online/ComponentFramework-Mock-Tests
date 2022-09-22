@@ -20,6 +20,7 @@ import {
 } from "@powerapps-samples/web-api-control/WebAPIControl/generated/ManifestTypes";
 import { WebAPIControl } from "@powerapps-samples/web-api-control/WebAPIControl";
 import { StringPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock";
+import "../PowerApps-Samples/component-framework/WebAPIControl/WebAPIControl/css/WebAPIControl.css"
 
 export default {
     title: "PCF Components/WebApiControl",
@@ -32,6 +33,7 @@ export default {
   } as Meta;
   const Template = (args) => {
     const container = document.createElement("div");
+    container.className = "SampleNamespace.WebAPIControl";
     let mockGenerator = new ComponentFrameworkMockGenerator<IInputs,IOutputs>(
         WebAPIControl,
         {
