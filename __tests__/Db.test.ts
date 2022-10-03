@@ -46,4 +46,30 @@ describe("Metadata", () => {
       expect(as).not.toBeNull();
     });
   });
+
+  it("refresh value", () => {
+    const db = new MetadataDB();
+    db.initMetadata([JSON.parse(JSON.stringify(userMetadataJson))]);
+    db.initItems(JSON.parse(JSON.stringify(userData)));
+    const asllan = db.RefreshValue(
+      "systemuser",
+      "48268759-f226-ed11-9db1-000d3a264915",
+      "windowsliveid",
+    );
+    console.log(asllan);
+    expect(asllan).not.toBeNull();
+  });
+
+  it("get rows", () => {
+    const db = new MetadataDB();
+    db.initMetadata([JSON.parse(JSON.stringify(userMetadataJson))]);
+    db.initItems(JSON.parse(JSON.stringify(userData)));
+    const asllan = db.GetRows(
+      "systemuser",
+    
+    );
+    console.log(asllan);
+    expect(asllan).not.toBeNull();
+  });
+
 });
