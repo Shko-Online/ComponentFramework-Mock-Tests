@@ -14,9 +14,11 @@
 */
 {
     "compilerOptions": {
-        "jsx": "react",
         "allowSyntheticDefaultImports": true,
-        "target": "es5",
+        "allowJs": true,
+        "baseUrl": ".",
+        "esModuleInterop": true,
+        "jsx": "react",
         "lib": [
             "es5",
             "es6",
@@ -29,7 +31,7 @@
         "outDir": "dist",
         "declaration": true,
         "sourceMap": true,
-        "baseUrl": ".",
+        "target": "ES6",
         "paths": {
             "@shko-online/componentframework-mock*": [
                 "./ComponentFramework-Mock/src*"
