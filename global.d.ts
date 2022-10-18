@@ -14,6 +14,6 @@
 */
 
 /// <reference types="powerapps-component-framework" />
-/// <reference types="./ComponentFramework-Mock/src/ComponentFramework-Mock/PropertyTypes/PropertyTypes" />
+/// <reference path="./ComponentFramework-Mock/src/ShkoOnline.d.ts" />
 
 declare module '*.resx';

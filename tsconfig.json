@@ -98,6 +98,8 @@
     "exclude": [
         "node_modules",
         "wwwroot",
+        "ComponentFramework-Mock\\src\\ComponentFramework-Mock-Generator\\ComponentFramework-Mock-Generator-React.ts",
+        "ComponentFramework-Mock-Generator\\ComponentFramework-Mock-Generator-React.ts"
     ],
     "include": [
         "src",

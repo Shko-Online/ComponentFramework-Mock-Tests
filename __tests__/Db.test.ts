@@ -21,7 +21,6 @@ describe("Metadata", () => {
     db.initMetadata([JSON.parse(JSON.stringify(userMetadataJson))]);
     db.initItems(JSON.parse(JSON.stringify(userData)));
     expect(db.data).not.toBeNull();
-    console.log(db.data);
   });
 
   it("Get Row", () => {
@@ -32,7 +31,6 @@ describe("Metadata", () => {
       "systemuser",
       "48268759-f226-ed11-9db1-000d3a264915"
     );
-    console.log(asllan);
     expect(asllan).not.toBeNull();
   });
   it("Get column data", () => {
@@ -40,7 +38,6 @@ describe("Metadata", () => {
     db.initMetadata([JSON.parse(JSON.stringify(userMetadataJson))]);
     db.initItems(JSON.parse(JSON.stringify(userData)));
     const asllan = db.GetAllColumn("systemuser", "systemuserid");
-    console.log(asllan);
     expect(asllan).not.toBeNull();
     asllan.forEach((as) => {
       expect(as).not.toBeNull();
@@ -56,7 +53,6 @@ describe("Metadata", () => {
       "48268759-f226-ed11-9db1-000d3a264915",
       "windowsliveid",
     );
-    console.log(asllan);
     expect(asllan).not.toBeNull();
   });
 
@@ -68,7 +64,6 @@ describe("Metadata", () => {
       "systemuser",
     
     );
-    console.log(asllan);
     expect(asllan).not.toBeNull();
   });
 
