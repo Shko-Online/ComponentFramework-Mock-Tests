@@ -104,7 +104,7 @@ exports[`TableControl Click should Work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Mon, October 03, 2022
+            Sun, October 09, 2022
           </td>
         </tr>
       </table>
@@ -222,7 +222,7 @@ exports[`TableControl Click should Work 2`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Mon, October 03, 2022
+            Sun, October 09, 2022
           </td>
         </tr>
       </table>
@@ -340,7 +340,7 @@ exports[`TableControl Destroy should work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Mon, October 03, 2022
+            Sun, October 09, 2022
           </td>
         </tr>
       </table>
@@ -458,7 +458,7 @@ exports[`TableControl GetOutputs should work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Mon, October 03, 2022
+            Sun, October 09, 2022
           </td>
         </tr>
       </table>
@@ -586,11 +586,7 @@ exports[`TableControl Update View should Work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-<<<<<<< Updated upstream
-            Mon, October 03, 2022
-=======
-            Thu, September 29, 2022
->>>>>>> Stashed changes
+            Sun, October 09, 2022
           </td>
         </tr>
       </table>
@@ -708,11 +704,7 @@ exports[`TableControl onlookup 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-<<<<<<< Updated upstream
-            Mon, October 03, 2022
-=======
-            Thu, September 29, 2022
->>>>>>> Stashed changes
+            Sun, October 09, 2022
           </td>
         </tr>
       </table>
@@ -830,11 +822,7 @@ exports[`TableControl onlookup 2`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-<<<<<<< Updated upstream
-            Mon, October 03, 2022
-=======
-            Thu, September 29, 2022
->>>>>>> Stashed changes
+            Sun, October 09, 2022
           </td>
         </tr>
       </table>
