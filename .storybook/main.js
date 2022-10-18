@@ -21,7 +21,6 @@ module.exports = {
     config.module.rules.push({ test: /\.resx$/, use: 'raw-loader' });
     config.module.rules.push({ test: /ComponentFramework-Mock-Generator-React\.ts$/, use: 'ignore-loader' });
 
-    console.log(config.module.rules);
     var loader = config.module.rules.find((rule)=>rule.exclude instanceof RegExp);
     loader.exclude = [loader.exclude];
     loader.exclude.push(/ComponentFramework-Mock-Generator-React\.ts$/);
