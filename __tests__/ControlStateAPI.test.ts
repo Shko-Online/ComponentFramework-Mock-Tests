@@ -61,9 +61,10 @@ describe("ControlStateAPI tests", () => {
     })
 
     it("Update View with state should Work", () => {      
-        mockGenerator.state = {};
-        mockGenerator.state[PERSISTED_SELECTED_COLOR_KEY_NAME] = "#add8e6";
-        mockGenerator.state[PERSISTED_SELECTED_LABEL_KEY_NAME] = "Blue";
+        mockGenerator.state = {
+            [PERSISTED_SELECTED_COLOR_KEY_NAME] : "#add8e6",
+            [PERSISTED_SELECTED_LABEL_KEY_NAME] : "Blue"
+        };
      
         mockGenerator.ExecuteInit();
         mockGenerator.ExecuteUpdateView();      

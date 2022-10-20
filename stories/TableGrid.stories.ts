@@ -6,7 +6,7 @@ import { IInputs, IOutputs } from '@albanian-xrm/test-components/TableGrid/gener
 import { DataSetMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock';
 import  resource from '@albanian-xrm/test-components/TableGrid/strings/TableGrid.1033.resx';
 import { EntityRecord } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock';
-import "../PowerApps-Samples/component-framework/TableGrid/TableGrid/css/TableGrid.css"
+import "@albanian-xrm/test-components/TableGrid/css/TableGrid.css"
 
 export default {
     title: "PCF Components/TableGrid",

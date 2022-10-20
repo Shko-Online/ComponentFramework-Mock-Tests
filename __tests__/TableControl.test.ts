@@ -12,6 +12,9 @@
 	PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	language governing rights and limitations under the RPL. 
 */
+jest.useFakeTimers({
+	now: new Date(2022, 9, 9, 10)
+});
 
 import * as sinon from 'sinon';
 

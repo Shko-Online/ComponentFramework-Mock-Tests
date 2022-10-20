@@ -1,16 +1,16 @@
 /*
-	Unless explicitly acquired and licensed from Licensor under another
-	license, the contents of this file are subject to the Reciprocal Public
-	License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
-	and You may not copy or use this file in either source code or executable
-	form, except in compliance with the terms and conditions of the RPL.
+  Unless explicitly acquired and licensed from Licensor under another
+  license, the contents of this file are subject to the Reciprocal Public
+  License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
+  and You may not copy or use this file in either source code or executable
+  form, except in compliance with the terms and conditions of the RPL.
 
-	All software distributed under the RPL is provided strictly on an "AS
-	IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND
-	LICENSOR HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT
-	LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-	PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
-	language governing rights and limitations under the RPL. 
+  All software distributed under the RPL is provided strictly on an "AS
+  IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND
+  LICENSOR HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT
+  LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+  PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
+  language governing rights and limitations under the RPL. 
 */
 
 import * as sinon from "sinon";
@@ -39,25 +39,25 @@ describe("DataSetGrid", () => {
     );
     mockGenerator.SetControlResource(resource);
     const controlValue = mockGenerator.context.parameters
-    .dataSetGrid as DataSetMock;
-  controlValue.columns = [
-    {
-      alias: "alias",
-      dataType: "string",
-      displayName: "Mocked Column",
-      name: "alias",
-      order: 1,
-      visualSizeFactor: 200,
-    },
-    {
-      alias: "alias2",
-      dataType: "string",
-      displayName: "Second Mocked Column",
-      name: "alias2",
-      order: 2,
-      visualSizeFactor: 200,
-    },
-  ];
+      .dataSetGrid as DataSetMock;
+    controlValue.columns = [
+      {
+        alias: "alias",
+        dataType: "string",
+        displayName: "Mocked Column",
+        name: "alias",
+        order: 1,
+        visualSizeFactor: 200,
+      },
+      {
+        alias: "alias2",
+        dataType: "string",
+        displayName: "Second Mocked Column",
+        name: "alias2",
+        order: 2,
+        visualSizeFactor: 200,
+      },
+    ];
     document.body.appendChild(container);
   });
   afterEach(() => {
@@ -122,8 +122,8 @@ describe("DataSetGrid", () => {
   });
   it("Get sorted Columns", () => {
     const controlValue = mockGenerator.context.parameters
-    .dataSetGrid as DataSetMock;
-  controlValue.columns= [];
+      .dataSetGrid as DataSetMock;
+    controlValue.columns = [];
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     expect(document.body).toMatchSnapshot();
@@ -132,9 +132,9 @@ describe("DataSetGrid", () => {
   it("Row Click Event handler for the associated row when being clicked", () => {
     const controlValue = mockGenerator.context.parameters.dataSetGrid as DataSetMock;
 
-    const row = new EntityRecord(undefined, "0023-2190139-12213-5643","First");
-    row.id = {guid: "0023-2190139-12213-5646"}
-    controlValue.records[row.id.guid]= row;
+    const row = new EntityRecord(undefined, "0023-2190139-12213-5643", "First");
+    row.id = { guid: "0023-2190139-12213-5646" }
+    controlValue.records[row.id.guid] = row;
     controlValue.sortedRecordIds = [row.id.guid]
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
@@ -145,10 +145,10 @@ describe("DataSetGrid", () => {
     evt.initEvent("click", false, true);
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
-    
+
   });
   it("toggle load more when needed", () => {
-    
+
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     const controlValue = mockGenerator.context.parameters
@@ -164,20 +164,21 @@ describe("DataSetGrid", () => {
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
   });
-it("Destroy should work", () => {
+  it("Destroy should work", () => {
     mockGenerator.control.destroy();
-mockGenerator.ExecuteInit();
-mockGenerator.ExecuteUpdateView();
-expect(document.body).toMatchSnapshot(); 
-})
+    mockGenerator.ExecuteInit();
+    mockGenerator.ExecuteUpdateView();
+    expect(document.body).toMatchSnapshot();
+  })
 
   it("Render multiple rows", () => {
     const controlValue = mockGenerator.context.parameters.dataSetGrid as DataSetMock;
 
     const rows = [
-    new EntityRecord(undefined, "0023-2190139-12213-5643","First"),
-    new EntityRecord(undefined, "0023-2190139-12213-5646", "Second"),
-    new EntityRecord(undefined, "0023-2190139-12213-5641",  "Third")];
+      new EntityRecord(undefined, "0023-2190139-12213-5643", "First"),
+      new EntityRecord(undefined, "0023-2190139-12213-5646", "Second"),
+      new EntityRecord(undefined, "0023-2190139-12213-5641", "Third")
+    ];
 
     controlValue.initRecords(rows);
 
@@ -190,17 +191,17 @@ expect(document.body).toMatchSnapshot();
     evt.initEvent("click", false, true);
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
-    
+
   });
 
   it("Render multiple rows sorted", () => {
     const controlValue = mockGenerator.context.parameters.dataSetGrid as DataSetMock;
 
     const rows = [
-    new EntityRecord(undefined,"0023-2190139-12213-5643","First"),
-    new EntityRecord(undefined, "0023-2190139-12213-5646", "Second"),
-    new EntityRecord(undefined, "0023-2190139-12213-5641", "Third")];
-    
+      new EntityRecord(undefined, "0023-2190139-12213-5643", "First"),
+      new EntityRecord(undefined, "0023-2190139-12213-5646", "Second"),
+      new EntityRecord(undefined, "0023-2190139-12213-5641", "Third")];
+
     controlValue.initRecords(rows);
 
     mockGenerator.ExecuteInit();
@@ -212,7 +213,7 @@ expect(document.body).toMatchSnapshot();
     evt.initEvent("click", false, true);
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
-    
+
   });
-  
+
 });
