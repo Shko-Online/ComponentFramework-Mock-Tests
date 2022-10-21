@@ -1,6 +1,7 @@
 import { MetadataDB } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator/Metadata.db";
-import * as userMetadataJson from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator/systemUser.json";
-import * as userData from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator/systemUserData.json";
+import * as userMetadataJson from "./data/systemUser.json";
+import * as userData from "./data/systemUserData.json";
+
 describe("Metadata", () => {
   it("initmetadata", () => {
     const db = new MetadataDB();
