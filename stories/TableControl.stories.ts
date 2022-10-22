@@ -1,7 +1,7 @@
 import { Story, Meta } from '@storybook/html';
 
 import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator";
-import { TableControl }  from '@powerapps-samples/table-control/TableControl';
+import { TableControl } from '@powerapps-samples/table-control/TableControl';
 import { IInputs, IOutputs } from '@powerapps-samples/table-control/TableControl/generated/ManifestTypes';
 import { StringPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock';
 import "@powerapps-samples/table-control/TableControl/css/TableControl.css"
@@ -12,48 +12,41 @@ export default {
     parameters: {
         layout: 'fullscreen',
     },
-    argTypes:{
+    argTypes: {
         onEntityName: { action: 'onEntityName' },
         onEntityType: { action: 'onEntityType' },
         onCreateEntity: { action: 'onCreateEntity' },
     },
     decorators: [
-        (Story, context)=>{
+        (Story, context) => {
             return Story(context.args);
         }
     ]
 } as Meta;
 
-const Template = (args) =>{
+const Template = (args) => {
     const container = document.createElement("div");
     container.className = "SampleNamespace.TableControl";
-    const mockGenerator: ComponentFrameworkMockGenerator<IInputs,IOutputs> = new ComponentFrameworkMockGenerator(
+    const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> = new ComponentFrameworkMockGenerator(
         TableControl,
         {
             stringProperty: StringPropertyMock,
         },
         container
     );
-    mockGenerator.context.utils.getEntityMetadata.callsFake((entity)=>{
-		return new	Promise<ComponentFramework.PropertyHelper.EntityMetadata>(resolve=>{
-			resolve({
-				data:  [
-					{
-						entityName: 'account'
-					}
-				]
-			})
-		})
-		})
-		mockGenerator.context.utils.lookupObjects.callsFake((lookupOptions: ComponentFramework.UtilityApi.LookupOptions) => {
-            return new Promise<ComponentFramework.LookupValue[]>((resolve) => {
-                resolve([{
-                    entityType: lookupOptions.entityTypes ? lookupOptions.entityTypes[0] : 'account',
-                    id: "00000000-0000-0000-0000-000000000004",
-                    name: "Account",
-                }])
-            });
-        })
+    mockGenerator.metadata.initMetadata([{
+        LogicalName: 'account',
+        Attributes: []
+    } as ShkoOnline.EntityMetadata]);
+    mockGenerator.context.utils.lookupObjects.callsFake((lookupOptions: ComponentFramework.UtilityApi.LookupOptions) => {
+        return new Promise<ComponentFramework.LookupValue[]>((resolve) => {
+            resolve([{
+                entityType: lookupOptions.entityTypes ? lookupOptions.entityTypes[0] : 'account',
+                id: "00000000-0000-0000-0000-000000000004",
+                name: "Account",
+            }])
+        });
+    })
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     return container;

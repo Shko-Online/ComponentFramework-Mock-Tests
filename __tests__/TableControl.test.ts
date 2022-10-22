@@ -38,17 +38,11 @@ describe("TableControl", () => {
 			container);
 		mockGenerator.SetControlResource(resource);
 		document.body.appendChild(container);
-		mockGenerator.context.utils.getEntityMetadata.callsFake((entity) => {
-			return new Promise<ComponentFramework.PropertyHelper.EntityMetadata>(resolve => {
-				resolve({
-					data: [
-						{
-							entityName: 'account'
-						}
-					]
-				})
-			})
-		})
+		mockGenerator.metadata.initMetadata([{
+			LogicalName: 'account',
+			Attributes: []
+		} as ShkoOnline.EntityMetadata]);
+
 		mockGenerator.context.utils.lookupObjects.callsFake((lookupOptions: ComponentFramework.UtilityApi.LookupOptions) => {
 			return new Promise<ComponentFramework.LookupValue[]>((resolve) => {
 				resolve([{
