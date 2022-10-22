@@ -39,8 +39,7 @@ describe("ControlStateAPI tests", () => {
             },
             container);
         document.body.appendChild(container);
-    }
-    )
+    })
 
     afterEach(()=>{
         document.body.innerHTML = null;
