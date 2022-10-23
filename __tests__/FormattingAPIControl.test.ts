@@ -38,24 +38,17 @@ describe("FormattingAPIControl tests", () => {
             },
             container);
 
-            const args = {
-                currencyInput: 1001.01,
-                dateInput: new Date(2022,8,2),
-                decimalInput: 123.45,
-                integerInput:  987          
-            }
-
-            const currencyInput = mockGenerator.context.parameters.currencyInput as  NumberPropertyMock;
-            currencyInput.setValue(args.currencyInput); 
-            const dateInput = mockGenerator.context.parameters.dateInput as DateTimePropertyMock;
-            dateInput.setValue(args.dateInput);
-            const decimalInput = mockGenerator.context.parameters.decimalInput as DecimalNumberPropertyMock;
-            decimalInput.setValue(args.decimalInput);
-            const integerInput = mockGenerator.context.parameters.integerInput as WholeNumberPropertyMock;
-            integerInput.setValue(args.integerInput); 
-            
-
-       
+            mockGenerator.metadata.initItems({
+                "@odata.context": "#!CanvasApp",
+                "value": [
+                    {
+                        currencyInput: 1001.01,
+                        dateInput: new Date(2022,8,2),
+                        decimalInput: 123.45,
+                        integerInput:  987   
+                    }
+                ]
+            });
         document.body.appendChild(container);
     }
     )

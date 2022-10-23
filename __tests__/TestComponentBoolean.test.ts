@@ -16,15 +16,37 @@
 import * as sinon from 'sinon';
 import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
 import { TestComponentBoolean } from '@albanian-xrm/test-components/TestComponentBoolean/TestComponentBoolean';
+import { IInputs, IOutputs } from '@albanian-xrm/test-components/TestComponentBoolean/generated/ManifestTypes';
 import { TwoOptionsPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/TwoOptionsProperty.mock';
 
 describe("dumb test", () => {
-    it("should work", () => {
-        const mockGenerator = new ComponentFrameworkMockGenerator(TestComponentBoolean, {
-            turnedOn: TwoOptionsPropertyMock
-        });      
-        mockGenerator.ExecuteInit();
-        sinon.assert.calledOnce(mockGenerator.control.init);
-        sinon.assert.called(mockGenerator.notifyOutputChanged);
-    })
+	let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
+	beforeEach(() => {
+		const container = document.createElement('div');
+
+		mockGenerator = new ComponentFrameworkMockGenerator(
+			TestComponentBoolean,
+			{
+				turnedOn: TwoOptionsPropertyMock
+			});
+		document.body.appendChild(container);
+	})
+
+	afterEach(() => {
+		document.body.innerHTML = null;
+	})
+
+	it("should work", () => {
+		mockGenerator.metadata.initItems({
+			"@odata.context": "#!CanvasApp",
+			"value": [
+				{
+					"turnedOn": true
+				}
+			]
+		});
+		mockGenerator.ExecuteInit();
+		sinon.assert.calledOnce(mockGenerator.control.init);
+		sinon.assert.called(mockGenerator.notifyOutputChanged);
+	})
 });

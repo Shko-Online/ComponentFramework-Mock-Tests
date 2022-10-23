@@ -34,6 +34,7 @@ describe("Metadata", () => {
     );
     expect(asllan).not.toBeNull();
   });
+  
   it("Get column data", () => {
     const db = new MetadataDB();
     db.initMetadata([JSON.parse(JSON.stringify(userMetadataJson))]);
@@ -49,7 +50,7 @@ describe("Metadata", () => {
     const db = new MetadataDB();
     db.initMetadata([JSON.parse(JSON.stringify(userMetadataJson))]);
     db.initItems(JSON.parse(JSON.stringify(userData)));
-    const asllan = db.RefreshValue(
+    const asllan = db.GetValueAndMetadata(
       "systemuser",
       "48268759-f226-ed11-9db1-000d3a264915",
       "windowsliveid",

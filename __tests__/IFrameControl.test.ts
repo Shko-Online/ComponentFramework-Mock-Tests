@@ -59,8 +59,15 @@ describe("IFrameControl", () => {
 		expect(document.body).toMatchSnapshot();
 	})	
 	it("Update View with value should work", () => {
-		mockGenerator.context.parameters.latitudeValue.raw=  41.153332;
-		mockGenerator.context.parameters.longitudeValue.raw=  20.168331;
+		mockGenerator.metadata.initItems({
+			"@odata.context": "#!CanvasApp",
+			"value": [
+				{
+					"latitudeValue":  41.153332,
+					"longitudeValue":   20.168331
+				}
+			]
+		});
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		sinon.assert.calledOnce(mockGenerator.control.init);

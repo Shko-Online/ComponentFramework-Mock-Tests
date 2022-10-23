@@ -52,7 +52,14 @@ describe("IncrementControl", () => {
 		expect(document.body).toMatchSnapshot();
 	})	
 	it("Update View with value should work", () => {
-		mockGenerator.context.parameters.value.raw = 100;
+		mockGenerator.metadata.initItems({
+			"@odata.context": "#!CanvasApp",
+			"value": [
+			  {
+				"value": 100
+			  }
+			]
+		  });
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		sinon.assert.calledOnce(mockGenerator.control.init);
@@ -68,7 +75,14 @@ describe("IncrementControl", () => {
 		expect(document.body).toMatchSnapshot();
 	})
 	it("Blur should Work", () => {
-		mockGenerator.context.parameters.value.raw = 100;
+		mockGenerator.metadata.initItems({
+			"@odata.context": "#!CanvasApp",
+			"value": [
+			  {
+				"value": 100
+			  }
+			]
+		  });
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 
@@ -82,7 +96,14 @@ describe("IncrementControl", () => {
 		expect(document.body).toMatchSnapshot();
 	})
 	it("Click should Work", () => {
-		mockGenerator.context.parameters.value.raw = 100;
+		mockGenerator.metadata.initItems({
+			"@odata.context": "#!CanvasApp",
+			"value": [
+			  {
+				"value": 100
+			  }
+			]
+		  });
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		expect(document.body).toMatchSnapshot();

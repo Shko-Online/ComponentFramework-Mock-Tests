@@ -32,16 +32,24 @@ describe("LookupSimpleControl", () => {
                 controlValue1: LookupPropertyMock
             },
             container);
-        mockGenerator.context.parameters.controlValue.raw = [{
-            entityType: 'mocked_entity',
-            id: "00000000-0000-0000-0000-000000000001",
-            name: 'Test Betim'
-        }];
-        mockGenerator.context.parameters.controlValue1.raw = [{
-            entityType: 'mocked_entity',
-            id: "00000000-0000-0000-0000-000000000002",
-            name: 'Test Betim2'
-        }];
+
+            mockGenerator.metadata.initItems({
+                "@odata.context": "#!CanvasApp",
+                "value": [
+                    {
+                        "controlValue":  {
+                            entityType: 'mocked_entity',
+                            id: "00000000-0000-0000-0000-000000000001",
+                            name: 'Test Betim'
+                        },
+                        "controlValue1":   {
+                            entityType: 'mocked_entity',
+                            id: "00000000-0000-0000-0000-000000000002",
+                            name: 'Test Betim2'
+                        }
+                    }
+                ]
+            });       
         document.body.appendChild(container);
     }
     )

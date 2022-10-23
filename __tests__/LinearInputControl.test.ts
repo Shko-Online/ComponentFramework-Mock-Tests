@@ -51,8 +51,14 @@ describe("LinearInputControl", () => {
         expect(document.body).toMatchSnapshot();
     })
     it("Update View with value should work", () => {
-		mockGenerator.context.parameters.controlValue.raw = 500;
-        mockGenerator.context.parameters.controlValue.formatted= "0";
+        mockGenerator.metadata.initItems({
+			"@odata.context": "#!CanvasApp",
+			"value": [
+			  {
+				"controlValue": 500
+			  }
+			]
+		  });
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 		sinon.assert.calledOnce(mockGenerator.control.init);
@@ -60,7 +66,14 @@ describe("LinearInputControl", () => {
         expect(document.body).toMatchSnapshot();
     })
     it("Refresh Data should work", () =>{
-        mockGenerator.context.parameters.controlValue.raw = 50;
+        mockGenerator.metadata.initItems({
+			"@odata.context": "#!CanvasApp",
+			"value": [
+			  {
+				"controlValue": 50
+			  }
+			]
+		  });
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 
@@ -74,7 +87,14 @@ describe("LinearInputControl", () => {
 		expect(document.body).toMatchSnapshot();
     })
     it("Slider should work", () => {
-        mockGenerator.context.parameters.controlValue.raw = 500;
+        mockGenerator.metadata.initItems({
+			"@odata.context": "#!CanvasApp",
+			"value": [
+			  {
+				"controlValue": 500
+			  }
+			]
+		  });
 		mockGenerator.ExecuteInit();
 		mockGenerator.ExecuteUpdateView();
 
