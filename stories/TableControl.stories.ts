@@ -4,7 +4,7 @@ import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework
 import { TableControl } from '@powerapps-samples/table-control/TableControl';
 import { IInputs, IOutputs } from '@powerapps-samples/table-control/TableControl/generated/ManifestTypes';
 import { StringPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock';
-import "@powerapps-samples/table-control/TableControl/css/TableControl.css"
+import "../PowerApps-Samples/component-framework/TableControl/TableControl/css/TableControl.css"
 
 
 export default {
