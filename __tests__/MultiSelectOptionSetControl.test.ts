@@ -22,6 +22,7 @@ import {
   IOutputs,
 } from "@powerapps-samples/multi-select-option-set-control/MultiSelectOptionSetControl/generated/ManifestTypes";
 import { MultiSelectOptionSetPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/MultiSelectOptionSetProperty.mock";
+import { AttributeType } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/AttributeType";
 
 describe("MultiSelectOptionSetControl", () => {
   let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
@@ -44,7 +45,7 @@ describe("MultiSelectOptionSetControl", () => {
       IsCustomOptionSet: true,
       MetadataId: '',
       Name: '',
-      OptionSetType: ShkoOnline.AttributeType.Picklist,
+      OptionSetType: AttributeType.Picklist,
       Options : {
         1: {
           Label: "First",
@@ -78,14 +79,11 @@ describe("MultiSelectOptionSetControl", () => {
     expect(document.body).toMatchSnapshot();
   });
   it("Select string value work", () => {
-    mockGenerator.metadata.initItems({
-      "@odata.context": "#!CanvasApp1",
-      value: [
-        {
-          controlValue: [1, 2],
-        },
-      ],
-    });
+    mockGenerator.metadata.initCanvasItems([
+      {
+        controlValue: [1, 2],
+      },
+    ]);
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     expect(document.body).toMatchSnapshot();
@@ -101,14 +99,11 @@ describe("MultiSelectOptionSetControl", () => {
     expect(document.body).toMatchSnapshot();
   });
   it("Update individual selected", () => {
-    mockGenerator.metadata.initItems({
-      "@odata.context": "#!CanvasApp1",
-      value: [
-        {
-          controlValue: [],
-        },
-      ],
-    });
+    mockGenerator.metadata.initCanvasItems([
+      {
+        controlValue: [],
+      },
+    ]);
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     expect(document.body).toMatchSnapshot();
