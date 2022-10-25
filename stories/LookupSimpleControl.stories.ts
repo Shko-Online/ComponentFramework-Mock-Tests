@@ -28,11 +28,16 @@ export default {
     )
   //const lookupValue = args.lookupvalue as LookupPropertyMock;
 
-   const lookup1=mockGenerator.context.parameters.controlValue as LookupPropertyMock;
-    lookup1.setValue([{name:args.lookupValue1[0],entityType:args.lookupValue1[1],id:args.lookupValue1[2]}])
-    const lookup2=mockGenerator.context.parameters.controlValue1 as LookupPropertyMock;
-    lookup2.setValue([{name:args.lookupValue2[0],entityType:args.lookupValue2[1],id:args.lookupValue2[2]}])
-
+    mockGenerator.metadata.initCanvasItems([
+      {
+        controlValue: args.lookupValue1[0]
+      },
+    ]);
+    mockGenerator.metadata.initCanvasItems([
+      {
+        controlValue1: args.lookupValue2[0],
+      },
+    ]);
 
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();

@@ -13,7 +13,7 @@
 	language governing rights and limitations under the RPL. 
 */
 
-import { Story, Meta } from '@storybook/html';
+import { Story, Meta } from "@storybook/html";
 
 import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator";
 import { MultiSelectOptionSetControl } from "@powerapps-samples/multi-select-option-set-control/MultiSelectOptionSetControl";
@@ -26,53 +26,70 @@ import { OptionSetMetadataMock } from "@shko-online/componentframework-mock/Comp
 import { OptionMetadataMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/Metadata/OptionMetadata.mock";
 
 export default {
-  title: 'PCF Components/MultiSelectOptionSetControl',
+  title: "PCF Components/MultiSelectOptionSetControl",
   parameters: {
     // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
   // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
   argTypes: {
-    onLogin: { action: 'onLogin' },
-    onLogout: { action: 'onLogout' },
-    onCreateAccount: { action: 'onCreateAccount' },
+    onLogin: { action: "onLogin" },
+    onLogout: { action: "onLogout" },
+    onCreateAccount: { action: "onCreateAccount" },
   },
 } as Meta;
 
 const Template = (args) => {
   const container = document.createElement("div");
-  const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> = new ComponentFrameworkMockGenerator(
-    MultiSelectOptionSetControl,
-    {
-      controlValue: MultiSelectOptionSetPropertyMock,
-    },
-    container
+  const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> =
+    new ComponentFrameworkMockGenerator(
+      MultiSelectOptionSetControl,
+      {
+        controlValue: MultiSelectOptionSetPropertyMock,
+      },
+      container
+    );
+
+  const controlValueMetadata = mockGenerator.metadata.getAttributeMetadata(
+    "!CanvasApp",
+    "controlValue"
+  ) as unknown as ShkoOnline.PickListAttributeMetadata;
+  controlValueMetadata.OptionSet = controlValueMetadata.OptionSet = {
+    IsCustomOptionSet: true,
+    MetadataId: "",
+    Name: "",
+    OptionSetType: 11,
+    Options: {},
+  };
+  args.Options.forEach((option) => {
+    controlValueMetadata.OptionSet.Options[option.Value] = option;
+  });
+  mockGenerator.metadata.upsertAttributeMetadata(
+    "!CanvasApp",
+    controlValueMetadata
   );
-  const attributes = mockGenerator.context.parameters.controlValue
-    .attributes as OptionSetMetadataMock;
-  attributes.Options = args.Options;
+  mockGenerator.metadata.initItems()
   mockGenerator.ExecuteInit();
   mockGenerator.ExecuteUpdateView();
   return container;
-}
+};
 
 export const Secondary = Template.bind({});
 
 Secondary.args = {
-  Options:  [
-    new OptionMetadataMock(1, "First"),
-    new OptionMetadataMock(2, "Second"),
-    new OptionMetadataMock(3, "Third"),
-    new OptionMetadataMock(4, "Fourth"),
-    new OptionMetadataMock(5, "Fifth"),
-  ]
-
-}
+  Options: [
+    { Value: 1, Label: "First" },
+    { Value: 2, Label: "Second" },
+    { Value: 3, Label: "Third" },
+    { Value: 4, Label: "Fourth" },
+    { Value: 5, Label: "Fifth" },
+  ],
+};
 
 export const Primary = Template.bind({});
 Primary.args = {
   Options: [
-    new OptionMetadataMock(1, "First"),
-    new OptionMetadataMock(2, "Second"),
-  ]
-}
+    { Value: 1, Label: "First" },
+    { Value: 2, Label: "Second" },
+  ],
+};

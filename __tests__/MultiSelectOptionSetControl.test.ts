@@ -35,33 +35,31 @@ describe("MultiSelectOptionSetControl", () => {
       },
       container
     );
-    mockGenerator.metadata.initMetadata([
-      {
-        LogicalName: '!CanvasApp1',
-        EntitySetName: '!CanvasApp1',
-        Attributes: [
-          {
-            EntityLogicalName: '!CanvasApp1',
-            LogicalName: 'controlValue',
-            AttributeType: ShkoOnline.AttributeType.Picklist,
-            OptionSet: {
-              OptionSetType: ShkoOnline.AttributeType.Picklist,
-              Options: {
-                1: {
-                  Label: "First",
-                  Value: 1
-                },
-                2: {
-                  Label: "Second",
-                  Value: 2
-                },
-              }
-            }
-          } as unknown as ShkoOnline.PickListAttributeMetadata
-        ]
-      } as unknown as ShkoOnline.EntityMetadata
-    ]);
-    (mockGenerator.context.parameters.controlValue as MultiSelectOptionSetPropertyMock)._Bind('!CanvasApp1', 'controlValue');
+
+    const controlValueMetadata = mockGenerator.metadata.getAttributeMetadata(
+      "!CanvasApp",
+      "controlValue"
+    ) as unknown as ShkoOnline.PickListAttributeMetadata;
+    controlValueMetadata.OptionSet= {
+      IsCustomOptionSet: true,
+      MetadataId: '',
+      Name: '',
+      OptionSetType: ShkoOnline.AttributeType.Picklist,
+      Options : {
+        1: {
+          Label: "First",
+          Value: 1,
+        },
+        2: {
+          Label: "Second",
+          Value: 2,
+        },
+      }
+    };
+    mockGenerator.metadata.upsertAttributeMetadata(
+      "!CanvasApp",
+      controlValueMetadata
+    );
     document.body.appendChild(container);
   });
   afterEach(() => {
@@ -82,11 +80,11 @@ describe("MultiSelectOptionSetControl", () => {
   it("Select string value work", () => {
     mockGenerator.metadata.initItems({
       "@odata.context": "#!CanvasApp1",
-      "value": [
+      value: [
         {
-          "controlValue": [1, 2]
-        }
-      ]
+          controlValue: [1, 2],
+        },
+      ],
     });
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
@@ -105,11 +103,11 @@ describe("MultiSelectOptionSetControl", () => {
   it("Update individual selected", () => {
     mockGenerator.metadata.initItems({
       "@odata.context": "#!CanvasApp1",
-      "value": [
+      value: [
         {
-          "controlValue": []
-        }
-      ]
+          controlValue: [],
+        },
+      ],
     });
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();

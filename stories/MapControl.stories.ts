@@ -42,12 +42,18 @@ const Template = (args) => {
       },
       container
     );
-  const mapUrl = mockGenerator.context.parameters
-    .controlValue as StringPropertyMock ;
-  const apiKey = mockGenerator.context.parameters
-    .controlApiKey as StringPropertyMock;
-mapUrl.setValue(args.addressString);
-apiKey.setValue(args.apiKey);
+
+mockGenerator.metadata.initCanvasItems([
+  {
+    mapUrl: args.addressString,
+  },
+]);
+mockGenerator.metadata.initCanvasItems([
+  {
+    apiKey: args.apiKey,
+  },
+]);
+
   mockGenerator.ExecuteInit();
   mockGenerator.ExecuteUpdateView();
   return container;

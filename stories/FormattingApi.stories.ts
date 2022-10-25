@@ -12,62 +12,75 @@
 	PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
 	language governing rights and limitations under the RPL. 
 */
-import { Story, Meta } from '@storybook/html';
+import { Story, Meta } from "@storybook/html";
 
-import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
-import { FormattingAPIControl }  from '@albanian-xrm/test-components/FormattingAPIControl';
-import { IInputs, IOutputs }  from '@albanian-xrm/test-components/FormattingAPIControl/generated/ManifestTypes';
-import { NumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock';
-import { DateTimePropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DateTimeProperty.mock';
-import { DecimalNumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DecimalNumberProperty.mock';
-import { WholeNumberPropertyMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/WholeNumberProperty.mock';
-import "@powerapps-samples/formatting-api/FormattingAPIControl/css/FormattingAPIControl.css"
+import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator";
+import { FormattingAPIControl } from "@albanian-xrm/test-components/FormattingAPIControl";
+import {
+  IInputs,
+  IOutputs,
+} from "@albanian-xrm/test-components/FormattingAPIControl/generated/ManifestTypes";
+import { NumberPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/NumberProperty.mock";
+import { DateTimePropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DateTimeProperty.mock";
+import { DecimalNumberPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DecimalNumberProperty.mock";
+import { WholeNumberPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/WholeNumberProperty.mock";
+import "@powerapps-samples/formatting-api/FormattingAPIControl/css/FormattingAPIControl.css";
 
 export default {
-    title: 'PCF Components/FormattingAPIControl',
-    parameters: {
-      // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
-      layout: 'fullscreen',
-    },
-    // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
-    argTypes: {
-   
-    },
-  } as Meta;
+  title: "PCF Components/FormattingAPIControl",
+  parameters: {
+    // More on Story layout: https://storybook.js.org/docs/html/configure/story-layout
+    layout: "fullscreen",
+  },
+  // More on argTypes: https://storybook.js.org/docs/html/api/argtypes
+  argTypes: {},
+} as Meta;
 
-  const Template = (args) => {
-    const container = document.createElement("div");
-    container.className = "SampleNamespace.FormattingAPIControl"
-    const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> = new ComponentFrameworkMockGenerator(
-        FormattingAPIControl,
-        {
-           currencyInput: NumberPropertyMock,
-           dateInput: DateTimePropertyMock,
-           decimalInput: DecimalNumberPropertyMock,
-           integerInput: WholeNumberPropertyMock
-        },
-        container);
-    const currencyInput = mockGenerator.context.parameters.currencyInput as  NumberPropertyMock;
-    currencyInput.setValue(args.currencyInput); 
-    const dateInput = mockGenerator.context.parameters.dateInput as DateTimePropertyMock;
-    dateInput.setValue(args.dateInput);
-    const decimalInput = mockGenerator.context.parameters.decimalInput as DecimalNumberPropertyMock;
-    decimalInput.setValue(args.decimalInput);
-    const integerInput = mockGenerator.context.parameters.integerInput as WholeNumberPropertyMock;
-    integerInput.setValue(args.integerInput); 
+const Template = (args) => {
+  const container = document.createElement("div");
+  container.className = "SampleNamespace.FormattingAPIControl";
+  const mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs> =
+    new ComponentFrameworkMockGenerator(
+      FormattingAPIControl,
+      {
+        currencyInput: NumberPropertyMock,
+        dateInput: DateTimePropertyMock,
+        decimalInput: DecimalNumberPropertyMock,
+        integerInput: WholeNumberPropertyMock,
+      },
+      container
+    );
+  mockGenerator.metadata.initCanvasItems([
+    {
+      currencyInput: args.value,
+    },
+  ]);
+  mockGenerator.metadata.initCanvasItems([
+    {
+      dateInput: args.dateInput,
+    },
+  ]);
+  mockGenerator.metadata.initCanvasItems([
+    {
+      decimalInput: args.decimalInput,
+    },
+  ]);
+  mockGenerator.metadata.initCanvasItems([
+    {
+      integerInput: args.integerInput,
+    },
+  ]);
 
-    mockGenerator.ExecuteInit();
-    mockGenerator.ExecuteUpdateView();
-    return container;
-  }
-  
-  
+  mockGenerator.ExecuteInit();
+  mockGenerator.ExecuteUpdateView();
+  return container;
+};
+
 export const Primary = Template.bind({});
 
 Primary.args = {
-    currencyInput: 1001.01,
-    dateInput: new Date(2022,8,2),
-    decimalInput: 123.45,
-    integerInput:  987
-
-}
+  currencyInput: 1001.01,
+  dateInput: new Date(2022, 8, 2),
+  decimalInput: 123.45,
+  integerInput: 987,
+};

@@ -31,8 +31,12 @@ export default {
         },
         container
     );
-    const value = mockGenerator.context.parameters.value as StringPropertyMock;
-    value.setValue(args.value);
+ 
+    mockGenerator.metadata.initCanvasItems([
+        {
+            value: args.value,
+        },
+      ]);
     container.style.width = "200px";
     container.style.height = "200px";
     mockGenerator.SetControlResource(resource);

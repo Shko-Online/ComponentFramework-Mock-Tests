@@ -53,7 +53,15 @@ describe("MapControl", () => {
   });
 
   it("MapUrl not null", () => {
-    (mockGenerator.context.parameters.controlValue as StringPropertyMock).setValue("MapUrl");
+    mockGenerator.metadata.initItems({
+			"@odata.context": "#!CanvasApp",
+			"value": [
+				{
+					"controlValue":  "MapUrl",
+					"controlApiKey":   "ApiKey"
+				}
+			]
+		});
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     sinon.assert.calledOnce(mockGenerator.control.init);
@@ -61,8 +69,15 @@ describe("MapControl", () => {
     expect(document.body).toMatchSnapshot();
   });
   it("ApiKey not null", () => {
-    (mockGenerator.context.parameters.controlValue as StringPropertyMock).setValue("MapUrl");
-    (mockGenerator.context.parameters.controlApiKey as StringPropertyMock).setValue("ApiKey");
+    mockGenerator.metadata.initItems({
+			"@odata.context": "#!CanvasApp",
+			"value": [
+				{
+					"controlValue":  "MapUrl",
+					"controlApiKey":   "ApiKey"
+				}
+			]
+		});
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     sinon.assert.calledOnce(mockGenerator.control.init);
