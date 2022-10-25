@@ -68,7 +68,7 @@ const Template = (args) => {
     "!CanvasApp",
     controlValueMetadata
   );
-  mockGenerator.metadata.initItems()
+  mockGenerator.metadata.initCanvasItems([{controlValue:[]}])
   mockGenerator.ExecuteInit();
   mockGenerator.ExecuteUpdateView();
   return container;
