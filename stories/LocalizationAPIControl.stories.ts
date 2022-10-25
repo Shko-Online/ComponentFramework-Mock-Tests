@@ -33,8 +33,12 @@ export default {
         },
         container
     );
-    const value = mockGenerator.context.parameters.value as NumberPropertyMock;
-    value.setValue(args.value);
+
+    mockGenerator.metadata.initCanvasItems([
+      {
+        value: args.value,
+      },
+    ]);
     mockGenerator.SetControlResource(resource);
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();

@@ -35,10 +35,20 @@ export default {
         },
         container
     );
-    const latitudeValue = mockGenerator.context.parameters.latitudeValue as DecimalNumberPropertyMock;
-    latitudeValue.setValue(args.latitudeValue);
-    const longtitudeValue = mockGenerator.context.parameters.longitudeValue as DecimalNumberPropertyMock;
-    longtitudeValue.setValue(args.longitudeValue);
+    // const latitudeValue = mockGenerator.context.parameters.latitudeValue as DecimalNumberPropertyMock;
+    // latitudeValue.setValue(args.latitudeValue);
+    mockGenerator.metadata.initCanvasItems([
+      {
+        latitudeValue: args.latitudeValue,   
+      },
+    ]);
+    // const longtitudeValue = mockGenerator.context.parameters.longitudeValue as DecimalNumberPropertyMock;
+    // longtitudeValue.setValue(args.longitudeValue);
+    mockGenerator.metadata.initCanvasItems([
+      {
+        longtitudeValue: args.longtitudeValue,   
+      },
+    ]);
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     return container;

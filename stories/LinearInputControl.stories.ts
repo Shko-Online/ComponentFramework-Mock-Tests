@@ -43,10 +43,12 @@ const Template = (args) => {
       },
       container
     );
-  const sliderValue = mockGenerator.context.parameters
-    .controlValue as NumberPropertyMock;
-  sliderValue.setValue(args.sliderValue);
 
+  mockGenerator.metadata.initCanvasItems([
+    {
+      controlValue: args.sliderValue,
+    },
+  ]);
   mockGenerator.ExecuteInit();
   mockGenerator.ExecuteUpdateView();
   return container;

@@ -54,6 +54,8 @@ mockGenerator.metadata.initCanvasItems([
   },
 ]);
 
+
+
   mockGenerator.ExecuteInit();
   mockGenerator.ExecuteUpdateView();
   return container;

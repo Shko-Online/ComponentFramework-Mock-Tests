@@ -52,9 +52,10 @@ const Template = (args) => {
     container.style.overflow= "auto";
     container.style.position = "relative";
     container.style.resize = "both, initial";
-
+    
   mockGenerator.ExecuteInit();
   mockGenerator.ExecuteUpdateView();
   return container;
 };
 export const Primary = Template.bind({});
+
