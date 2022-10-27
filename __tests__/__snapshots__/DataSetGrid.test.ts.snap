@@ -157,7 +157,7 @@ exports[`DataSetGrid Render multiple rows 1`] = `
         <div>
           <div
             class="DataSetControl_grid-item"
-            rowrecid="0023-2190139-12213-5643"
+            rowrecid="1"
           >
             <p
               class="DataSetControl_grid-text-label"
@@ -167,7 +167,7 @@ exports[`DataSetGrid Render multiple rows 1`] = `
             <p
               class="DataSetControl_grid-text-value"
             >
-              -
+              First Item
             </p>
             <p
               class="DataSetControl_grid-text-label"
@@ -177,12 +177,12 @@ exports[`DataSetGrid Render multiple rows 1`] = `
             <p
               class="DataSetControl_grid-text-value"
             >
-              -
+              Second Item
             </p>
           </div>
           <div
             class="DataSetControl_grid-item"
-            rowrecid="0023-2190139-12213-5646"
+            rowrecid="2"
           >
             <p
               class="DataSetControl_grid-text-label"
@@ -192,7 +192,7 @@ exports[`DataSetGrid Render multiple rows 1`] = `
             <p
               class="DataSetControl_grid-text-value"
             >
-              -
+              First Item 2
             </p>
             <p
               class="DataSetControl_grid-text-label"
@@ -202,32 +202,7 @@ exports[`DataSetGrid Render multiple rows 1`] = `
             <p
               class="DataSetControl_grid-text-value"
             >
-              -
-            </p>
-          </div>
-          <div
-            class="DataSetControl_grid-item"
-            rowrecid="0023-2190139-12213-5641"
-          >
-            <p
-              class="DataSetControl_grid-text-label"
-            >
-              Mocked Column : 
-            </p>
-            <p
-              class="DataSetControl_grid-text-value"
-            >
-              -
-            </p>
-            <p
-              class="DataSetControl_grid-text-label"
-            >
-              Second Mocked Column : 
-            </p>
-            <p
-              class="DataSetControl_grid-text-value"
-            >
-              -
+              Second Item 2
             </p>
           </div>
         </div>
@@ -254,7 +229,7 @@ exports[`DataSetGrid Render multiple rows sorted 1`] = `
         <div>
           <div
             class="DataSetControl_grid-item"
-            rowrecid="0023-2190139-12213-5643"
+            rowrecid="1"
           >
             <p
               class="DataSetControl_grid-text-label"
@@ -264,7 +239,7 @@ exports[`DataSetGrid Render multiple rows sorted 1`] = `
             <p
               class="DataSetControl_grid-text-value"
             >
-              -
+              First Item
             </p>
             <p
               class="DataSetControl_grid-text-label"
@@ -274,12 +249,12 @@ exports[`DataSetGrid Render multiple rows sorted 1`] = `
             <p
               class="DataSetControl_grid-text-value"
             >
-              -
+              Second Item
             </p>
           </div>
           <div
             class="DataSetControl_grid-item"
-            rowrecid="0023-2190139-12213-5646"
+            rowrecid="2"
           >
             <p
               class="DataSetControl_grid-text-label"
@@ -289,7 +264,7 @@ exports[`DataSetGrid Render multiple rows sorted 1`] = `
             <p
               class="DataSetControl_grid-text-value"
             >
-              -
+              First Item 2
             </p>
             <p
               class="DataSetControl_grid-text-label"
@@ -299,32 +274,7 @@ exports[`DataSetGrid Render multiple rows sorted 1`] = `
             <p
               class="DataSetControl_grid-text-value"
             >
-              -
-            </p>
-          </div>
-          <div
-            class="DataSetControl_grid-item"
-            rowrecid="0023-2190139-12213-5641"
-          >
-            <p
-              class="DataSetControl_grid-text-label"
-            >
-              Mocked Column : 
-            </p>
-            <p
-              class="DataSetControl_grid-text-value"
-            >
-              -
-            </p>
-            <p
-              class="DataSetControl_grid-text-label"
-            >
-              Second Mocked Column : 
-            </p>
-            <p
-              class="DataSetControl_grid-text-value"
-            >
-              -
+              Second Item 2
             </p>
           </div>
         </div>
@@ -351,7 +301,7 @@ exports[`DataSetGrid Row Click Event handler for the associated row when being c
         <div>
           <div
             class="DataSetControl_grid-item"
-            rowrecid="0023-2190139-12213-5646"
+            rowrecid="1"
           >
             <p
               class="DataSetControl_grid-text-label"
@@ -361,7 +311,7 @@ exports[`DataSetGrid Row Click Event handler for the associated row when being c
             <p
               class="DataSetControl_grid-text-value"
             >
-              -
+              First Item
             </p>
             <p
               class="DataSetControl_grid-text-label"
@@ -371,7 +321,32 @@ exports[`DataSetGrid Row Click Event handler for the associated row when being c
             <p
               class="DataSetControl_grid-text-value"
             >
-              -
+              Second Item
+            </p>
+          </div>
+          <div
+            class="DataSetControl_grid-item"
+            rowrecid="2"
+          >
+            <p
+              class="DataSetControl_grid-text-label"
+            >
+              Mocked Column : 
+            </p>
+            <p
+              class="DataSetControl_grid-text-value"
+            >
+              First Item 2
+            </p>
+            <p
+              class="DataSetControl_grid-text-label"
+            >
+              Second Mocked Column : 
+            </p>
+            <p
+              class="DataSetControl_grid-text-value"
+            >
+              Second Item 2
             </p>
           </div>
         </div>

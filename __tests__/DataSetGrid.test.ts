@@ -23,10 +23,23 @@ import {
 } from "@powerapps-samples/data-set-grid/DataSetGrid/generated/ManifestTypes";
 import { DataSetMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock";
 import { resource } from "@powerapps-samples/data-set-grid/DataSetGrid/strings/DataSetGrid.1033.resx";
-import { EntityRecord } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock";
 
 describe("DataSetGrid", () => {
   let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
+  const itemsLogicalName = "!!!items";
+  const rows = [
+    {
+      myId: "1",
+      alias: "First Item",
+      alias2: "Second Item",
+    },
+    {
+      myId: "2",
+      alias: "First Item 2",
+      alias2: "Second Item 2",
+    },
+  ];
+
   beforeEach(() => {
     const container = document.createElement("div");
 
@@ -58,6 +71,21 @@ describe("DataSetGrid", () => {
         visualSizeFactor: 200,
       },
     ];
+    mockGenerator.metadata.initMetadata([
+      {
+        EntitySetName: itemsLogicalName,
+        LogicalName: itemsLogicalName,
+        PrimaryIdAttribute: "myId",
+        PrimaryNameAttribute: "alias",
+        Attributes: ["myId", "alias", "alias2"].map(
+          (logicalName) =>
+            ({
+              EntityLogicalName: itemsLogicalName,
+              LogicalName: logicalName,
+            } as ShkoOnline.StringAttributeMetadata)
+        ),
+      },
+    ]);
     document.body.appendChild(container);
   });
   afterEach(() => {
@@ -121,41 +149,33 @@ describe("DataSetGrid", () => {
     expect(document.body).toMatchSnapshot();
   });
   it("Get sorted Columns", () => {
-    const controlValue = mockGenerator.context.parameters
-      .dataSetGrid as DataSetMock;
-    controlValue.columns = [];
+    mockGenerator.context.parameters.dataSetGrid.columns = [] 
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     expect(document.body).toMatchSnapshot();
     mockGenerator.ExecuteUpdateView();
   });
   it("Row Click Event handler for the associated row when being clicked", () => {
-    const controlValue = mockGenerator.context.parameters.dataSetGrid as DataSetMock;
-
-    const row = new EntityRecord(undefined, "0023-2190139-12213-5643", "First");
-    row.id = { guid: "0023-2190139-12213-5646" }
-    controlValue.records[row.id.guid] = row;
-    controlValue.sortedRecordIds = [row.id.guid]
+    mockGenerator.context._parameters.dataSetGrid._Bind(
+      itemsLogicalName,
+      "items"
+    );
+    mockGenerator.context._parameters.dataSetGrid._InitItems(rows || []);
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
-
-    const select = mockGenerator.container.querySelectorAll(`[rowRecId='${row.id.guid}']`)[0];
+    const select = mockGenerator.container.querySelectorAll(
+      `[rowRecId='${rows[0].myId}']`
+    )[0];
 
     var evt = document.createEvent("Event");
     evt.initEvent("click", false, true);
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
-
   });
   it("toggle load more when needed", () => {
-
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
-    const controlValue = mockGenerator.context.parameters
-      .dataSetGrid as DataSetMock;
-    controlValue.paging.hasNextPage = true;
-
-
+    mockGenerator.context.parameters.dataSetGrid.paging.hasNextPage = true;
     const select = mockGenerator.container.querySelector(
       ".DataSetControl_LoadMoreButton_Hidden_Style"
     );
@@ -169,51 +189,44 @@ describe("DataSetGrid", () => {
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     expect(document.body).toMatchSnapshot();
-  })
+  });
 
   it("Render multiple rows", () => {
-    const controlValue = mockGenerator.context.parameters.dataSetGrid as DataSetMock;
-
-    const rows = [
-      new EntityRecord(undefined, "0023-2190139-12213-5643", "First"),
-      new EntityRecord(undefined, "0023-2190139-12213-5646", "Second"),
-      new EntityRecord(undefined, "0023-2190139-12213-5641", "Third")
-    ];
-
-    controlValue.initRecords(rows);
+    mockGenerator.context._parameters.dataSetGrid._Bind(
+      itemsLogicalName,
+      "items"
+    );
+    mockGenerator.context._parameters.dataSetGrid._InitItems(rows || []);
 
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
 
-    const select = mockGenerator.container.querySelectorAll(`[rowRecId='${rows[0].id.guid}']`)[0];
+    const select = mockGenerator.container.querySelectorAll(
+      `[rowRecId='${rows[0].myId}']`
+    )[0];
 
     var evt = document.createEvent("Event");
     evt.initEvent("click", false, true);
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
-
   });
 
   it("Render multiple rows sorted", () => {
-    const controlValue = mockGenerator.context.parameters.dataSetGrid as DataSetMock;
-
-    const rows = [
-      new EntityRecord(undefined, "0023-2190139-12213-5643", "First"),
-      new EntityRecord(undefined, "0023-2190139-12213-5646", "Second"),
-      new EntityRecord(undefined, "0023-2190139-12213-5641", "Third")];
-
-    controlValue.initRecords(rows);
-
+    mockGenerator.context._parameters.dataSetGrid._Bind(
+      itemsLogicalName,
+      "items"
+    );
+    mockGenerator.context._parameters.dataSetGrid._InitItems(rows || []);
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
 
-    const select = mockGenerator.container.querySelectorAll(`[rowRecId='${rows[0].id.guid}']`)[0];
+    const select = mockGenerator.container.querySelectorAll(
+      `[rowRecId='${rows[0].myId}']`
+    )[0];
 
     var evt = document.createEvent("Event");
     evt.initEvent("click", false, true);
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
-
   });
-
 });

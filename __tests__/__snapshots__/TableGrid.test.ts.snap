@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableControl Destroy should work 1`] = `
+exports[`TableGrid Destroy should work 1`] = `
 <body>
   <div>
     <div
@@ -50,7 +50,7 @@ exports[`TableControl Destroy should work 1`] = `
 </body>
 `;
 
-exports[`TableControl GetOutputs should work 1`] = `
+exports[`TableGrid GetOutputs should work 1`] = `
 <body>
   <div>
     <div
@@ -100,7 +100,7 @@ exports[`TableControl GetOutputs should work 1`] = `
 </body>
 `;
 
-exports[`TableControl Init should work 1`] = `
+exports[`TableGrid Init should work 1`] = `
 <body>
   <div>
     <div
@@ -118,7 +118,7 @@ exports[`TableControl Init should work 1`] = `
 </body>
 `;
 
-exports[`TableControl Load More Button 1`] = `
+exports[`TableGrid Load More Button 1`] = `
 <body>
   <div>
     <div
@@ -168,7 +168,7 @@ exports[`TableControl Load More Button 1`] = `
 </body>
 `;
 
-exports[`TableControl Load More Button 2`] = `
+exports[`TableGrid Row Click Event handler for the associated row when being clicked 1`] = `
 <body>
   <div>
     <div
@@ -201,59 +201,51 @@ exports[`TableControl Load More Button 2`] = `
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr
+            class="SimpleTable_TableRow_Style"
+            rowrecid="1"
+          >
             <td
-              class="No_Record_Style"
-              colspan="2"
-            />
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: NaNpx;"
+              />
+            </td>
           </tr>
-        </tbody>
-      </table>
-      <button
-        class="LoadMoreButton_Hidden_Style LoadMoreButton_Style"
-        type="button"
-      />
-    </div>
-  </div>
-</body>
-`;
-
-exports[`TableControl Row Click Event handler for the associated row when being clicked 1`] = `
-<body>
-  <div>
-    <div
-      class="SimpleTable_MainContainer_Style"
-      style="height: 698px;"
-    >
-      <table
-        class="SimpleTable_Table_Style"
-      >
-        <thead>
           <tr
             class="SimpleTable_TableRow_Style"
+            rowrecid="2"
           >
-            <th
-              class="SimpleTable_TableHeader_Style"
+            <td
+              class="SimpleTable_TableCell_Style"
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
                 style="max-width: NaNpx;"
               />
-            </th>
-            <th
-              class="SimpleTable_TableHeader_Style"
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
                 style="max-width: NaNpx;"
               />
-            </th>
+            </td>
           </tr>
-        </thead>
-        <tbody>
           <tr
             class="SimpleTable_TableRow_Style"
-            rowrecid="0023-2190139-12213-5646"
+            rowrecid="3"
           >
             <td
               class="SimpleTable_TableCell_Style"
@@ -283,7 +275,7 @@ exports[`TableControl Row Click Event handler for the associated row when being 
 </body>
 `;
 
-exports[`TableControl Update View should Work 1`] = `
+exports[`TableGrid Update View should Work 1`] = `
 <body>
   <div>
     <div
@@ -333,7 +325,7 @@ exports[`TableControl Update View should Work 1`] = `
 </body>
 `;
 
-exports[`TableControl toggle load more button if it has next page 1`] = `
+exports[`TableGrid toggle load more button if it has next page 1`] = `
 <body>
   <div>
     <div

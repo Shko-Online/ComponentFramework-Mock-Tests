@@ -13,26 +13,47 @@
   language governing rights and limitations under the RPL. 
 */
 
-import * as sinon from 'sinon';
+import * as sinon from "sinon";
 
-import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
-import { TableGrid } from '@albanian-xrm/test-components/TableGrid';
-import { IInputs, IOutputs } from '@albanian-xrm/test-components/TableGrid/generated/ManifestTypes';
-import * as resource from '@albanian-xrm/test-components/TableGrid/strings/TableGrid.1033.resx';
-import { DataSetMock } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock';
-import { EntityRecord } from '@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock';
+import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator";
+import { TableGrid } from "@albanian-xrm/test-components/TableGrid";
+import {
+  IInputs,
+  IOutputs,
+} from "@albanian-xrm/test-components/TableGrid/generated/ManifestTypes";
+import * as resource from "@albanian-xrm/test-components/TableGrid/strings/TableGrid.1033.resx";
+import { DataSetMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock";
 
-describe("TableControl", () => {
+describe("TableGrid", () => {
   let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
+  const itemsLogicalName = "!!!items";
+  const rows = [
+    {
+      myId: "1",
+      alias: "First Item",
+      alias2: "Second Item",
+    },
+    {
+      myId: "2",
+      alias: "First Item 2",
+      alias2: "Second Item 2",
+    },
+    {
+      myId: "3",
+      alias: "First Item 3",
+      alias2: "Second Item 3",
+    },
+  ];
   beforeEach(() => {
-    const container = document.createElement('div');
+    const container = document.createElement("div");
 
     mockGenerator = new ComponentFrameworkMockGenerator(
       TableGrid,
       {
-        simpleTableGrid: DataSetMock
+        simpleTableGrid: DataSetMock,
       },
-      container);
+      container
+    );
     mockGenerator.SetControlResource(resource);
     const controlValue = mockGenerator.context.parameters
       .simpleTableGrid as DataSetMock;
@@ -54,59 +75,76 @@ describe("TableControl", () => {
         visualSizeFactor: 200,
       },
     ];
+    mockGenerator.metadata.initMetadata([
+      {
+        EntitySetName: itemsLogicalName,
+        LogicalName: itemsLogicalName,
+        PrimaryIdAttribute: "myId",
+        PrimaryNameAttribute: "alias",
+        Attributes: ["myId", "alias", "alias2"].map(
+          (logicalName) =>
+            ({
+              EntityLogicalName: itemsLogicalName,
+              LogicalName: logicalName,
+            } as ShkoOnline.StringAttributeMetadata)
+        ),
+      },
+    ]);
+
     document.body.appendChild(container);
-  })
+  });
 
   afterEach(() => {
     document.body.innerHTML = null;
-  })
+  });
   it("Init should work", () => {
     mockGenerator.ExecuteInit();
     sinon.assert.calledOnce(mockGenerator.control.init);
     expect(document.body).toMatchSnapshot();
-  })
+  });
   it("Update View should Work", () => {
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     sinon.assert.calledOnce(mockGenerator.control.init);
     sinon.assert.calledOnce(mockGenerator.control.updateView);
     expect(document.body).toMatchSnapshot();
-  })
+  });
   it("GetOutputs should work", () => {
     mockGenerator.control.getOutputs();
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     expect(document.body).toMatchSnapshot();
-  })
+  });
   it("Destroy should work", () => {
     mockGenerator.control.destroy();
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     expect(document.body).toMatchSnapshot();
-  })
+  });
   it("Row Click Event handler for the associated row when being clicked", () => {
-    const controlValue = mockGenerator.context.parameters.simpleTableGrid as DataSetMock;
-
-    const row = new EntityRecord(undefined, "0023-2190139-12213-5646");
-    controlValue.records[row.id.guid] = row;
-    controlValue.sortedRecordIds = [row.id.guid]
+    mockGenerator.context._parameters.simpleTableGrid._Bind(
+      itemsLogicalName,
+      "items"
+    );
+    mockGenerator.context._parameters.simpleTableGrid._InitItems(rows || []);
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
 
-    const select = mockGenerator.container.querySelectorAll(`[rowRecId='${row.id.guid}']`)[0];
+    const select = mockGenerator.container.querySelectorAll(
+      `[rowRecId='${rows[0].myId}']`
+    )[0];
 
     var evt = document.createEvent("Event");
     evt.initEvent("click", false, true);
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
-
-  })
+  });
   it("Load More Button", () => {
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
-    expect(document.body).toMatchSnapshot();
-
-    const select = mockGenerator.container.querySelectorAll(".LoadMoreButton_Style")[0];
+    const select = mockGenerator.container.querySelectorAll(
+      ".LoadMoreButton_Style"
+    )[0];
     var evt = document.createEvent("Event");
     evt.initEvent("click", false, true);
     select.dispatchEvent(evt);
@@ -115,17 +153,16 @@ describe("TableControl", () => {
     expect(document.body).toMatchSnapshot();
   });
   it("toggle load more button if it has next page", () => {
-    const controlValue = mockGenerator.context.parameters
-      .simpleTableGrid as DataSetMock;
-    controlValue.paging.hasNextPage = true;
-
+    mockGenerator.context.parameters.simpleTableGrid.paging.hasNextPage = true;
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
 
-    const select = mockGenerator.container.querySelector(".SimpleTable_MainContainer_Style");
+    const select = mockGenerator.container.querySelector(
+      ".SimpleTable_MainContainer_Style"
+    );
     var evt = document.createEvent("Event");
     evt.initEvent("click", false, true);
     select.dispatchEvent(evt);
     expect(document.body).toMatchSnapshot();
   });
-})
+});

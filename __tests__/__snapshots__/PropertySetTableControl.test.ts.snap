@@ -453,7 +453,26 @@ exports[`PropertySetTableControl Row click should work 1`] = `
         <tbody>
           <tr
             class="SimpleTable_TableRow_Style"
-            rowrecid="0023-2190139-12213-5646"
+            rowrecid="1"
+          >
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+              />
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+              />
+            </td>
+          </tr>
+          <tr
+            class="SimpleTable_TableRow_Style"
+            rowrecid="2"
           >
             <td
               class="SimpleTable_TableCell_Style"
