@@ -32,12 +32,25 @@ const Template =(args) => {
     mockGenerator.SetControlResource(resource);
     const controlValue = mockGenerator.context.parameters.sampleDataSet as DataSetMock;
     controlValue.columns = args.Columns||[];
-    controlValue.initRecords((args.Items||[]).map(record=>{
-      const record1 = new EntityRecord("test", record.id, record.alias);
-      record1.columns = record;
-      return record1;
-    }))
+    const itemsLogicalName = '!!!items';
   
+    mockGenerator.metadata.initMetadata([
+        {
+            EntitySetName: itemsLogicalName,
+            LogicalName: itemsLogicalName,
+            PrimaryIdAttribute: 'myId',
+            PrimaryNameAttribute: 'alias',
+            Attributes: ['myId', 'alias', 'alias2'].map(
+                (logicalName) =>
+                ({
+                    EntityLogicalName: itemsLogicalName,
+                    LogicalName: logicalName,
+                } as ShkoOnline.StringAttributeMetadata),
+            ),
+        },
+    ]);
+    mockGenerator.context._parameters.sampleDataSet._Bind(itemsLogicalName, 'items');
+    mockGenerator.context._parameters.sampleDataSet._InitItems(args.items || []);
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     return container;
@@ -64,7 +77,7 @@ Primary.args= {
           visualSizeFactor: 200,
         },
       ],
-      Items: [
+      items: [
         {
           id: '1',
           alias: 'First Item',
