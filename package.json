@@ -50,8 +50,8 @@
     "type": "git",
     "url": "git+https://github.com/albanian-xrm/ComponentFramework-Mock-Tests.git"
   },
-  "author": "AlbanianXrm",
-  "license": "RPL-1.5",
+  "author": "Shko Online <sales@shko.online> (https://shko.online)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/albanian-xrm/ComponentFramework-Mock-Tests/issues"
   },

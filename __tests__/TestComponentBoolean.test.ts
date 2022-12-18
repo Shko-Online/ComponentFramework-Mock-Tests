@@ -13,7 +13,7 @@
 	language governing rights and limitations under the RPL. 
 */
 
-import * as sinon from 'sinon';
+import sinon from 'sinon';
 import { ComponentFrameworkMockGenerator } from '@shko-online/componentframework-mock/ComponentFramework-Mock-Generator';
 import { TestComponentBoolean } from '@albanian-xrm/test-components/TestComponentBoolean/TestComponentBoolean';
 import { IInputs, IOutputs } from '@albanian-xrm/test-components/TestComponentBoolean/generated/ManifestTypes';
