@@ -1,14 +1,15 @@
 import { Meta } from "@storybook/html";
 
-import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator";
+import {
+  ComponentFrameworkMockGenerator,
+  DataSetMock,
+} from "@shko.online/componentframework-mock";
 import { TableGrid } from "@albanian-xrm/test-components/TableGrid";
 import {
   IInputs,
   IOutputs,
 } from "@albanian-xrm/test-components/TableGrid/generated/ManifestTypes";
-import { DataSetMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock";
 import resource from "@albanian-xrm/test-components/TableGrid/strings/TableGrid.1033.resx";
-import { EntityRecord } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSetApi/EntityRecord.mock";
 import "../PowerApps-Samples/component-framework/TableGrid/TableGrid/css/TableGrid.css";
 
 export default {

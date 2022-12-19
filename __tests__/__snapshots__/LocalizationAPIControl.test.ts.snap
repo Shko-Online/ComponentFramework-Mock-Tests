@@ -10,7 +10,7 @@ exports[`LocalizationAPIControl Blur should Work 1`] = `
       <button
         class="LocalizationSample_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>
@@ -27,7 +27,7 @@ exports[`LocalizationAPIControl Click should Work 1`] = `
       <button
         class="LocalizationSample_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>
@@ -44,7 +44,7 @@ exports[`LocalizationAPIControl Click should Work 2`] = `
       <button
         class="LocalizationSample_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>
@@ -61,7 +61,7 @@ exports[`LocalizationAPIControl Init should work 1`] = `
       <button
         class="LocalizationSample_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>
@@ -78,7 +78,7 @@ exports[`LocalizationAPIControl Update View should Work 1`] = `
       <button
         class="LocalizationSample_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>
@@ -95,7 +95,7 @@ exports[`LocalizationAPIControl Update View with value should work 1`] = `
       <button
         class="LocalizationSample_Button_Style"
       >
-        undefined
+        Increment
       </button>
     </div>
   </div>

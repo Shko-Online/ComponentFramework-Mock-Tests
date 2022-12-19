@@ -1,28 +1,20 @@
 /*
-  Unless explicitly acquired and licensed from Licensor under another
-  license, the contents of this file are subject to the Reciprocal Public
-  License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
-  and You may not copy or use this file in either source code or executable
-  form, except in compliance with the terms and conditions of the RPL.
-
-  All software distributed under the RPL is provided strictly on an "AS
-  IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND
-  LICENSOR HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT
-  LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-  PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
-  language governing rights and limitations under the RPL. 
+    Copyright (c) 2022 Betim Beja and Shko Online LLC
+    Licensed under the MIT license.
 */
 
-import * as sinon from "sinon";
+import sinon from "sinon";
 
-import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator";
+import {
+  ComponentFrameworkMockGenerator,
+  DataSetMock,
+} from "@shko.online/componentframework-mock";
 import { DataSetGrid } from "@powerapps-samples/data-set-grid/DataSetGrid";
 import {
   IInputs,
   IOutputs,
 } from "@powerapps-samples/data-set-grid/DataSetGrid/generated/ManifestTypes";
-import { DataSetMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/DataSet.mock";
-import { resource } from "@powerapps-samples/data-set-grid/DataSetGrid/strings/DataSetGrid.1033.resx";
+import resource from "@powerapps-samples/data-set-grid/DataSetGrid/strings/DataSetGrid.1033.resx";
 
 describe("DataSetGrid", () => {
   let mockGenerator: ComponentFrameworkMockGenerator<IInputs, IOutputs>;
@@ -51,8 +43,7 @@ describe("DataSetGrid", () => {
       container
     );
     mockGenerator.SetControlResource(resource);
-    const controlValue = mockGenerator.context.parameters
-      .dataSetGrid as DataSetMock;
+    const controlValue = mockGenerator.context._parameters.dataSetGrid;
     controlValue.columns = [
       {
         alias: "alias",
@@ -149,7 +140,7 @@ describe("DataSetGrid", () => {
     expect(document.body).toMatchSnapshot();
   });
   it("Get sorted Columns", () => {
-    mockGenerator.context.parameters.dataSetGrid.columns = [] 
+    mockGenerator.context.parameters.dataSetGrid.columns = [];
     mockGenerator.ExecuteInit();
     mockGenerator.ExecuteUpdateView();
     expect(document.body).toMatchSnapshot();

@@ -5,6 +5,7 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 1`] = `
   <div>
     <div
       class="main-container"
+      style="height: -51px;"
     >
       <div>
         <input
@@ -39,7 +40,7 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: 0px;"
               />
             </th>
             <th
@@ -47,7 +48,7 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -1px;"
               />
             </th>
           </tr>
@@ -71,6 +72,7 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 2`] = `
   <div>
     <div
       class="main-container"
+      style="height: -51px;"
     >
       <div>
         <input
@@ -105,7 +107,7 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 2`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: 0px;"
               />
             </th>
             <th
@@ -113,7 +115,7 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 2`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -1px;"
               />
             </th>
           </tr>
@@ -137,6 +139,7 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 3`] = `
   <div>
     <div
       class="main-container"
+      style="height: -51px;"
     >
       <div>
         <input
@@ -171,7 +174,7 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 3`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: 0px;"
               />
             </th>
             <th
@@ -179,7 +182,7 @@ exports[`PropertySetTableControl Button LoadPrev & LoadNext should work 3`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -1px;"
               />
             </th>
           </tr>
@@ -203,6 +206,7 @@ exports[`PropertySetTableControl Destroy should work 1`] = `
   <div>
     <div
       class="main-container"
+      style="height: -51px;"
     >
       <div>
         <input
@@ -237,7 +241,7 @@ exports[`PropertySetTableControl Destroy should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: 0px;"
               />
             </th>
             <th
@@ -245,7 +249,7 @@ exports[`PropertySetTableControl Destroy should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -1px;"
               />
             </th>
           </tr>
@@ -304,6 +308,7 @@ exports[`PropertySetTableControl Get output should work 1`] = `
   <div>
     <div
       class="main-container"
+      style="height: -51px;"
     >
       <div>
         <input
@@ -338,7 +343,7 @@ exports[`PropertySetTableControl Get output should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: 0px;"
               />
             </th>
             <th
@@ -346,7 +351,7 @@ exports[`PropertySetTableControl Get output should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -1px;"
               />
             </th>
           </tr>
@@ -403,6 +408,7 @@ exports[`PropertySetTableControl Row click should work 1`] = `
   <div>
     <div
       class="main-container"
+      style="height: -51px;"
     >
       <div>
         <input
@@ -437,7 +443,7 @@ exports[`PropertySetTableControl Row click should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: 0px;"
               />
             </th>
             <th
@@ -445,7 +451,15 @@ exports[`PropertySetTableControl Row click should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: 0px;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: -1px;"
               />
             </th>
           </tr>
@@ -460,6 +474,7 @@ exports[`PropertySetTableControl Row click should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
+                style="width: 0px;"
               />
             </td>
             <td
@@ -467,6 +482,15 @@ exports[`PropertySetTableControl Row click should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
+                style="width: 0px;"
+              />
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="width: -1px;"
               />
             </td>
           </tr>
@@ -479,6 +503,7 @@ exports[`PropertySetTableControl Row click should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
+                style="width: 0px;"
               />
             </td>
             <td
@@ -486,6 +511,15 @@ exports[`PropertySetTableControl Row click should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
+                style="width: 0px;"
+              />
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="width: -1px;"
               />
             </td>
           </tr>
@@ -501,6 +535,7 @@ exports[`PropertySetTableControl Update View should Work 1`] = `
   <div>
     <div
       class="main-container"
+      style="height: -51px;"
     >
       <div>
         <input
@@ -535,7 +570,7 @@ exports[`PropertySetTableControl Update View should Work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: 0px;"
               />
             </th>
             <th
@@ -543,7 +578,7 @@ exports[`PropertySetTableControl Update View should Work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -1px;"
               />
             </th>
           </tr>
@@ -567,6 +602,7 @@ exports[`PropertySetTableControl toggle load more button if it has next page 1`]
   <div>
     <div
       class="main-container"
+      style="height: -51px;"
     >
       <div>
         <input
@@ -600,7 +636,7 @@ exports[`PropertySetTableControl toggle load more button if it has next page 1`]
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: 0px;"
               />
             </th>
             <th
@@ -608,7 +644,7 @@ exports[`PropertySetTableControl toggle load more button if it has next page 1`]
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -1px;"
               />
             </th>
           </tr>
@@ -632,6 +668,7 @@ exports[`PropertySetTableControl toggle load more button if it has previous page
   <div>
     <div
       class="main-container"
+      style="height: -51px;"
     >
       <div>
         <input
@@ -665,7 +702,7 @@ exports[`PropertySetTableControl toggle load more button if it has previous page
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: 0px;"
               />
             </th>
             <th
@@ -673,7 +710,7 @@ exports[`PropertySetTableControl toggle load more button if it has previous page
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -1px;"
               />
             </th>
           </tr>

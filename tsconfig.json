@@ -1,17 +1,8 @@
 /*
-	Unless explicitly acquired and licensed from Licensor under another
-	license, the contents of this file are subject to the Reciprocal Public
-	License ("RPL") Version 1.5, or subsequent versions as allowed by the RPL,
-	and You may not copy or use this file in either source code or executable
-	form, except in compliance with the terms and conditions of the RPL.
-
-	All software distributed under the RPL is provided strictly on an "AS
-	IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND
-	LICENSOR HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT
-	LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-	PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the RPL for specific
-	language governing rights and limitations under the RPL. 
+    Copyright (c) 2022 Betim Beja and Shko Online LLC
+    Licensed under the MIT license.
 */
+
 {
     "compilerOptions": {
         "allowSyntheticDefaultImports": true,
@@ -32,10 +23,7 @@
         "declaration": true,
         "sourceMap": true,
         "target": "ES6",
-        "paths": {
-            "@shko-online/componentframework-mock*": [
-                "./ComponentFramework-Mock/src*"
-            ],
+        "paths": {          
             "@powerapps-samples/control-state-api*": [
                 "./PowerApps-Samples/component-framework/ControlStateAPI*"
             ],
@@ -93,14 +81,12 @@
         },
         "typeRoots": [
             "./node_modules/@types",
-            "./ComponentFramework/src"
-        ]
+            "./node_modules/@shko.online/ComponentFramework-Mock"
+        ]      
     },
     "exclude": [
         "node_modules",
         "wwwroot",
-        "ComponentFramework-Mock\\src\\ComponentFramework-Mock-Generator\\ComponentFramework-Mock-Generator-React.ts",
-        "ComponentFramework-Mock-Generator\\ComponentFramework-Mock-Generator-React.ts"
     ],
     "include": [
         "src",

@@ -1,13 +1,12 @@
 import { Story, Meta } from "@storybook/html";
 
-import { ComponentFrameworkMockGenerator } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator";
+import { ComponentFrameworkMockGenerator,StringPropertyMock } from "@shko.online/componentframework-mock";
 import { DeviceApiControl } from "@powerapps-samples/device-api-control/DeviceApiControl";
 import {
   IInputs,
   IOutputs,
 } from "@powerapps-samples/device-api-control/DeviceApiControl/generated/ManifestTypes";
 import * as resource from "@powerapps-samples/device-api-control/DeviceApiControl/strings/DeviceApiControl.1033.resx";
-import { StringPropertyMock } from "@shko-online/componentframework-mock/ComponentFramework-Mock/PropertyTypes/StringProperty.mock";
 import "@powerapps-samples/device-api-control/DeviceApiControl/css/DeviceApiControl.css";
 export default {
   title: "PCF Components/DeviceApiControl",

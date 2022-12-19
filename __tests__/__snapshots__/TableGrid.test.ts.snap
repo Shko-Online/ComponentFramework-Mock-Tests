@@ -19,7 +19,7 @@ exports[`TableGrid Destroy should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -125px;"
               />
             </th>
             <th
@@ -27,7 +27,7 @@ exports[`TableGrid Destroy should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -126px;"
               />
             </th>
           </tr>
@@ -69,7 +69,7 @@ exports[`TableGrid GetOutputs should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -125px;"
               />
             </th>
             <th
@@ -77,7 +77,7 @@ exports[`TableGrid GetOutputs should work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -126px;"
               />
             </th>
           </tr>
@@ -137,7 +137,7 @@ exports[`TableGrid Load More Button 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -125px;"
               />
             </th>
             <th
@@ -145,7 +145,7 @@ exports[`TableGrid Load More Button 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -126px;"
               />
             </th>
           </tr>
@@ -187,7 +187,7 @@ exports[`TableGrid Row Click Event handler for the associated row when being cli
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -84px;"
               />
             </th>
             <th
@@ -195,7 +195,15 @@ exports[`TableGrid Row Click Event handler for the associated row when being cli
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -84px;"
+              />
+            </th>
+            <th
+              class="SimpleTable_TableHeader_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: -83px;"
               />
             </th>
           </tr>
@@ -210,7 +218,7 @@ exports[`TableGrid Row Click Event handler for the associated row when being cli
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -84px;"
               />
             </td>
             <td
@@ -218,7 +226,15 @@ exports[`TableGrid Row Click Event handler for the associated row when being cli
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -84px;"
+              />
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: -83px;"
               />
             </td>
           </tr>
@@ -231,7 +247,7 @@ exports[`TableGrid Row Click Event handler for the associated row when being cli
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -84px;"
               />
             </td>
             <td
@@ -239,7 +255,15 @@ exports[`TableGrid Row Click Event handler for the associated row when being cli
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -84px;"
+              />
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: -83px;"
               />
             </td>
           </tr>
@@ -252,7 +276,7 @@ exports[`TableGrid Row Click Event handler for the associated row when being cli
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -84px;"
               />
             </td>
             <td
@@ -260,7 +284,15 @@ exports[`TableGrid Row Click Event handler for the associated row when being cli
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -84px;"
+              />
+            </td>
+            <td
+              class="SimpleTable_TableCell_Style"
+            >
+              <div
+                class="SimpleTable_TableCellInnerDiv_Style"
+                style="max-width: -83px;"
               />
             </td>
           </tr>
@@ -294,7 +326,7 @@ exports[`TableGrid Update View should Work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -125px;"
               />
             </th>
             <th
@@ -302,7 +334,7 @@ exports[`TableGrid Update View should Work 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -126px;"
               />
             </th>
           </tr>
@@ -344,7 +376,7 @@ exports[`TableGrid toggle load more button if it has next page 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -125px;"
               />
             </th>
             <th
@@ -352,7 +384,7 @@ exports[`TableGrid toggle load more button if it has next page 1`] = `
             >
               <div
                 class="SimpleTable_TableCellInnerDiv_Style"
-                style="max-width: NaNpx;"
+                style="max-width: -126px;"
               />
             </th>
           </tr>

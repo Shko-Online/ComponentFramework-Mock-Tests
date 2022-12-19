@@ -13,8 +13,9 @@ exports[`DataSetGrid Adding DataSet Control main-container button to the contain
         <div>
           <div
             class="DataSetControl_grid-norecords"
+            style="width: -26px;"
           >
-            undefined
+            No records found.
           </div>
         </div>
       </div>
@@ -40,8 +41,9 @@ exports[`DataSetGrid Destroy should work 1`] = `
         <div>
           <div
             class="DataSetControl_grid-norecords"
+            style="width: -26px;"
           >
-            undefined
+            No records found.
           </div>
         </div>
       </div>
@@ -103,8 +105,9 @@ exports[`DataSetGrid Load More Button 1`] = `
         <div>
           <div
             class="DataSetControl_grid-norecords"
+            style="width: -26px;"
           >
-            undefined
+            No records found.
           </div>
         </div>
       </div>
@@ -130,8 +133,9 @@ exports[`DataSetGrid Load More Button 2`] = `
         <div>
           <div
             class="DataSetControl_grid-norecords"
+            style="width: -26px;"
           >
-            undefined
+            No records found.
           </div>
         </div>
       </div>
@@ -162,7 +166,17 @@ exports[`DataSetGrid Render multiple rows 1`] = `
             <p
               class="DataSetControl_grid-text-label"
             >
-              Mocked Column : 
+              myId : 
+            </p>
+            <p
+              class="DataSetControl_grid-text-value"
+            >
+              1
+            </p>
+            <p
+              class="DataSetControl_grid-text-label"
+            >
+              alias : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -172,7 +186,7 @@ exports[`DataSetGrid Render multiple rows 1`] = `
             <p
               class="DataSetControl_grid-text-label"
             >
-              Second Mocked Column : 
+              alias2 : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -187,7 +201,17 @@ exports[`DataSetGrid Render multiple rows 1`] = `
             <p
               class="DataSetControl_grid-text-label"
             >
-              Mocked Column : 
+              myId : 
+            </p>
+            <p
+              class="DataSetControl_grid-text-value"
+            >
+              2
+            </p>
+            <p
+              class="DataSetControl_grid-text-label"
+            >
+              alias : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -197,7 +221,7 @@ exports[`DataSetGrid Render multiple rows 1`] = `
             <p
               class="DataSetControl_grid-text-label"
             >
-              Second Mocked Column : 
+              alias2 : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -234,7 +258,17 @@ exports[`DataSetGrid Render multiple rows sorted 1`] = `
             <p
               class="DataSetControl_grid-text-label"
             >
-              Mocked Column : 
+              myId : 
+            </p>
+            <p
+              class="DataSetControl_grid-text-value"
+            >
+              1
+            </p>
+            <p
+              class="DataSetControl_grid-text-label"
+            >
+              alias : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -244,7 +278,7 @@ exports[`DataSetGrid Render multiple rows sorted 1`] = `
             <p
               class="DataSetControl_grid-text-label"
             >
-              Second Mocked Column : 
+              alias2 : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -259,7 +293,17 @@ exports[`DataSetGrid Render multiple rows sorted 1`] = `
             <p
               class="DataSetControl_grid-text-label"
             >
-              Mocked Column : 
+              myId : 
+            </p>
+            <p
+              class="DataSetControl_grid-text-value"
+            >
+              2
+            </p>
+            <p
+              class="DataSetControl_grid-text-label"
+            >
+              alias : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -269,7 +313,7 @@ exports[`DataSetGrid Render multiple rows sorted 1`] = `
             <p
               class="DataSetControl_grid-text-label"
             >
-              Second Mocked Column : 
+              alias2 : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -306,7 +350,17 @@ exports[`DataSetGrid Row Click Event handler for the associated row when being c
             <p
               class="DataSetControl_grid-text-label"
             >
-              Mocked Column : 
+              myId : 
+            </p>
+            <p
+              class="DataSetControl_grid-text-value"
+            >
+              1
+            </p>
+            <p
+              class="DataSetControl_grid-text-label"
+            >
+              alias : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -316,7 +370,7 @@ exports[`DataSetGrid Row Click Event handler for the associated row when being c
             <p
               class="DataSetControl_grid-text-label"
             >
-              Second Mocked Column : 
+              alias2 : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -331,7 +385,17 @@ exports[`DataSetGrid Row Click Event handler for the associated row when being c
             <p
               class="DataSetControl_grid-text-label"
             >
-              Mocked Column : 
+              myId : 
+            </p>
+            <p
+              class="DataSetControl_grid-text-value"
+            >
+              2
+            </p>
+            <p
+              class="DataSetControl_grid-text-label"
+            >
+              alias : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -341,7 +405,7 @@ exports[`DataSetGrid Row Click Event handler for the associated row when being c
             <p
               class="DataSetControl_grid-text-label"
             >
-              Second Mocked Column : 
+              alias2 : 
             </p>
             <p
               class="DataSetControl_grid-text-value"
@@ -373,8 +437,9 @@ exports[`DataSetGrid Update View should Work 1`] = `
         <div>
           <div
             class="DataSetControl_grid-norecords"
+            style="width: -26px;"
           >
-            undefined
+            No records found.
           </div>
         </div>
       </div>
@@ -400,8 +465,9 @@ exports[`DataSetGrid toggle load more button if it has next page 1`] = `
         <div>
           <div
             class="DataSetControl_grid-norecords"
+            style="width: -26px;"
           >
-            undefined
+            No records found.
           </div>
         </div>
       </div>
@@ -427,8 +493,9 @@ exports[`DataSetGrid toggle load more when needed 1`] = `
         <div>
           <div
             class="DataSetControl_grid-norecords"
+            style="width: -26px;"
           >
-            undefined
+            No records found.
           </div>
         </div>
       </div>

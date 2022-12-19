@@ -1,4 +1,4 @@
-import { MetadataDB } from "@shko-online/componentframework-mock/ComponentFramework-Mock-Generator/Metadata.db";
+import { MetadataDB } from "@shko.online/componentframework-mock";
 import * as userMetadataJson from "./data/systemUser.json";
 import * as userData from "./data/systemUserData.json";
 

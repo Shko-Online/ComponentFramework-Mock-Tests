@@ -62,7 +62,7 @@ exports[`TableControl Click should Work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Betim Beja
+            
           </td>
         </tr>
         <tr
@@ -76,7 +76,7 @@ exports[`TableControl Click should Work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            undefined
+            true
           </td>
         </tr>
         <tr
@@ -90,7 +90,7 @@ exports[`TableControl Click should Work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            $100,500
+            $100,500.00000
           </td>
         </tr>
         <tr
@@ -180,7 +180,7 @@ exports[`TableControl Click should Work 2`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Betim Beja
+            
           </td>
         </tr>
         <tr
@@ -194,7 +194,7 @@ exports[`TableControl Click should Work 2`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            undefined
+            true
           </td>
         </tr>
         <tr
@@ -208,7 +208,7 @@ exports[`TableControl Click should Work 2`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            $100,500
+            $100,500.00000
           </td>
         </tr>
         <tr
@@ -298,7 +298,7 @@ exports[`TableControl Destroy should work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Betim Beja
+            
           </td>
         </tr>
         <tr
@@ -312,7 +312,7 @@ exports[`TableControl Destroy should work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            undefined
+            true
           </td>
         </tr>
         <tr
@@ -326,7 +326,7 @@ exports[`TableControl Destroy should work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            $100,500
+            $100,500.00000
           </td>
         </tr>
         <tr
@@ -416,7 +416,7 @@ exports[`TableControl GetOutputs should work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Betim Beja
+            
           </td>
         </tr>
         <tr
@@ -430,7 +430,7 @@ exports[`TableControl GetOutputs should work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            undefined
+            true
           </td>
         </tr>
         <tr
@@ -444,7 +444,7 @@ exports[`TableControl GetOutputs should work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            $100,500
+            $100,500.00000
           </td>
         </tr>
         <tr
@@ -544,7 +544,7 @@ exports[`TableControl Update View should Work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Betim Beja
+            
           </td>
         </tr>
         <tr
@@ -558,7 +558,7 @@ exports[`TableControl Update View should Work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            undefined
+            true
           </td>
         </tr>
         <tr
@@ -572,7 +572,7 @@ exports[`TableControl Update View should Work 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            $100,500
+            $100,500.00000
           </td>
         </tr>
         <tr
@@ -662,7 +662,7 @@ exports[`TableControl onlookup 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Betim Beja
+            
           </td>
         </tr>
         <tr
@@ -676,7 +676,7 @@ exports[`TableControl onlookup 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            undefined
+            true
           </td>
         </tr>
         <tr
@@ -690,7 +690,7 @@ exports[`TableControl onlookup 1`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            $100,500
+            $100,500.00000
           </td>
         </tr>
         <tr
@@ -780,7 +780,7 @@ exports[`TableControl onlookup 2`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            Betim Beja
+            
           </td>
         </tr>
         <tr
@@ -794,7 +794,7 @@ exports[`TableControl onlookup 2`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            undefined
+            true
           </td>
         </tr>
         <tr
@@ -808,7 +808,7 @@ exports[`TableControl onlookup 2`] = `
           <td
             class="SampleControlHtmlTable_HtmlCell SampleControlHtmlTable_HtmlCell_Value"
           >
-            $100,500
+            $100,500.00000
           </td>
         </tr>
         <tr

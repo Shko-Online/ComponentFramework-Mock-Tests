@@ -7,13 +7,13 @@ exports[`ImageUploadontrol Click remove work 1`] = `
       class="NoImage"
     >
       <button>
-        undefined
+        Upload
       </button>
       <img />
       <button
         class="RemoveButton"
       >
-        undefined
+        Remove
       </button>
       <label />
     </div>
@@ -28,13 +28,13 @@ exports[`ImageUploadontrol Click remove work 2`] = `
       class="NoImage"
     >
       <button>
-        undefined
+        Upload
       </button>
       <img />
       <button
         class="RemoveButton"
       >
-        undefined
+        Remove
       </button>
       <label />
     </div>
@@ -49,13 +49,13 @@ exports[`ImageUploadontrol Click upload work 1`] = `
       class="NoImage"
     >
       <button>
-        undefined
+        Upload
       </button>
       <img />
       <button
         class="RemoveButton"
       >
-        undefined
+        Remove
       </button>
       <label />
     </div>
@@ -70,13 +70,13 @@ exports[`ImageUploadontrol Click upload work 2`] = `
       class="NoImage"
     >
       <button>
-        undefined
+        Upload
       </button>
       <img />
       <button
         class="RemoveButton"
       >
-        undefined
+        Remove
       </button>
       <label />
     </div>
@@ -91,13 +91,13 @@ exports[`ImageUploadontrol Init should work 1`] = `
       class="NoImage"
     >
       <button>
-        undefined
+        Upload
       </button>
       <img />
       <button
         class="RemoveButton"
       >
-        undefined
+        Remove
       </button>
       <label />
     </div>
@@ -112,13 +112,13 @@ exports[`ImageUploadontrol Update View should Work 1`] = `
       class="NoImage"
     >
       <button>
-        undefined
+        Upload
       </button>
       <img />
       <button
         class="RemoveButton"
       >
-        undefined
+        Remove
       </button>
       <label />
     </div>
@@ -133,13 +133,13 @@ exports[`ImageUploadontrol Update View with value should work 1`] = `
       class="NoImage"
     >
       <button>
-        undefined
+        Upload
       </button>
       <img />
       <button
         class="RemoveButton"
       >
-        undefined
+        Remove
       </button>
       <label />
     </div>
