@@ -48,7 +48,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/albanian-xrm/ComponentFramework-Mock-Tests.git"
+    "url": "git+https://github.com/shko-online/ComponentFramework-Mock-Tests.git"
   },
   "author": "Shko Online <sales@shko.online> (https://shko.online)",
   "license": "MIT",
