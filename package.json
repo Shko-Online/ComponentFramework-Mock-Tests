@@ -4,8 +4,7 @@
   "description": "Test for our mocking library which helps with testing PowerApps Component Framework Components",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run install:albx & npm run install:control-state & npm run install:formatting-api & npm run install:i-frame-control & npm run install:increment-control & npm run install:linear-input-control & npm run install:localization-api-control & npm run install:device-api-control & npm run install:lookup-simple-control & npm run install:image-upload-control & npm run install:navigation-api-control & npm run install:multi-select-option-set-control & npm run install:data-set-grid & npm run install:web-api-control & npm run install:property-set-table-control & npm run install:table-control & npm run install:map-control & npm run install:table-grid",
-    "install:albx": "cd ComponentFramework-Mock && npm install",
+    "postinstall": "npm run install:control-state & npm run install:formatting-api & npm run install:i-frame-control & npm run install:increment-control & npm run install:linear-input-control & npm run install:localization-api-control & npm run install:device-api-control & npm run install:lookup-simple-control & npm run install:image-upload-control & npm run install:navigation-api-control & npm run install:multi-select-option-set-control & npm run install:data-set-grid & npm run install:web-api-control & npm run install:property-set-table-control & npm run install:table-control & npm run install:map-control & npm run install:table-grid",
     "install:control-state": "cd PowerApps-Samples\\component-framework\\ControlStateAPI && npm install",
     "install:formatting-api": "cd PowerApps-Samples\\component-framework\\FormattingAPIControl && npm install",
     "install:i-frame-control": "cd PowerApps-Samples\\component-framework\\IFrameControl && npm install",

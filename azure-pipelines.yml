@@ -10,22 +10,21 @@ pool:
   vmImage: windows-latest
 
 steps:
-- task: YarnInstaller@3
+- task: Npm@1
   inputs:
-    versionSpec: '1.x'
-
-- task: Yarn@3
+    command: 'install'
   displayName: "Install NPM Dependencies"
 
-- task: Yarn@3
+- task: Npm@1
   displayName: "Build NPM Dependencies"
   inputs:
-    arguments: 'build'
+    command: 'custom'
+    customCommand: 'build'
 
-- task: Yarn@3
+- task: Npm@1
   displayName: "Test"
   inputs:
-    arguments: 'test'
+    command: 'test'
 
 - task: PublishCodeCoverageResults@1
   displayName: "Publish code coverage results"
