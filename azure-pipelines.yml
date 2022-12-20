@@ -19,7 +19,7 @@ steps:
   displayName: "Build NPM Dependencies"
   inputs:
     command: 'custom'
-    customCommand: 'build'
+    customCommand: 'run build'
 
 - task: Npm@1
   displayName: "Test"
